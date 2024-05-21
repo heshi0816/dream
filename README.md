@@ -1,2 +1,3 @@
-软件展示地址http://8.137.95.225:8090/
-测试账号admin  密码：123
+Software demonstration URL: http://8.137.95.225:8090/
+Test account: admin
+Password: 123
