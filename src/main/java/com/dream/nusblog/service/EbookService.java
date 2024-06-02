@@ -1,6 +1,6 @@
 package com.dream.nusblog.service;
 
-import com.dream.nusblog.domain.Demo;
+import com.dream.nusblog.domain.Ebook;
 import com.dream.nusblog.mapper.EbookMapper;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
 
-    public List<Demo> list() {
+    public List<Ebook> list() {
         return ebookMapper.selectByExample(null);
     }
 }
