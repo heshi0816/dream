@@ -16,6 +16,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @EnableAsync
+
 public class NusblogApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(NusblogApplication.class);
