@@ -1,89 +1,135 @@
-2024-06-01 17:05:18.128 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 14168 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-01 17:05:18.130 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-01 17:05:18.686 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
-2024-06-01 17:05:18.692 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-01 17:05:18.693 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-01 17:05:18.693 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-01 17:05:18.743 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-01 17:05:18.743 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 578 ms
-2024-06-01 17:05:18.854 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-01 17:05:18.949 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
-2024-06-01 17:05:18.965 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-01 17:05:18.975 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.168 seconds (JVM running for 1.685)
-2024-06-01 17:27:29.612 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 10008 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-01 17:27:29.614 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-01 17:27:30.171 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
-2024-06-01 17:27:30.177 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
-2024-06-01 17:27:30.177 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-01 17:27:30.178 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-01 17:27:30.224 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-01 17:27:30.224 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 577 ms
-2024-06-01 17:27:30.333 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-01 17:27:30.435 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
-2024-06-01 17:27:30.451 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
-2024-06-01 17:27:30.461 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.171 seconds (JVM running for 1.666)
-2024-06-01 22:29:57.005 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 14716 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-01 22:29:57.007 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-01 22:29:57.501 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'servletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.port' to java.lang.Integer
-2024-06-01 22:29:57.510 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-06-01 22:29:57.524 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'server.port' to java.lang.Integer:
-
-    Property: server.port
-    Value: 8880;
-    Origin: class path resource [application.properties] - 1:15
-    Reason: failed to convert java.lang.String to java.lang.Integer
-
-Action:
-
-Update your application's configuration
-
-2024-06-01 22:31:10.911 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 1156 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-01 22:31:10.913 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-01 22:31:11.421 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'servletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.port' to java.lang.Integer
-2024-06-01 22:31:11.429 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2024-06-01 22:31:11.438 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under 'server.port' to java.lang.Integer:
-
-    Property: server.port
-    Value: 8880;
-    Origin: class path resource [application.properties] - 1:15
-    Reason: failed to convert java.lang.String to java.lang.Integer
-
-Action:
-
-Update your application's configuration
-
-2024-06-01 22:32:00.968 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 16424 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-01 22:32:00.970 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-01 22:32:01.564 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-01 22:32:01.570 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-01 22:32:01.570 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-01 22:32:01.571 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-01 22:32:01.616 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-01 22:32:01.617 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 610 ms
-2024-06-01 22:32:01.729 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-01 22:32:01.835 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-01 22:32:01.846 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-01 22:32:01.862 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-01 22:32:01.882 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.238 seconds (JVM running for 1.75)
-2024-06-01 22:32:01.885 INFO  com.dream.nusblog.NusblogApplication              :26   [32m                  [0;39m 启动成功！！
-2024-06-01 22:32:01.886 INFO  com.dream.nusblog.NusblogApplication              :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-02 10:56:22.478 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 11352 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-02 10:56:22.481 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-02 10:56:23.114 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-02 10:56:23.120 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-02 10:56:23.121 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-02 10:56:23.121 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-02 10:56:23.168 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-02 10:56:23.168 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 650 ms
+2024-06-02 10:56:23.286 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-02 10:56:23.396 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-02 10:56:23.408 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-02 10:56:23.424 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-02 10:56:23.435 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.278 seconds (JVM running for 1.769)
+2024-06-02 10:56:23.437 INFO  com.dream.nusblog.NusblogApplication              :26   [32m                  [0;39m 启动成功！！
+2024-06-02 10:56:23.437 INFO  com.dream.nusblog.NusblogApplication              :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-02 10:56:37.867 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-02 10:56:37.869 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-02 10:56:37.870 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-02 11:04:03.887 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 15760 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-02 11:04:03.889 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-02 11:04:04.486 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-02 11:04:04.492 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:04:04.493 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-02 11:04:04.493 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-02 11:04:04.555 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-02 11:04:04.556 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 629 ms
+2024-06-02 11:04:04.673 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-02 11:04:04.795 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-02 11:04:04.807 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:04:04.822 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-02 11:04:04.833 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.288 seconds (JVM running for 1.814)
+2024-06-02 11:04:04.835 INFO  com.dream.nusblog.NusblogApplication              :26   [32m                  [0;39m 启动成功！！
+2024-06-02 11:04:04.836 INFO  com.dream.nusblog.NusblogApplication              :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-02 11:04:10.012 INFO  org.apache.coyote.http11.Http11Processor          :175  [32m                  [0;39m Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: The HTTP header line [name=TEST: ] does not conform to RFC 7230 and has been ignored.
+	at org.apache.coyote.http11.Http11InputBuffer.skipLine(Http11InputBuffer.java:1041)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeader(Http11InputBuffer.java:893)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeaders(Http11InputBuffer.java:593)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:284)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024-06-02 11:05:24.971 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-02 11:05:24.972 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-02 11:05:24.973 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-02 11:07:12.601 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 13128 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-02 11:07:12.603 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-02 11:07:13.208 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-02 11:07:13.214 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:07:13.215 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-02 11:07:13.216 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-02 11:07:13.280 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-02 11:07:13.280 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 641 ms
+2024-06-02 11:07:13.400 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-02 11:07:13.505 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-02 11:07:13.517 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:07:13.532 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-02 11:07:13.543 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.336 seconds (JVM running for 1.838)
+2024-06-02 11:07:13.545 INFO  com.dream.nusblog.NusblogApplication              :26   [32m                  [0;39m 启动成功！！
+2024-06-02 11:07:13.546 INFO  com.dream.nusblog.NusblogApplication              :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-02 11:07:16.701 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-02 11:07:16.702 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-02 11:07:16.703 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-02 11:07:45.744 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 1840 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-02 11:07:45.747 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-02 11:07:46.338 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-02 11:07:46.344 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:07:46.344 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-02 11:07:46.345 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-02 11:07:46.392 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-02 11:07:46.392 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 610 ms
+2024-06-02 11:07:46.521 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-02 11:07:46.628 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-02 11:07:46.640 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:07:46.655 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-02 11:07:46.665 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.261 seconds (JVM running for 1.78)
+2024-06-02 11:07:46.668 INFO  com.dream.nusblog.NusblogApplication              :26   [32m                  [0;39m 启动成功！！
+2024-06-02 11:07:46.668 INFO  com.dream.nusblog.NusblogApplication              :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-02 11:07:50.194 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-02 11:07:50.195 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-02 11:07:50.196 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-02 11:08:03.250 INFO  org.apache.coyote.http11.Http11Processor          :175  [32m                  [0;39m Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: The HTTP header line [name = test: ] does not conform to RFC 7230 and has been ignored.
+	at org.apache.coyote.http11.Http11InputBuffer.skipLine(Http11InputBuffer.java:1041)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeader(Http11InputBuffer.java:893)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeaders(Http11InputBuffer.java:593)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:284)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024-06-02 11:21:04.012 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 10324 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-02 11:21:04.014 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-02 11:21:04.637 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-02 11:21:04.643 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:21:04.644 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-02 11:21:04.644 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-02 11:21:04.691 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-02 11:21:04.692 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 639 ms
+2024-06-02 11:21:04.812 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-02 11:21:04.922 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-02 11:21:04.934 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-02 11:21:04.949 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-02 11:21:04.960 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 1.283 seconds (JVM running for 1.77)
+2024-06-02 11:21:04.962 INFO  com.dream.nusblog.NusblogApplication              :26   [32m                  [0;39m 启动成功！！
+2024-06-02 11:21:04.962 INFO  com.dream.nusblog.NusblogApplication              :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-02 11:21:07.301 INFO  org.apache.coyote.http11.Http11Processor          :175  [32m                  [0;39m Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: The HTTP header line [> {%: ] does not conform to RFC 7230 and has been ignored.
+	at org.apache.coyote.http11.Http11InputBuffer.skipLine(Http11InputBuffer.java:1041)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeader(Http11InputBuffer.java:893)
+	at org.apache.coyote.http11.Http11InputBuffer.parseHeaders(Http11InputBuffer.java:593)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:284)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024-06-02 11:21:18.929 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-02 11:21:18.930 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-02 11:21:18.932 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
