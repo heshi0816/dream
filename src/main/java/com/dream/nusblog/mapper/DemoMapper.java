@@ -2,8 +2,9 @@ package com.dream.nusblog.mapper;
 
 import com.dream.nusblog.domain.Demo;
 import com.dream.nusblog.domain.DemoExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface DemoMapper {
     long countByExample(DemoExample example);
