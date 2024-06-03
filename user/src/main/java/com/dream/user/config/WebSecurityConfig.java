@@ -44,6 +44,7 @@ public class WebSecurityConfig {
         http.
                 //配置认证
                         formLogin()
+
                 //登录页面路径配置
                 .loginPage("/login")
                 //登录处理路径配置
@@ -62,7 +63,7 @@ public class WebSecurityConfig {
                 //配置授权
                         authorizeRequests()
                 //放行静态资源
-                .requestMatchers("/bootstrap/**", "/js/**").permitAll()
+                .requestMatchers("/default","/bootstrap/**", "/js/**","/map/**").permitAll()
                 .withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
                     @Override
                     public <O extends FilterSecurityInterceptor> O postProcess(O o) {

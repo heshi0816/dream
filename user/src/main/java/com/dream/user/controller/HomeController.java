@@ -8,6 +8,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home() {
-        return "redirect:/index";  // 重定向到 /index，进一步触发安全重定向到登录
+        return "redirect:/default.html";  // 重定向到 /index，进一步触发安全重定向到登录
     }
 }
