@@ -2,7 +2,7 @@
 <html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>角色管理</title>
+    <title>role manage</title>
     <link rel="stylesheet"
           th:href="@{'/bootstrap/css/bootstrap.min.css'}"/>
 
@@ -34,14 +34,14 @@
                 if (id > -1) {
                     location.href = "showUpdate?id=" + id;
                 } else {
-                    alert("请选中数据");
+                    alert("choice data");
                 }
             })
             $("#delete").click(function () {
                 if (id >-1) {
                     location.href = "delete?id=" + id;
                 } else {
-                    alert("请选中数据");
+                    alert("choice data");
                 }
             })
         })
@@ -53,8 +53,8 @@
     <table class="table table-striped table-bordered table-hover">
         <tr>
             <th>CODE</th>
-            <th>名称</th>
-            <th>权限</th>
+            <th>name</th>
+            <th>access</th>
         </tr>
             <tr class="data" th:each="sysRole:${list}" th:data-id="${sysRole.id }">
                 <td th:text="${sysRole.code}"></td>
@@ -64,9 +64,9 @@
                 </td>
             </tr>
     </table>
-    <button type="button" class="btn btn-primary" id="add">新增</button>
-    <button type="button" class="btn btn-primary" id="update">修改</button>
-    <button type="button" class="btn btn-danger" id="delete">删除</button>
+    <button type="button" class="btn btn-primary" id="add">add</button>
+    <button type="button" class="btn btn-primary" id="update">update</button>
+    <button type="button" class="btn btn-danger" id="delete">delete</button>
 
 </div>
 </body>
