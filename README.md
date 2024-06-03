@@ -28,7 +28,7 @@ This project adopts an agile development model. Initially, the front-end uses Th
     - - user with limited access
     - **Username: `tom`
     - **Password: `123`
-- **Cloud Database Connection** (may be unstable outside China):
+- **Cloud Database Connection(Chinese versioin)** (may be unstable outside China):
 ```js
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dream?serverTimezone=UTC&characterEncoding=UTF-8
@@ -68,7 +68,7 @@ git checkout branch_he
 - Use your IDE to run the `UserApplication.java` file.
 - Access the URL: [http://localhost:8090](http://localhost:8090).
 
-### Using Cloud Database
+### Using Cloud Database(Chinese version)
 
 If you choose to use the cloud database, make sure to configure the following information in `application.properties`:
 ```js
