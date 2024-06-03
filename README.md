@@ -55,7 +55,7 @@ cd dream
 git checkout branch_he
 ```
 4. **Import the Database**:
-- Import the database file from `dream/user/data` into your local MySQL database.
+- Import the database file from `dream/user/data/dreamE.sql` into your local MySQL database.
 - Ensure the database charset and collation are set to `utf8mb4` and `utf8mb4_bin`.
 
 4. **Configure Database Connection**:
