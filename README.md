@@ -77,12 +77,21 @@ git checkout branch_he
 - Use your IDE to run the `UserApplication.java` file.
 - Access the URL: [http://localhost:8090](http://localhost:8090).
 
-### Using Cloud Database(Chinese version)
+### Using Cloud Database
 
 If you choose to use the cloud database, make sure to configure the following information in `application.properties`:
+
+- **Cloud Database Connection(Chinese versioin)** (may be unstable outside China):
 ```js
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dream?serverTimezone=UTC&characterEncoding=UTF-8
+spring.datasource.username=root
+spring.datasource.password=123456
+```
+- **Cloud Database Connection(english versioin)** (may be unstable outside China):
+```js
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dreamE?serverTimezone=UTC&characterEncoding=UTF-8
 spring.datasource.username=root
 spring.datasource.password=123456
 ```
