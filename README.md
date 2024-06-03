@@ -10,7 +10,7 @@ This project adopts an agile development model. Initially, the front-end uses Th
 
 ## Project Description
 
-- **Current Version**: Chinese. Please set your development software to UTF-8 encoding after downloading the code. An English version will be updated later.
+- **Current Version**: I have updated the version on github repository to be english version, but so far the version deployed on the cloud server is still chinese version. http://8.137.95.225:8090/
 - **Database File Path**: `dream/user/data/dreamE.sql`
 - **Database Settings**:
     - Charset: `utf8mb4`
