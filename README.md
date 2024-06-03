@@ -1,5 +1,9 @@
 ##软件展示地址http://8.137.95.225:8090/
+- administrators' access
 - **Username: `admin`
+- **Password: `123`
+- user with limited access
+- **Username: `tom`
 - **Password: `123`
 
 # Dream Project
