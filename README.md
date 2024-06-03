@@ -34,6 +34,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dream?serverTimezone=UTC&characterEncoding=UTF-8
 spring.datasource.username=root
 spring.datasource.password=123456
+```
 
 - **Cloud Database Connection(english versioin)** (may be unstable outside China):
 ```js
