@@ -2,9 +2,7 @@
 - administrators' access
 - **Username: `admin`
 - **Password: `123`
-- user with limited access
-- **Username: `tom`
-- **Password: `123`
+
 
 # Dream Project
 
@@ -24,8 +22,12 @@ This project adopts an agile development model. Initially, the front-end uses Th
 - **Startup Program**: `UserApplication.java`
     - Access URL: [http://localhost:8090](http://localhost:8090)
 - **Admin Test Account**:
+    - administrators' access
     - Username: `admin`
     - Password: `123`
+    - - user with limited access
+    - **Username: `tom`
+    - **Password: `123`
 - **Cloud Database Connection** (may be unstable outside China):
 ```js
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
