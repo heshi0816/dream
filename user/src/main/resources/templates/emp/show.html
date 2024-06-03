@@ -73,7 +73,7 @@
 
             <div class="col-sm-2 ">
                 <select name="dep.id" class="form-control">
-                    <option value="">department</option>
+                    <option value="">faculty</option>
                     <option th:each="dep:${depList}" th:selected="${c.dep!=null}?${dep.id ==c.dep.id}:false"
                         th:text="${dep.name }" th:value="${dep.id }" >
                     </option>
@@ -90,7 +90,7 @@
             <th>name</th>
             <th>gender</th>
             <th>age</th>
-            <th>department</th>
+            <th>faculty</th>
         </tr>
 
         <tr class="data" th:each="emp:${list}" th:data-id="${emp.id }">
