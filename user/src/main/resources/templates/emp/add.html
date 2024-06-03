@@ -2,7 +2,7 @@
 <html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>新增员工</title>
+    <title>adding member</title>
     <link rel="stylesheet"
           th:href="@{'/bootstrap/css/bootstrap.min.css'}"/>
 
@@ -20,34 +20,34 @@
 <div id="container">
     <form class="form-horizontal" action="add">
         <div class="form-group">
-            <label class="col-sm-2 control-label">编号</label>
+            <label class="col-sm-2 control-label">id</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="请输入编号" name="number">
+                <input type="text" class="form-control" placeholder="please input id" name="number">
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 control-label">名字</label>
+            <label class="col-sm-2 control-label">name</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="请输入名字"
+                <input type="text" class="form-control" placeholder="please input name"
                        name="name">
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 control-label">性别</label>
+            <label class="col-sm-2 control-label">gender</label>
             <div class="col-sm-10">
-                <input type="radio" value="男" name="gender" />男<input type="radio"
-                                                                      value="女" name="gender" />女
+                <input type="radio" value="male" name="gender" />male<input type="radio"
+                                                                      value="female" name="gender" />female
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 control-label">年龄</label>
+            <label class="col-sm-2 control-label">age</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="请输入年龄"
+                <input type="text" class="form-control" placeholder="please input age"
                        name="age">
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 control-label">部门</label>
+            <label class="col-sm-2 control-label">department</label>
             <div class="col-sm-10">
                 <select class="form-control" name="dep.id">
                     <option  th:each="dep:${depList}"
@@ -58,7 +58,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">保存</button>
+                <button type="submit" class="btn btn-primary">submit</button>
             </div>
         </div>
     </form>

@@ -95,11 +95,11 @@
     <div id="top">
         <div id="logo">Nus Learn community management systems</div>
         <div id="welcome" >
-            <label>欢迎：</label>
+            <label>welcome：</label>
             <th:block th:text="${user.username}"></th:block>
-            <label>您的身份是：</label>
+            <label>your role：</label>
             <th:block th:each="role:${user.roles}" th:text="${role.name}"></th:block>
-            <div><a href="/logout">退出系统</a></div>
+            <div><a href="/logout">logout</a></div>
         </div>
 
     </div>
