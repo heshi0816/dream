@@ -2,7 +2,7 @@
 <html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>修改部门</title>
+    <title>update department</title>
     <link rel="stylesheet"
           th:href="@{'/bootstrap/css/bootstrap.min.css'}"/>
     <style>
@@ -21,22 +21,22 @@
     <form class="form-horizontal" action="update">
         <input type="hidden" name="id" th:value="${dep.id}">
         <div class="form-group">
-            <label class="col-sm-2 control-label">编号</label>
+            <label class="col-sm-2 control-label">id</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="请输入编号" name="number" th:value="${dep.number}">
+                <input type="text" class="form-control" placeholder="please input id" name="number" th:value="${dep.number}">
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 control-label">名称</label>
+            <label class="col-sm-2 control-label">name</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="请输入名称"
+                <input type="text" class="form-control" placeholder="please input name"
                        name="name" th:value="${dep.name}">
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">保存</button>
+                <button type="submit" class="btn btn-primary">submit</button>
             </div>
         </div>
     </form>
