@@ -13,11 +13,12 @@ This project adopts an agile development model. Initially, the front-end uses Th
 ## Project Description
 
 - **Current Version**: Chinese. Please set your development software to UTF-8 encoding after downloading the code. An English version will be updated later.
-- **Database File Path**: `dream/user/data/dream.sql`
+- **Database File Path**: `dream/user/data/dreamE.sql`
 - **Database Settings**:
     - Charset: `utf8mb4`
     - Collation: `utf8mb4_bin`
 - **Local Database Configuration**:
+    - Database name: 'dream1'
     - Username: `root`
     - Password: `123456`
 - **Startup Program**: `UserApplication.java`
