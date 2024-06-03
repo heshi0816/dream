@@ -1,4 +1,4 @@
-## Chinese version software display addresshttp://8.137.95.225:8090/
+## Chinese version software display address http://8.137.95.225:8090/
 - administrators' access
 - **Username: `admin`
 - **Password: `123`
