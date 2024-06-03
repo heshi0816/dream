@@ -142,23 +142,32 @@ As an NUS student, I find that sourcing educational resources is a time-consumin
 
 ## Project Feature:
 
-# 1 Account Management: every student will have their own repositories, which will record all the materials they have posted. When they are posting materials, they can select them to be either notes, cheatsheets, or past-year videos etc...and when they are posting they can select a tag for the document they are posting which can be the key for searching. The posted materials can be setted to either private or public, or granting certain people the access right to visit. 
+## 1 
+Account Management: every student will have their own repositories, which will record all the materials they have posted. When they are posting materials, they can select them to be either notes, cheatsheets, or past-year videos etc...and when they are posting they can select a tag for the document they are posting which can be the key for searching. The posted materials can be setted to either private or public, or granting certain people the access right to visit. 
 
-# 2 Recommendation system: After students have visited the materials they can either vote “likes” or “dislikes”, the materials with most likes will be granted with higher recommending priority in the same relevance level.
+## 2 
+Recommendation system: After students have visited the materials they can either vote “likes” or “dislikes”, the materials with most likes will be granted with higher recommending priority in the same relevance level.
 
-# 3 Comment system: The web will also have a comment system for users to leave comments on the materials they have readed in case any potential confusion. And if there’s any dispute user can also see the replication from other people. In case, any debate escalate into too fierce conflict we will also have a report function.
+## 3 
+Comment system: The web will also have a comment system for users to leave comments on the materials they have readed in case any potential confusion. And if there’s any dispute user can also see the replication from other people. In case, any debate escalate into too fierce conflict we will also have a report function.
 
-# 4 Course-centralled resources learning warehouse: Through the course code, the student can find relevant lecture slides, videos, notes, and other relevant stuff easily. In the searching box, you can either put the name of the course or using the course code, and also add the exact name of  the kind of material you want. Then the web will guide you to the page of that course and recommend the material with the closest name and highest “likes” at the top.
+## 4 
+Course-centralled resources learning warehouse: Through the course code, the student can find relevant lecture slides, videos, notes, and other relevant stuff easily. In the searching box, you can either put the name of the course or using the course code, and also add the exact name of  the kind of material you want. Then the web will guide you to the page of that course and recommend the material with the closest name and highest “likes” at the top.
 
-# 5 Multi-form resource platform: the website supports information in multimedia, like videos, or pdf document. But the videos can only be embedded by a link from other video platform, otherwise the cost will be too consuming.
+## 5 
+Multi-form resource platform: the website supports information in multimedia, like videos, or pdf document. But the videos can only be embedded by a link from other video platform, otherwise the cost will be too consuming.
 
-# 6 Course-centralled blog platform: The web is going to be mounted with a blog system for students who wanna share their studying experience. When the user want to create a new blog they can tag the blog with the name of the module and the course code. So that when students are searching the course name or code, the users’ blog will be correspondingly categorized in the blog block under the course name.
+## 6 
+Course-centralled blog platform: The web is going to be mounted with a blog system for students who wanna share their studying experience. When the user want to create a new blog they can tag the blog with the name of the module and the course code. So that when students are searching the course name or code, the users’ blog will be correspondingly categorized in the blog block under the course name.
 
-# 7 Studying Community: The first user created the community will become the administrator of the community. And he is granted with the right to invite and delete other members of the community. The power of administrator can be distributed out by the main administrator exclusively, and can also be drew back by him. The studying community will also be tagged with the course code and name accordingly for searching purpose.
+## 7 
+Studying Community: The first user created the community will become the administrator of the community. And he is granted with the right to invite and delete other members of the community. The power of administrator can be distributed out by the main administrator exclusively, and can also be drew back by him. The studying community will also be tagged with the course code and name accordingly for searching purpose.
 
-% 8 Completed backend managing system: the backend admin can check the statistics from the database, like how many materials in each module and what’s the overall rating of a published material.
+## 8 
+Completed backend managing system: the backend admin can check the statistics from the database, like how many materials in each module and what’s the overall rating of a published material.
 
-# 9 deploy to the cloud for users to test and use: the web will be eventually deployed on a cloud server and we are super grateful for anybody who wants to use and test our web.
+## 9 
+deploy to the cloud for users to test and use: the web will be eventually deployed on a cloud server and we are super grateful for anybody who wants to use and test our web.
 
 # Getting Started
 ### Reference Documentation
