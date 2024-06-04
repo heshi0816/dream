@@ -2,10 +2,10 @@
   <a-layout>
     <a-layout-sider width="200" style="background: #fff">
       <a-menu
-        mode="inline"
-        v-model:selectedKeys="selectedKeys2"
-        v-model:openKeys="openKeys"
-        :style="{ height: '100%', borderRight: 0 }"
+              mode="inline"
+              v-model:selectedKeys="selectedKeys2"
+              v-model:openKeys="openKeys"
+              :style="{ height: '100%', borderRight: 0 }"
       >
         <a-sub-menu key="sub1">
           <template #title>
@@ -37,21 +37,17 @@
       </a-menu>
     </a-layout-sider>
     <a-layout-content
-    :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
-  >
-    Content
-  </a-layout-content>
+            :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
+    >
+      Content
+    </a-layout-content>
   </a-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-});
+  export default defineComponent({
+    name: 'Home',
+  });
 </script>
