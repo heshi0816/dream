@@ -168,6 +168,33 @@ Completed backend managing system: the backend admin can check the statistics fr
 
 ## 9 
 deploy to the cloud for users to test and use: the web will be eventually deployed on a cloud server and we are super grateful for anybody who wants to use and test our web.
+---
+
+------
+
+------
+## Website running preview picture
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-hompage.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-login.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-user.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-userAdd.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-faculty.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-systemManagement.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-roleManagement.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-roleAdd.jpg)
+---
+![image](https://github.com/heshi0816/dream/blob/branch_he/appImage/dream-accessManagement.jpg)
+---
+
+---
 
 # Getting Started
 ### Reference Documentation
