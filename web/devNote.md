@@ -2,8 +2,8 @@
  git config --global user.email "your-email@example.com"修改本机git用户名，也是最终显示在GitHub上的用户名字。
 而最终确定显示的用户名的是邮箱，因为你用于在github注册的邮箱已经与github的用户名挂钩了。
 ## 2.即使用exe安装的git,
-也要手动把D:\Program Files\Git\mingw64\bin这个路径注册如环境变量的path才能使用。
-因为默认注册的是D:\Program Files\Git\bin，而我们使用的是64位的。
+也要手动把`D:\Program Files\Git\mingw64\bin`这个路径注册如环境变量的path才能使用。
+因为默认注册的是`D:\Program Files\Git\bin`，而我们使用的是64位的。
 ## 3.heshi0816这个github账号是用hgh54@126.com邮箱注册的。
 密码Swxxxxxxx！
 ## 4.ideal第一次连接github时用用户名和密码不能连接，
@@ -37,6 +37,13 @@ axios.get("http://127.0.0.1:8880/ebook/list?name=Spring").then((response) => {co
  ```
  At last you can return 
  the field with value to use them in template
+ Creating env.dev and env.prod files and record the port information in these 2 files.
+ In main.ts you can set the baseUrl by
+ ```
+  axios.defaults.baseURL = process.env.VUE_APP_SERVER;
+```
+ process.env.VUE_APP_SERVER means the VUE_APP_SERVER attribute from the env file.
+ Then axios.get("/ebook/list") defaultly setted the baseurl as the prefix of "/ebook/list"
 
 
 # web

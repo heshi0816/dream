@@ -79,17 +79,14 @@
     export default defineComponent({
         name: 'Home',
         setup() {
-            console.log("setup");
             const ebooks = ref();
             const ebooks1 = reactive({books: []});
 
             onMounted(() => {
-                console.log("onMounted2222");
                 axios.get("/ebook/list").then((response) => {
                     const data = response.data;
                     ebooks.value = data.content;
                     ebooks1.books = data.content;
-                    console.log(response);
                 });
             });
 
@@ -112,3 +109,13 @@
         }
     });
 </script>
+
+<style scoped>
+    .ant-avatar {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 8%;
+        margin: 5px 0;
+    }
+</style>
