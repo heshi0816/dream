@@ -44,9 +44,14 @@ axios.get("http://127.0.0.1:8880/ebook/list?name=Spring").then((response) => {co
 ```
  process.env.VUE_APP_SERVER means the VUE_APP_SERVER attribute from the env file.
  Then axios.get("/ebook/list") defaultly setted the baseurl as the prefix of "/ebook/list"
-
-
-# web
+ 
+ The interceptor can intercept request and response, you can use them for things like writting log.
+ ```$xslt
+axios.interceptors.request/response.use(....);
+```
+ 
+ 
+ # web
 
 ## Project setup
 ```

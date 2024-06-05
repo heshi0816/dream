@@ -3,7 +3,7 @@ package com.dream.nusblog.controller;
 import com.dream.nusblog.req.EbookReq;
 import com.dream.nusblog.resp.EbookResp;
 import com.dream.nusblog.service.EbookService;
-import com.jiawa.wiki.resp.CommonResp;
+import com.dream.nusblog.resp.CommonResp;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
