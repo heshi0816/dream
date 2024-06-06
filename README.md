@@ -1,7 +1,13 @@
-## Chinese version software display address http://8.137.95.225:8090/
+## software display address http://8.137.95.225:8090/
 - administrators' access
 - **Username: `admin`
 - **Password: `123`
+    - ** user with limited access
+    - ** Username: `tom`
+    - ** Password: `123`
+    - ** user with limited access
+    - ** Username: `abc`
+    - ** Password: `111`
 
 
 # Dream Project
@@ -10,14 +16,14 @@ This project adopts an agile development model. Initially, the front-end uses Th
 
 ## Project Description
 
-- **Current Version**: I have updated the version on github repository to be english version, but so far the version deployed on the cloud server is still chinese version. http://8.137.95.225:8090/
+- **Current Version**: I have updated the version on github repository to be english version http://8.137.95.225:8090/
 - **Database File Path**: `dream/user/data/dreamE.sql`
 - **Database Settings**:
     - Charset: `utf8mb4`
     - Collation: `utf8mb4_bin`
 - **Local Database Configuration**:
     - Database name: 'dream1'
-    - Username: `root`
+    - Username: `heshi`
     - Password: `123456`
 - **Startup Program**: `UserApplication.java`
     - Access URL: [http://localhost:8090](http://localhost:8090)
@@ -28,28 +34,28 @@ This project adopts an agile development model. Initially, the front-end uses Th
     - ** user with limited access
     - ** Username: `tom`
     - ** Password: `123`
-- **Cloud Database Connection(Chinese versioin)** (may be unstable outside China):
+    - ** user with limited access
+    - ** Username: `abc`
+    - ** Password: `111`
+- **Cloud Database Connection** (may be unstable outside China):
 ```js
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dream?serverTimezone=UTC&characterEncoding=UTF-8
-spring.datasource.username=root
-spring.datasource.password=123456
-```
-
-- **Cloud Database Connection(english versioin)** (may be unstable outside China):
-```js
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dreamE?serverTimezone=UTC&characterEncoding=UTF-8
-spring.datasource.username=root
+spring.datasource.url=jdbc:mysql://8.137.95.225:3306/dream1?serverTimezone=UTC&characterEncoding=UTF-8
+spring.datasource.username=heshi
 spring.datasource.password=123456
 ```
 
 - **Server Deployment** (may be unstable outside China):
 - Access URL: [http://8.137.95.225:8090](http://8.137.95.225:8090)
-- Admin Test Account:
-    - Username: `admin`
-    - Password: `123`
-
+- ** administrators' access
+    - ** Username: `admin`
+    - ** Password: `123`
+    - ** user with limited access
+    - ** Username: `tom`
+    - ** Password: `123`
+    - ** user with limited access
+    - ** Username: `abc`
+    - ** Password: `111`
 ## Branch Description
 
 - **Default Branch**: `branch_he`, used for developing the management module.
@@ -81,29 +87,27 @@ git checkout branch_he
 
 If you choose to use the cloud database, make sure to configure the following information in `application.properties`:
 
-- **Cloud Database Connection(Chinese versioin)** (may be unstable outside China):
+- **Cloud Database Connection** (may be unstable outside China):
 ```js
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dream?serverTimezone=UTC&characterEncoding=UTF-8
-spring.datasource.username=root
+spring.datasource.url=jdbc:mysql://8.137.95.225:3306/dream1?serverTimezone=UTC&characterEncoding=UTF-8
+spring.datasource.username=heshi
 spring.datasource.password=123456
 ```
-- **Cloud Database Connection(english versioin)** (may be unstable outside China):
-```js
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://8.137.95.225:3306/david-dreamE?serverTimezone=UTC&characterEncoding=UTF-8
-spring.datasource.username=root
-spring.datasource.password=123456
-```
+
 ### Accessing Admin Panel
 
 - Open your browser and visit [http://localhost:8090](http://localhost:8090) or [http://8.137.95.225:8090](http://8.137.95.225:8090) (if using the cloud server).
 - Use the following test account to log in:
-    - Username: `admin`
-    - Password: `123`
+    - ** administrators' access
+    - ** Username: `admin`
+    - ** Password: `123`
     - ** user with limited access
     - ** Username: `tom`
     - ** Password: `123`
+    - ** user with limited access
+    - ** Username: `abc`
+    - ** Password: `111`
 
 ## Development Branches
 
@@ -121,11 +125,6 @@ git checkout nusblog
 If you have any questions or need assistance, please contact the project maintainers.
 
 
-
-
-Software demonstration URL: http://8.137.95.225:8090/
-Test account: admin
-Password: 123
 
 ## Motivation:
 
