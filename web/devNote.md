@@ -85,6 +85,12 @@ use a-table can create your own template for rendering
                </a-table>
 ```
 @change attribute in a-table means changing page
+
+```$xslt
+        PageHelper.startPage(1, 3);
+        List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
+```
+Pagehelper only works for the first selectbyExample code.
  
  
  # web
