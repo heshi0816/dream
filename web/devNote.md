@@ -50,6 +50,15 @@ axios.get("http://127.0.0.1:8880/ebook/list?name=Spring").then((response) => {co
 axios.interceptors.request/response.use(....);
 ```
  
+ ##June 6th
+ AOP, Interceptor, Filter all have the same function of processing before and after receiving the request and repose
+setting a Pointcut. 
+```$xslt
+    @Pointcut("execution(public * com.jiawa.*.controller..*Controller.*(..))")
+    public void controllerPointcut() {}
+```
+use @doAround, @before, @after to do processing.
+ 
  
  # web
 
