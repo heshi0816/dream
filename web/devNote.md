@@ -65,6 +65,26 @@ use @doAround, @before, @after to do processing.
             </a-menu-item>
 ```
 router-link to can redirect to a different page.
+
+use a-table can create your own template for rendering
+```            
+               <a-table>
+                   <template #cover="{ text: cover }">
+                       <img v-if="cover" :src="cover" alt="avatar" />
+                   </template>
+                   <template v-slot:action="{ text, record }">
+                       <a-space size="small">
+                           <a-button type="primary">
+                               编辑
+                           </a-button>
+                           <a-button type="danger">
+                               删除
+                           </a-button>
+                       </a-space>
+                   </template>
+               </a-table>
+```
+@change attribute in a-table means changing page
  
  
  # web
