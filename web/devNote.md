@@ -58,6 +58,13 @@ setting a Pointcut.
     public void controllerPointcut() {}
 ```
 use @doAround, @before, @after to do processing.
+
+```
+            <a-menu-item key="/">
+                <router-link to="/">首页</router-link>
+            </a-menu-item>
+```
+router-link to can redirect to a different page.
  
  
  # web
