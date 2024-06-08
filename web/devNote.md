@@ -104,6 +104,19 @@ PageHelper.startPage(req.getPage(), req.getSize());
 ```
 add pagination function in the backend
 
+in the request class use
+```$xslt
+    @NotNull(message = "【页码】不能为空")
+    private int page;
+
+    @NotNull(message = "【每页条数】不能为空")
+    @Max(value = 1000, message = "【每页条数】不能超过1000")
+```
+to add rule on parameter 
+```$xslt
+    public CommonResp save(@Valid @RequestBody EbookSaveReq req) {
+```
+@Valid activate the rule in the controller @RequestBody changes the json file into req class
  
  # web
 
@@ -111,6 +124,7 @@ add pagination function in the backend
 ```
 npm install
 ```
+
 
 ### Compiles and hot-reloads for development
 ```
