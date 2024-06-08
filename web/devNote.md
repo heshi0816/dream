@@ -92,6 +92,18 @@ use a-table can create your own template for rendering
 ```
 Pagehelper only works for the first selectbyExample code.
  
+ #June 8th
+ @MapperScan is needed for scanning all mapper
+ 
+ enviroment file like env.dev has to be under src folder
+ 
+ when git repository conflicts choose the later one click "Theirs"
+ 
+ ```$xslt
+PageHelper.startPage(req.getPage(), req.getSize());
+```
+add pagination function in the backend
+
  
  # web
 

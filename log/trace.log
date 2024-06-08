@@ -1591,3 +1591,7 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'doc_count' cannot be 
 2024-06-08 18:49:31.541 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：2
 2024-06-08 18:49:32.511 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：7
 2024-06-08 18:49:32.512 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：2
+2024-06-08 18:51:29.274 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：7
+2024-06-08 18:51:29.274 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：2
+2024-06-08 18:51:29.961 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：7
+2024-06-08 18:51:29.962 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：2
