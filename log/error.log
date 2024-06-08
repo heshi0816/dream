@@ -36,3 +36,48 @@ Action:
 
 Update your application's configuration
 
+2024-06-08 10:05:10.287 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.dream.nusblog.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.dream.nusblog.mapper.DemoMapper' in your configuration.
+
+2024-06-08 10:10:32.421 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.dream.nusblog.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.dream.nusblog.mapper.DemoMapper' in your configuration.
+
+2024-06-08 10:13:05.990 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.dream.nusblog.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.dream.nusblog.mapper.DemoMapper' in your configuration.
+

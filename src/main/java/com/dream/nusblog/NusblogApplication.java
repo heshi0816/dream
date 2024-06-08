@@ -1,6 +1,7 @@
 package com.dream.nusblog;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -13,7 +14,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 // @ComponentScan({"com.jiawa", "com.test"})
 @ComponentScan("com.dream")
 @SpringBootApplication
-
+@MapperScan("com.dream.nusblog.mapper")
 @EnableScheduling
 @EnableAsync
 

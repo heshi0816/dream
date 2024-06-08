@@ -2,9 +2,8 @@ package com.dream.nusblog.mapper;
 
 import com.dream.nusblog.domain.Ebook;
 import com.dream.nusblog.domain.EbookExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface EbookMapper {
     long countByExample(EbookExample example);
