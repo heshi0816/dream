@@ -1,12 +1,13 @@
 package com.dream.nusblog.controller;
 
-import com.dream.nusblog.req.EbookQueryReq;
-import com.dream.nusblog.req.EbookSaveReq;
-import com.dream.nusblog.resp.EbookQueryResp;
+import com.dream.nusblog.req.EbookReq;
+import com.dream.nusblog.resp.CommonResp;
+import com.dream.nusblog.resp.EbookResp;
 import com.dream.nusblog.resp.PageResp;
 import com.dream.nusblog.service.EbookService;
-import com.jiawa.wiki.resp.CommonResp;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
@@ -18,17 +19,11 @@ public class EbookController {
     private EbookService ebookService;
 
     @GetMapping("/list")
-    public CommonResp list(EbookQueryReq req) {
-        CommonResp<PageResp<EbookQueryResp>> resp = new CommonResp<>();
-        PageResp<EbookQueryResp> list = ebookService.list(req);
+    public CommonResp list(EbookReq req) {
+        CommonResp<PageResp<EbookResp>> resp = new CommonResp<>();
+        PageResp<EbookResp> list = ebookService.list(req);
         resp.setContent(list);
         return resp;
     }
-
-    @PostMapping("/save")
-    public CommonResp save(@RequestBody EbookSaveReq req) {
-        CommonResp resp = new CommonResp<>();
-        ebookService.save(req);
-        return resp;
-    }
 }
+

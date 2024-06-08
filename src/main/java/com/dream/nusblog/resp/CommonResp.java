@@ -1,4 +1,4 @@
-package com.jiawa.wiki.resp;
+package com.dream.nusblog.resp;
 
 public class CommonResp<T> {
 

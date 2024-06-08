@@ -24,7 +24,7 @@ public class LogAspect {
     private final static Logger LOG = LoggerFactory.getLogger(LogAspect.class);
 
     /** 定义一个切点 */
-    @Pointcut("execution(public * com.dream*.controller..*Controller.*(..))")
+    @Pointcut("execution(public * com.jiawa.*.controller..*Controller.*(..))")
     public void controllerPointcut() {}
 
     @Before("controllerPointcut()")
