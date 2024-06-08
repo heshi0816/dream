@@ -3,8 +3,9 @@ package com.dream.nusblog.service;
 import com.dream.nusblog.domain.Ebook;
 import com.dream.nusblog.domain.EbookExample;
 import com.dream.nusblog.mapper.EbookMapper;
-import com.dream.nusblog.req.EbookReq;
-import com.dream.nusblog.resp.EbookResp;
+import com.dream.nusblog.req.EbookQueryReq;
+import com.dream.nusblog.req.EbookSaveReq;
+import com.dream.nusblog.resp.EbookQueryResp;
 import com.dream.nusblog.resp.PageResp;
 import com.dream.nusblog.util.CopyUtil;
 import com.github.pagehelper.PageHelper;
@@ -25,7 +26,7 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
 
-    public PageResp<EbookResp> list(EbookReq req) {
+    public PageResp<EbookQueryResp> list(EbookQueryReq req) {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
@@ -49,12 +50,26 @@ public class EbookService {
         // }
 
         // 列表复制
-        List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
+        List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
 
-        PageResp<EbookResp> pageResp = new PageResp();
+        PageResp<EbookQueryResp> pageResp = new PageResp();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
 
         return pageResp;
+    }
+
+    /**
+     * 保存
+     */
+    public void save(EbookSaveReq req) {
+        Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        if (ObjectUtils.isEmpty(req.getId())) {
+            // 新增
+            ebookMapper.insert(ebook);
+        } else {
+            // 更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
     }
 }
