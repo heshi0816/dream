@@ -242,3 +242,7 @@
 2024-06-09 22:55:59.653 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
 2024-06-09 22:57:59.746 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
 2024-06-09 22:57:59.746 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
+2024-06-09 23:01:48.048 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
+2024-06-09 23:01:48.049 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
+2024-06-09 23:02:43.399 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
+2024-06-09 23:02:43.400 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
