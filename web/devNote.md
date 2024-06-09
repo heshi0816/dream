@@ -118,6 +118,16 @@ to add rule on parameter
 ```
 @Valid activate the rule in the controller @RequestBody changes the json file into req class
  
+ 
+ #JUNE 9th
+ change the data source parameter in a-table can change the list type
+ ```$xslt
+:data-source="level1"
+:data-source="ebooks"
+```
+ebooks is a list, but level1 is the sublist with children parameter 
+ended up having totally different list on the webpage in the frontend
+ 
  # web
 
 ## Project setup
