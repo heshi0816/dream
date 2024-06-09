@@ -1,9 +1,11 @@
 package com.dream.nusblog.mapper;
 
+
 import com.dream.nusblog.domain.Doc;
 import com.dream.nusblog.domain.DocExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface DocMapper {
     long countByExample(DocExample example);

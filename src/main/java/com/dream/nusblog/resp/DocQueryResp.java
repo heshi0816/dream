@@ -1,7 +1,6 @@
-package com.dream.nusblog.domain;
+package com.dream.nusblog.resp;
 
-
-public class Doc {
+public class DocQueryResp {
     private Long id;
 
     private Long ebookId;
