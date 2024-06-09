@@ -127,6 +127,26 @@ to add rule on parameter
 ```
 ebooks is a list, but level1 is the sublist with children parameter 
 ended up having totally different list on the webpage in the frontend
+
+
+```$xslt
+            <a-form-item label="parent type">
+                <a-select
+                        v-model:value="category.parent"
+                        ref="select"
+                >
+                    <a-select-option value="0">
+                        no type
+                    </a-select-option>
+                    <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="category.id === c.id">
+                        {{c.name}}
+                    </a-select-option>
+                </a-select>
+            </a-form-item>
+```
+constructing a drop-down menu v-for =.... is for loop iterating on "level1" fields, :disabled
+keyword exclude some some options from being picked
+
  
  # web
 
