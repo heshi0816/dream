@@ -147,6 +147,19 @@ ended up having totally different list on the webpage in the frontend
 constructing a drop-down menu v-for =.... is for loop iterating on "level1" fields, :disabled
 keyword exclude some some options from being picked
 
+
+# JUNE 10th
+
+```$xslt
+in admin-doc
+        doc.value = {
+          ebookId: route.query.ebookId
+        };
+in admin-ebook
+<router-link :to="'/admin/doc?ebookId=' + record.id">
+```
+as long as the parameter name and the variable name are the same they value can be transferred
+
  
  # web
 

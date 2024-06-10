@@ -437,3 +437,125 @@
 2024-06-10 07:21:00.711 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
 2024-06-10 07:21:18.974 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
 2024-06-10 07:21:18.975 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:09:03.717 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 24468 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-10 11:09:03.717 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-10 11:09:03.721 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-10 11:09:03.768 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-10 11:09:03.768 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-10 11:09:04.772 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-10 11:09:04.779 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-10 11:09:04.779 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-10 11:09:04.779 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-10 11:09:04.835 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-10 11:09:04.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1066 ms
+2024-06-10 11:09:05.342 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-10 11:09:05.623 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-10 11:09:05.668 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-10 11:09:05.682 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-10 11:09:05.699 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-10 11:09:05.711 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.341 seconds (JVM running for 2.924)
+2024-06-10 11:09:05.713 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-10 11:09:05.714 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-10 11:09:20.202 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-10 11:09:20.203 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-10 11:09:20.204 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-10 11:09:20.254 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-10 11:09:20.528 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-10 11:09:25.115 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:09:25.115 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:09:28.741 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:09:28.742 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:09:29.273 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:09:29.274 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:31:47.443 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:47.443 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:31:48.209 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:31:48.209 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:31:48.935 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:48.935 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:31:49.499 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:31:49.499 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:31:49.898 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:31:49.898 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:31:50.296 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:50.296 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:31:50.966 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:50.967 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:31:51.520 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:31:51.520 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:31:52.017 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:31:52.017 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:31:52.478 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:52.478 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:31:53.535 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:31:53.536 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:31:55.057 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:55.058 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:31:59.206 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:59.206 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:31:59.713 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:31:59.714 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:32:01.057 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:32:01.058 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:32:01.552 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:32:01.552 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:32:02.170 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:32:02.170 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:32:27.466 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:32:27.467 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:32:28.114 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:32:28.114 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:32:28.737 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:32:28.737 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:32:29.266 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:32:29.266 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:32:31.601 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 11:32:31.602 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 11:32:32.219 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 11:32:32.219 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:40:58.829 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:40:58.829 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:41:05.191 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:41:05.192 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:41:19.206 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:41:19.207 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:41:21.845 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:41:21.845 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:41:24.130 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:41:24.130 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:45:06.928 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【顺序】不能为空
+2024-06-10 11:45:06.930 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq) with 2 errors: [Field error in object 'docSaveReq' on field 'sort': rejected value [null]; codes [NotNull.docSaveReq.sort,NotNull.sort,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.sort,sort]; arguments []; default message [sort]]; default message [【顺序】不能为空]] [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] ]
+2024-06-10 11:45:08.802 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【电子书】不能为空
+2024-06-10 11:45:08.803 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] ]
+2024-06-10 11:45:16.482 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【电子书】不能为空
+2024-06-10 11:45:16.483 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] ]
+2024-06-10 11:45:21.696 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:45:21.697 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 11:45:30.348 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 11:45:30.348 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 18:33:55.219 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 18:33:55.220 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 18:33:56.939 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 18:33:56.940 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 18:33:59.738 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 18:33:59.738 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 18:34:04.547 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 18:34:04.547 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 18:34:06.373 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 18:34:06.373 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 18:34:07.963 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 18:34:07.963 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 18:34:09.516 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 18:34:09.517 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 18:34:21.073 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 18:34:21.073 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 18:34:21.886 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 18:34:21.886 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 18:34:23.439 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-10 18:34:23.439 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-10 18:34:25.014 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-10 18:34:25.014 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 19:12:33.857 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 19:12:33.857 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-10 19:30:34.810 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-10 19:30:34.811 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
