@@ -192,3 +192,1040 @@
 2024-06-11 11:55:58.252 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
 2024-06-11 11:55:58.259 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
 2024-06-11 11:55:58.281 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2024-06-11 15:20:06.231 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 15:20:06.231 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 15:20:09.049 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-11 15:20:09.049 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 15:20:10.736 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 15:20:10.737 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 15:20:11.680 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-11 15:20:11.680 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 15:20:12.752 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 15:20:12.752 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 15:20:14.139 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-11 15:20:14.139 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 15:20:23.717 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 15:20:23.718 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 15:21:13.591 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 15:21:13.591 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 17:22:06.534 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 17:22:06.535 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:22:06.536 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2024-06-11 17:22:06.544 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2024-06-11 17:22:06.671 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 22168 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:22:06.672 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:22:06.946 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:22:06.947 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:22:06.947 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:22:06.948 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:22:06.963 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:22:06.964 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 289 ms
+2024-06-11 17:22:07.191 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:22:07.352 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:22:07.379 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:22:07.387 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:22:07.394 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:22:07.397 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.753 seconds (JVM running for 25459.131)
+2024-06-11 17:22:07.398 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 17:22:07.399 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:22:07.399 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:22:34.908 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:22:34.908 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:22:34.910 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:22:34.935 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:22:34.937 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:22:35.827 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:22:35.829 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:22:45.356 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:22:45.357 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:22:45.996 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:22:45.997 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:22:57.357 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 20728 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:22:57.357 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 17:22:57.360 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:22:57.411 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 17:22:57.411 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 17:22:58.421 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:22:58.428 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:22:58.429 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:22:58.429 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:22:58.489 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:22:58.489 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1077 ms
+2024-06-11 17:22:59.046 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:22:59.357 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:22:59.406 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:22:59.421 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:22:59.438 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:22:59.451 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.439 seconds (JVM running for 3.049)
+2024-06-11 17:22:59.454 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:22:59.454 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:23:46.845 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:23:46.846 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:23:46.847 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:23:46.997 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:23:47.021 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:23:49.873 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 17:23:50.138 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 17:23:57.413 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:23:57.415 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:27:14.522 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 17:27:14.524 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:27:14.525 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-06-11 17:27:14.537 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-06-11 17:27:14.624 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 20728 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:27:14.625 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:27:14.917 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:27:14.918 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:27:14.918 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:27:14.918 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:27:14.935 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:27:14.936 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 308 ms
+2024-06-11 17:27:15.190 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:27:15.355 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:27:15.386 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:27:15.394 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:27:15.397 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:27:15.401 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.808 seconds (JVM running for 258.999)
+2024-06-11 17:27:15.403 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 17:27:15.403 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:27:15.403 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:27:16.949 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 17:27:16.950 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:27:17.025 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 20728 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:27:17.025 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:27:17.289 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:27:17.290 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:27:17.291 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:27:17.291 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:27:17.309 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:27:17.310 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 282 ms
+2024-06-11 17:27:17.548 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:27:17.713 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:27:17.741 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:27:17.749 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:27:17.754 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:27:17.758 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.759 seconds (JVM running for 261.356)
+2024-06-11 17:27:17.759 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 17:27:17.760 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:27:17.760 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:27:18.564 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:27:18.565 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:27:18.566 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:27:18.581 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:27:18.583 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:28:02.341 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:28:02.343 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:28:02.964 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:28:02.965 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:28:03.364 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:28:03.365 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:28:03.541 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:28:03.543 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:28:03.717 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:28:03.718 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:28:12.892 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:28:12.894 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:28:17.808 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 17:28:17.809 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:28:17.877 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 20728 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:28:17.877 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:28:18.136 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:28:18.137 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:28:18.138 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:28:18.138 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:28:18.166 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:28:18.166 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 287 ms
+2024-06-11 17:28:18.437 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:28:18.623 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:28:18.653 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:28:18.661 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:28:18.668 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:28:18.675 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.825 seconds (JVM running for 322.273)
+2024-06-11 17:28:18.677 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 17:28:18.677 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:28:18.678 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:28:24.019 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:28:24.020 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:28:24.021 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:28:24.039 INFO  com.dream.nusblog.service.DocService              :86   [32m                  [0;39m data get
+2024-06-11 17:28:24.039 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2024-06-11 17:28:24.057 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2024-06-11 17:28:24.107 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+### The error may exist in file [E:\nusblog\target\classes\mapper\ContentMapper.xml]
+### The error may involve com.dream.nusblog.mapper.ContentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into content (id, content)     values (?, ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+; Column 'content' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy111.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy84.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy132.insert(Unknown Source)
+	at com.dream.nusblog.service.DocService.save(DocService.java:99)
+	at com.dream.nusblog.controller.DocController.save(DocController.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024-06-11 17:28:25.036 INFO  com.dream.nusblog.service.DocService              :86   [32m                  [0;39m data get
+2024-06-11 17:28:25.042 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+### The error may exist in file [E:\nusblog\target\classes\mapper\ContentMapper.xml]
+### The error may involve com.dream.nusblog.mapper.ContentMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into content (id, content)     values (?, ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+; Column 'content' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy111.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy84.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy132.insert(Unknown Source)
+	at com.dream.nusblog.service.DocService.save(DocService.java:99)
+	at com.dream.nusblog.controller.DocController.save(DocController.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2024-06-11 17:28:36.012 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 17:28:36.013 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:28:36.013 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2024-06-11 17:28:36.020 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2024-06-11 17:28:36.090 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 20728 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:28:36.090 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:28:36.334 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:28:36.335 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:28:36.335 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:28:36.335 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:28:36.349 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:28:36.349 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 256 ms
+2024-06-11 17:28:36.555 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:28:36.709 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:28:36.736 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:28:36.743 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:28:36.745 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:28:36.749 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.688 seconds (JVM running for 340.347)
+2024-06-11 17:28:36.750 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 17:28:36.750 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:28:36.750 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:29:21.243 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:29:21.244 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:29:21.245 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2024-06-11 17:29:21.261 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:29:21.264 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:30:59.035 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:30:59.037 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:31:30.381 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 17:31:30.381 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 16824 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:31:30.384 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:31:30.426 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 17:31:30.427 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 17:31:31.423 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:31:31.430 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:31:31.431 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:31:31.431 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:31:31.485 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:31:31.486 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1059 ms
+2024-06-11 17:31:32.016 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:31:32.399 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:31:32.447 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:31:32.462 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:31:32.478 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:31:32.491 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.453 seconds (JVM running for 3.013)
+2024-06-11 17:31:32.494 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:31:32.494 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:31:53.150 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:31:53.151 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:31:53.152 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:31:53.218 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 17:31:53.498 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 17:31:55.231 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 17:31:55.231 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 17:32:03.225 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:32:03.227 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:34:25.469 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 8132 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:34:25.468 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 17:34:25.472 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:34:25.519 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 17:34:25.520 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 17:34:26.500 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:34:26.514 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:34:26.515 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:34:26.516 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:34:26.580 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:34:26.580 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1059 ms
+2024-06-11 17:34:27.081 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:34:27.373 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:34:27.419 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:34:27.434 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:34:27.450 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:34:27.463 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.34 seconds (JVM running for 2.95)
+2024-06-11 17:34:27.466 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:34:27.466 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:35:18.958 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:35:18.959 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:35:18.960 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:35:19.088 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:35:19.110 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:35:21.350 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 17:35:21.656 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 17:35:21.665 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2024-06-11 17:35:21.685 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:35:21.701 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-06-11 17:35:21.701 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 455003718723702784, 100, jjj, 9
+2024-06-11 17:35:21.702 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2024-06-11 17:35:21.703 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2024-06-11 17:35:21.703 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2024-06-11 17:35:21.704 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2024-06-11 17:35:21.704 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2024-06-11 17:35:21.704 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2024-06-11 17:35:21.705 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2024-06-11 17:35:21.705 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2024-06-11 17:35:21.706 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2024-06-11 17:35:21.706 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2024-06-11 17:35:21.707 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2024-06-11 17:35:21.707 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2024-06-11 17:35:21.708 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2024-06-11 17:35:21.708 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2024-06-11 17:35:21.709 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2024-06-11 17:35:21.711 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2024-06-11 17:35:23.153 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:23.153 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 201(Long)
+2024-06-11 17:35:23.155 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:23.155 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:23.156 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:23.157 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:23.158 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:24.202 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:24.203 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 202(Long)
+2024-06-11 17:35:24.205 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:24.205 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:24.205 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:24.206 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:24.206 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:24.705 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:24.706 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 201(Long)
+2024-06-11 17:35:24.707 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:24.708 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:24.708 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:24.709 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:24.709 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:25.170 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:25.171 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 301(Long)
+2024-06-11 17:35:25.172 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:25.172 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:25.173 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:25.173 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:25.174 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:25.642 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:25.643 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 302(Long)
+2024-06-11 17:35:25.644 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:25.644 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:25.645 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:25.645 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:25.646 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:27.495 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:27.495 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 401(Long)
+2024-06-11 17:35:27.497 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:27.498 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:27.498 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:27.499 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:27.499 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:28.002 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:28.003 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 502(Long)
+2024-06-11 17:35:28.004 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:28.004 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:28.005 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:28.005 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:28.005 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:28.413 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:28.414 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 503(Long)
+2024-06-11 17:35:28.415 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:28.416 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:28.416 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:28.416 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:28.417 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:29.168 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:29.168 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 501(Long)
+2024-06-11 17:35:29.169 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:29.170 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:29.170 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:29.171 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:29.171 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:29.565 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:29.566 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 401(Long)
+2024-06-11 17:35:29.567 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:29.568 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:29.568 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:29.568 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:29.569 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:30.043 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:30.043 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 302(Long)
+2024-06-11 17:35:30.044 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:30.045 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:30.045 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:30.046 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:30.046 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:30.589 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:30.590 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 301(Long)
+2024-06-11 17:35:30.591 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:30.592 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:30.592 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:30.593 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:30.593 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:31.038 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:31.039 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 202(Long)
+2024-06-11 17:35:31.040 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:31.040 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:31.041 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:31.041 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:31.041 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:31.404 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:31.405 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 201(Long)
+2024-06-11 17:35:31.405 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:31.405 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:31.407 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:31.407 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:31.407 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:32.506 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:32.507 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 101(Long)
+2024-06-11 17:35:32.510 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:32.510 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 1
+2024-06-11 17:35:32.510 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:32.514 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2024-06-11 17:35:32.515 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 101(Long), 1000(Integer)
+2024-06-11 17:35:32.516 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2024-06-11 17:35:32.517 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 100, 101, 零基础入门 Java 开发，企业级应用开发最佳首选框架, \image\cover1.png, null, null, null
+2024-06-11 17:35:32.517 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:32.518 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-11 17:35:32.518 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 17:35:33.414 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:33.414 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 102(Long)
+2024-06-11 17:35:33.415 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:33.416 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:33.416 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:33.417 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:33.417 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:33.874 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:33.875 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 455003718723702800(Long)
+2024-06-11 17:35:33.876 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:33.876 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:33.877 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:33.877 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:33.877 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:34.353 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:34.354 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 102(Long)
+2024-06-11 17:35:34.355 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:34.355 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:34.356 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:34.357 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:34.357 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:35.189 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:35.189 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 102(Long)
+2024-06-11 17:35:35.191 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:35.191 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 0
+2024-06-11 17:35:35.191 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:35.192 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
+2024-06-11 17:35:35.192 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:35:35.450 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2024-06-11 17:35:35.450 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 101(Long)
+2024-06-11 17:35:35.452 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:35:35.452 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 1
+2024-06-11 17:35:35.452 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:35.453 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2024-06-11 17:35:35.453 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 101(Long), 1000(Integer)
+2024-06-11 17:35:35.454 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2024-06-11 17:35:35.454 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 100, 101, 零基础入门 Java 开发，企业级应用开发最佳首选框架, \image\cover1.png, null, null, null
+2024-06-11 17:35:35.455 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:35:35.455 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
+2024-06-11 17:35:35.455 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 17:36:00.770 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2024-06-11 17:36:00.770 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:36:00.771 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-06-11 17:36:00.772 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 455003718723702784, 100, jjj, 9
+2024-06-11 17:36:00.772 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2024-06-11 17:36:00.772 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2024-06-11 17:36:00.773 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2024-06-11 17:36:00.773 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2024-06-11 17:36:00.773 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2024-06-11 17:36:00.773 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2024-06-11 17:36:00.774 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2024-06-11 17:36:00.774 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2024-06-11 17:36:00.774 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2024-06-11 17:36:00.774 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2024-06-11 17:36:00.775 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2024-06-11 17:36:00.775 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2024-06-11 17:36:00.775 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2024-06-11 17:36:00.775 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2024-06-11 17:36:00.776 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2024-06-11 17:36:00.776 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2024-06-11 17:36:02.992 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2024-06-11 17:36:02.993 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:36:02.995 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2024-06-11 17:36:02.996 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 455003718723702784, 100, jjj, 9
+2024-06-11 17:36:02.996 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2024-06-11 17:36:02.997 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2024-06-11 17:36:02.997 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2024-06-11 17:36:02.998 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2024-06-11 17:36:02.998 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2024-06-11 17:36:02.999 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2024-06-11 17:36:02.999 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2024-06-11 17:36:03.000 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2024-06-11 17:36:03.000 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2024-06-11 17:36:03.001 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2024-06-11 17:36:03.001 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2024-06-11 17:36:03.002 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2024-06-11 17:36:03.002 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2024-06-11 17:36:03.003 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2024-06-11 17:36:03.003 TRACE c.d.nusblog.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2024-06-11 17:36:03.004 DEBUG c.d.nusblog.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2024-06-11 17:36:03.023 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2024-06-11 17:36:03.023 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:36:03.026 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:36:03.026 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 9
+2024-06-11 17:36:03.027 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:36:03.028 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2024-06-11 17:36:03.028 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-06-11 17:36:03.030 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2024-06-11 17:36:03.031 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 100, 101, 零基础入门 Java 开发，企业级应用开发最佳首选框架, \image\cover1.png, null, null, null
+2024-06-11 17:36:03.031 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, Vue 入门教程1, 0, 1, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, \image\cover2.png, null, null, null
+2024-06-11 17:36:03.032 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, Python 入门教程12, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2024-06-11 17:36:03.032 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2024-06-11 17:36:03.032 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2024-06-11 17:36:03.033 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454596882199613440, rr3, null, null, null, null, null, null, null
+2024-06-11 17:36:03.033 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454596966555455488, reter, null, null, null, null, null, null, null
+2024-06-11 17:36:03.033 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454627104001232896, 滴滴打人, null, null, null, null, null, null, null
+2024-06-11 17:36:03.033 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454640263579701248, hhh, null, null, null, null, null, null, null
+2024-06-11 17:36:03.034 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2024-06-11 17:36:03.034 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 17:36:03.034 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 17:36:04.073 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:36:04.074 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:36:04.076 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:36:04.076 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:36:04.076 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:36:04.076 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:36:04.077 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:36:04.077 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:36:04.077 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:36:04.078 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:36:16.333 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:16.335 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq) with 5 errors: [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] [Field error in object 'docSaveReq' on field 'name': rejected value [null]; codes [NotNull.docSaveReq.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.name,name]; arguments []; default message [name]]; default message [【名称】不能为空]] [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] [Field error in object 'docSaveReq' on field 'sort': rejected value [null]; codes [NotNull.docSaveReq.sort,NotNull.sort,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.sort,sort]; arguments []; default message [sort]]; default message [【顺序】不能为空]] [Field error in object 'docSaveReq' on field 'parent': rejected value [null]; codes [NotNull.docSaveReq.parent,NotNull.parent,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.parent,parent]; arguments []; default message [parent]]; default message [【父文档】不能为空]] ]
+2024-06-11 17:36:21.212 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:21.213 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:25.371 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:25.372 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:25.540 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:25.541 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:25.701 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:25.702 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:25.867 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:25.869 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:26.028 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:26.029 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:26.196 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:26.197 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:26.349 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:26.351 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:26.524 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:26.525 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:26.691 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:26.692 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:26.860 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:26.861 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:27.036 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:27.037 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:27.212 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:27.213 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:36:27.357 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:36:27.358 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:37:39.557 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2024-06-11 17:37:39.558 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:37:39.561 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-11 17:37:39.562 TRACE c.d.n.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 9
+2024-06-11 17:37:39.562 DEBUG c.d.n.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2024-06-11 17:37:39.563 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2024-06-11 17:37:39.563 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:37:39.565 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2024-06-11 17:37:39.566 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 100, 101, 零基础入门 Java 开发，企业级应用开发最佳首选框架, \image\cover1.png, null, null, null
+2024-06-11 17:37:39.566 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, Vue 入门教程1, 0, 1, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, \image\cover2.png, null, null, null
+2024-06-11 17:37:39.567 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, Python 入门教程12, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, null, null, null
+2024-06-11 17:37:39.567 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, null, null, null
+2024-06-11 17:37:39.568 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, null, null, null
+2024-06-11 17:37:39.570 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454596882199613440, rr3, null, null, null, null, null, null, null
+2024-06-11 17:37:39.570 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454596966555455488, reter, null, null, null, null, null, null, null
+2024-06-11 17:37:39.571 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454627104001232896, 滴滴打人, null, null, null, null, null, null, null
+2024-06-11 17:37:39.571 TRACE c.dream.nusblog.mapper.EbookMapper.selectByExample:143  [32m                  [0;39m <==        Row: 454640263579701248, hhh, null, null, null, null, null, null, null
+2024-06-11 17:37:39.571 DEBUG c.dream.nusblog.mapper.EbookMapper.selectByExample:137  [32m                  [0;39m <==      Total: 9
+2024-06-11 17:37:39.572 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 17:37:39.572 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
+2024-06-11 17:38:34.540 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 17:38:34.541 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:38:34.542 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-06-11 17:38:34.562 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-06-11 17:38:39.970 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 8132 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:38:39.971 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:38:40.121 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.dream.nusblog.mapper]' package. Please check your configuration.
+2024-06-11 17:38:40.167 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:38:40.167 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:38:40.167 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:38:40.183 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:38:40.183 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 210 ms
+2024-06-11 17:38:40.236 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:38:40.307 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.dream.nusblog.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+2024-06-11 17:38:40.307 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:38:40.308 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2024-06-11 17:38:40.312 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-11 17:38:40.316 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.dream.nusblog.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.dream.nusblog.NusblogApplication.main(NusblogApplication.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.dream.nusblog.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 23 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.dream.nusblog.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:612)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:490)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:632)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$87ce3a7d.CGLIB$sqlSessionFactory$2(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$87ce3a7d$$FastClassBySpringCGLIB$$943b6f6a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$87ce3a7d.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 24 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\nusblog\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.dream.nusblog.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 37 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.dream.nusblog.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.dream.nusblog.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.dream.nusblog.domain.Category
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 45 common frames omitted
+2024-06-11 17:38:41.793 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 8132 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:38:41.793 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:38:42.048 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:38:42.049 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:38:42.049 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:38:42.067 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:38:42.068 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 273 ms
+2024-06-11 17:38:42.342 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:38:42.508 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:38:42.534 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:38:42.544 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:38:42.548 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.785 seconds (JVM running for 258.035)
+2024-06-11 17:38:42.550 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 17:38:42.551 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:38:42.551 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:39:18.236 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:39:18.237 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:39:18.238 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:39:18.253 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:39:18.256 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:39:49.723 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:39:49.725 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:39:50.420 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:39:50.420 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:39:55.600 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2024-06-11 17:39:55.632 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2024-06-11 17:39:55.632 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:39:55.633 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:39:55.634 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:39:55.634 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:39:55.634 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:39:55.634 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:39:55.634 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:39:55.635 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:39:55.635 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:39:55.635 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:40:01.957 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:40:01.958 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:40:15.352 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 6964 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:40:15.352 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 17:40:15.355 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:40:15.402 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 17:40:15.403 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 17:40:16.369 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:40:16.376 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:40:16.376 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:40:16.377 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:40:16.431 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:40:16.432 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1028 ms
+2024-06-11 17:40:16.921 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:40:17.236 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:40:17.292 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:40:17.307 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:40:17.328 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:40:17.355 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.335 seconds (JVM running for 2.942)
+2024-06-11 17:40:17.357 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:40:17.358 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:40:39.974 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:40:39.974 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:40:39.975 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:40:40.027 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 17:40:40.318 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 17:40:40.326 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:40:40.347 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:40:40.362 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:40:40.362 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:40:40.363 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:40:40.364 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:40:40.364 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:40:40.365 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:40:40.365 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:40:40.366 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:40:46.566 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:40:46.569 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:46:08.172 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:46:08.174 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:46:10.491 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:46:10.492 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:46:10.494 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:46:10.495 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:46:10.497 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:46:10.498 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:46:10.499 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:46:10.500 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:46:10.501 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:46:10.502 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:51:41.954 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:51:41.955 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:51:41.957 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:51:41.957 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:51:41.958 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:51:41.958 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:51:41.959 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:51:41.961 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:51:41.961 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:51:41.962 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:51:57.161 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:51:57.161 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:51:57.163 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:51:57.164 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:51:57.165 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:51:57.165 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:51:57.166 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:51:57.167 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:51:57.167 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:51:57.168 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:52:03.581 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:03.583 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:43.107 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:52:43.108 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:52:43.109 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:52:43.109 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:52:43.109 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:52:43.110 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:52:43.110 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:52:43.111 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:52:43.111 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:52:43.111 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:52:52.965 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:52.966 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:53.884 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:53.886 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:54.061 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:54.063 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:54.221 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:54.222 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:54.381 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:54.383 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:54.540 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:54.541 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:54.700 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:54.703 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:54.869 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:54.870 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:55.013 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:55.015 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:55.172 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:55.173 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:55.357 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:55.359 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:55.517 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:55.518 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:55.694 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:55.695 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:58.276 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:58.277 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:58.843 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:58.845 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:59.564 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:59.565 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:52:59.899 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:52:59.900 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:53:12.482 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:53:12.483 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:53:12.484 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:53:12.485 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:53:12.485 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:53:12.486 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:53:12.486 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:53:12.486 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:53:12.487 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:53:12.487 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:53:13.803 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【父文档】不能为空
+2024-06-11 17:53:13.804 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq) with 5 errors: [Field error in object 'docSaveReq' on field 'parent': rejected value [null]; codes [NotNull.docSaveReq.parent,NotNull.parent,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.parent,parent]; arguments []; default message [parent]]; default message [【父文档】不能为空]] [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] [Field error in object 'docSaveReq' on field 'name': rejected value [null]; codes [NotNull.docSaveReq.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.name,name]; arguments []; default message [name]]; default message [【名称】不能为空]] [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] [Field error in object 'docSaveReq' on field 'sort': rejected value [null]; codes [NotNull.docSaveReq.sort,NotNull.sort,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.sort,sort]; arguments []; default message [sort]]; default message [【顺序】不能为空]] ]
+2024-06-11 17:53:18.476 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:53:18.477 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:53:53.103 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:53:53.104 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:53:53.106 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:53:53.107 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:53:53.107 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:53:53.108 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:53:53.109 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:53:53.109 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:53:53.110 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:53:53.111 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:56:03.229 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:56:03.230 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:56:59.341 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【内容】不能为空
+2024-06-11 17:56:59.343 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'content': rejected value [null]; codes [NotNull.docSaveReq.content,NotNull.content,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.content,content]; arguments []; default message [content]]; default message [【内容】不能为空]] ]
+2024-06-11 17:58:41.427 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 6644 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 17:58:41.430 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 17:58:41.431 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 17:58:41.474 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 17:58:41.475 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 17:58:42.465 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 17:58:42.472 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:58:42.473 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 17:58:42.473 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 17:58:42.527 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 17:58:42.528 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1051 ms
+2024-06-11 17:58:43.066 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 17:58:43.396 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 17:58:43.442 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 17:58:43.458 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 17:58:43.488 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 17:58:43.500 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.409 seconds (JVM running for 2.966)
+2024-06-11 17:58:43.503 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 17:58:43.504 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 17:59:14.220 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 17:59:14.221 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 17:59:14.222 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 17:59:14.272 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 17:59:14.537 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 17:59:14.544 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:59:14.561 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:59:14.574 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:59:14.574 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:59:14.576 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:59:14.576 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:59:14.577 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:59:14.577 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:59:14.578 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:59:14.579 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6
+2024-06-11 17:59:19.380 INFO  com.dream.nusblog.service.DocService              :86   [32m                  [0;39m data get
+2024-06-11 17:59:19.382 DEBUG c.d.nusblog.mapper.DocMapper.updateByPrimaryKey   :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2024-06-11 17:59:19.383 DEBUG c.d.nusblog.mapper.DocMapper.updateByPrimaryKey   :137  [32m                  [0;39m ==> Parameters: 1(Long), 0(Long), 文档1(String), 1(Integer), 0(Integer), 0(Integer), 1(Long)
+2024-06-11 17:59:19.385 DEBUG c.d.nusblog.mapper.DocMapper.updateByPrimaryKey   :137  [32m                  [0;39m <==    Updates: 1
+2024-06-11 17:59:19.385 DEBUG c.d.n.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m ==>  Preparing: update content set content = ? where id = ?
+2024-06-11 17:59:19.386 DEBUG c.d.n.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m ==> Parameters: <p>fbdfb</p>(String), 1(Long)
+2024-06-11 17:59:19.387 DEBUG c.d.n.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m <==    Updates: 0
+2024-06-11 17:59:19.388 DEBUG com.dream.nusblog.mapper.ContentMapper.insert     :137  [32m                  [0;39m ==>  Preparing: insert into content (id, content) values (?, ?)
+2024-06-11 17:59:19.388 DEBUG com.dream.nusblog.mapper.ContentMapper.insert     :137  [32m                  [0;39m ==> Parameters: 1(Long), <p>fbdfb</p>(String)
+2024-06-11 17:59:19.400 DEBUG com.dream.nusblog.mapper.ContentMapper.insert     :137  [32m                  [0;39m <==    Updates: 1
+2024-06-11 17:59:19.416 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2024-06-11 17:59:19.417 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2024-06-11 17:59:19.419 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2024-06-11 17:59:19.419 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2024-06-11 17:59:19.420 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2024-06-11 17:59:19.421 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 0, 0
+2024-06-11 17:59:19.421 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 0, 0
+2024-06-11 17:59:19.422 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 3, 1, 0, 文档2, 2, 0, 0
+2024-06-11 17:59:19.422 TRACE com.dream.nusblog.mapper.DocMapper.selectByExample:143  [32m                  [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 0, 0
+2024-06-11 17:59:19.423 DEBUG com.dream.nusblog.mapper.DocMapper.selectByExample:137  [32m                  [0;39m <==      Total: 6

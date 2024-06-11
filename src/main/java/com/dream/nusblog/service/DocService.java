@@ -1,7 +1,9 @@
 package com.dream.nusblog.service;
 
+import com.dream.nusblog.domain.Content;
 import com.dream.nusblog.domain.Doc;
 import com.dream.nusblog.domain.DocExample;
+import com.dream.nusblog.mapper.ContentMapper;
 import com.dream.nusblog.mapper.DocMapper;
 import com.dream.nusblog.req.DocQueryReq;
 import com.dream.nusblog.req.DocSaveReq;
@@ -26,6 +28,9 @@ public class DocService {
 
     @Resource
     private DocMapper docMapper;
+
+    @Resource
+    private ContentMapper contentMapper;
 
     @Resource
     private SnowFlake snowFlake;
@@ -77,13 +82,22 @@ public class DocService {
      */
     public void save(DocSaveReq req) {
         Doc doc = CopyUtil.copy(req, Doc.class);
+        Content content = CopyUtil.copy(req, Content.class);
+        LOG.info("data get");
         if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
             doc.setId(snowFlake.nextId());
             docMapper.insert(doc);
+
+            content.setId(doc.getId());
+            contentMapper.insert(content);
         } else {
             // 更新
             docMapper.updateByPrimaryKey(doc);
+            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            if (count == 0) {
+                contentMapper.insert(content);
+            }
         }
     }
 
@@ -98,3 +112,4 @@ public class DocService {
         docMapper.deleteByExample(docExample);
     }
 }
+
