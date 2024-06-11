@@ -1,597 +1,130 @@
-2024-06-10 02:58:02.078 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2024-06-10 02:58:02.082 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 23236 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 02:58:02.083 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 02:58:02.129 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-10 02:58:02.130 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-10 02:58:03.132 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 02:58:03.139 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 02:58:03.140 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 02:58:03.140 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 02:58:03.195 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 02:58:03.195 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1064 ms
-2024-06-10 02:58:03.669 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 02:58:03.947 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 02:58:03.992 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 02:58:04.006 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 02:58:04.023 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 02:58:04.037 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.305 seconds (JVM running for 2.921)
-2024-06-10 02:58:04.039 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 02:58:04.040 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 02:58:20.174 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 02:58:20.175 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 02:58:20.176 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 02:58:20.226 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2024-06-10 02:58:20.492 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2024-06-10 02:58:20.534 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 02:58:20.534 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 02:59:52.665 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 02:59:52.666 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 03:06:54.519 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 03:06:54.520 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 03:21:03.320 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 03:21:03.321 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 03:21:17.108 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 03:21:17.109 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 03:31:08.726 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 03:31:08.727 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 03:41:46.353 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 03:41:46.354 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 03:55:43.866 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 03:55:43.866 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:02:35.304 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2024-06-10 05:02:35.306 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:02:35.308 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2024-06-10 05:02:35.318 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2024-06-10 05:02:35.423 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 23236 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 05:02:35.423 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 05:02:35.715 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 05:02:35.716 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:02:35.717 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 05:02:35.717 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 05:02:35.734 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 05:02:35.735 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 309 ms
-2024-06-10 05:02:35.969 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:02:36.146 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 05:02:36.173 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 05:02:36.184 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:02:36.186 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 05:02:36.190 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.798 seconds (JVM running for 7475.074)
-2024-06-10 05:02:36.191 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2024-06-10 05:02:36.192 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 05:02:36.192 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 05:02:43.113 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 05:02:43.114 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 05:02:43.115 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 05:02:43.119 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2024-06-10 05:02:43.145 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2024-06-10 05:03:02.756 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:03:02.756 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:03:03.783 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:03:03.784 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:03:05.148 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:03:05.148 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:03:07.082 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:03:07.083 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:03:07.695 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:03:07.696 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:06:37.395 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2024-06-10 05:06:37.398 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 18632 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 05:06:37.399 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 05:06:37.446 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-10 05:06:37.447 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-10 05:06:38.478 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 05:06:38.485 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:06:38.486 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 05:06:38.486 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 05:06:38.541 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 05:06:38.541 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1094 ms
-2024-06-10 05:06:39.042 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:06:39.375 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 05:06:39.437 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 05:06:39.453 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:06:39.471 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 05:06:39.485 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.432 seconds (JVM running for 3.011)
-2024-06-10 05:06:39.487 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 05:06:39.488 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 05:07:03.277 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 05:07:03.278 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 05:07:03.279 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 05:07:03.332 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2024-06-10 05:07:03.596 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2024-06-10 05:07:06.802 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:06.803 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:07.402 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:07.403 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:07.887 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:07.887 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:08.723 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:08.723 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:10.174 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:10.174 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:10.708 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:10.708 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:11.873 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:11.873 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:12.344 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:12.344 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:13.403 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:13.403 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:14.748 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:14.749 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:15.318 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:15.318 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:16.368 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 05:07:16.369 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 05:07:21.089 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:21.089 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:21.641 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:21.642 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:22.226 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:22.226 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:23.605 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:23.606 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:23.935 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:23.935 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:07:24.444 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:07:24.445 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:21.322 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:08:21.323 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:21.863 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:08:21.863 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:22.863 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:08:22.863 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:24.935 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:08:24.936 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:25.341 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:08:25.341 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:26.587 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:08:26.588 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:27.157 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:08:27.158 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:08:50.590 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 05:08:50.590 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 05:09:06.792 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2024-06-10 05:09:06.794 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:09:06.795 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2024-06-10 05:09:06.805 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2024-06-10 05:09:06.888 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 18632 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 05:09:06.888 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 05:09:07.174 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 05:09:07.175 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:09:07.175 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 05:09:07.175 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 05:09:07.193 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 05:09:07.193 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 301 ms
-2024-06-10 05:09:07.431 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:09:07.609 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 05:09:07.637 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 05:09:07.646 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:09:07.649 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 05:09:07.653 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.794 seconds (JVM running for 151.179)
-2024-06-10 05:09:07.654 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2024-06-10 05:09:07.654 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 05:09:07.655 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 05:10:21.023 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 05:10:21.024 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 05:10:21.025 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 05:10:21.029 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2024-06-10 05:10:21.053 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2024-06-10 05:10:21.062 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:10:21.062 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:11:20.283 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:11:20.283 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:11:20.984 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:11:20.984 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:11:21.625 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:11:21.626 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:12:37.529 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2024-06-10 05:12:37.529 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:12:37.530 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
-2024-06-10 05:12:37.539 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
-2024-06-10 05:12:37.614 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 18632 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 05:12:37.614 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 05:12:37.861 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 05:12:37.862 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:12:37.862 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 05:12:37.863 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 05:12:37.890 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 05:12:37.890 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 273 ms
-2024-06-10 05:12:38.115 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:12:38.307 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 05:12:38.335 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 05:12:38.343 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:12:38.346 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 05:12:38.349 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.763 seconds (JVM running for 361.876)
-2024-06-10 05:12:38.351 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2024-06-10 05:12:38.351 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 05:12:38.351 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 05:12:46.202 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 05:12:46.203 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 05:12:46.205 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 05:12:46.225 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
-2024-06-10 05:12:46.243 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
-2024-06-10 05:12:46.245 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:46.245 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:46.559 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:46.559 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:47.327 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:47.327 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:49.664 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:49.664 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:51.011 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:51.012 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:51.493 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:51.493 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:51.914 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:51.914 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:54.050 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:54.050 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:12:54.539 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:12:54.539 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:13:16.680 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2024-06-10 05:13:16.680 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:13:16.681 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
-2024-06-10 05:13:16.691 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
-2024-06-10 05:13:16.779 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 18632 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 05:13:16.780 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 05:13:17.035 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 05:13:17.036 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:13:17.036 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 05:13:17.036 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 05:13:17.052 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 05:13:17.052 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 269 ms
-2024-06-10 05:13:17.260 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:13:17.435 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 05:13:17.461 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 05:13:17.468 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:13:17.471 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 05:13:17.474 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.727 seconds (JVM running for 401.0)
-2024-06-10 05:13:17.475 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2024-06-10 05:13:17.475 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 05:13:17.476 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 05:13:18.076 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 05:13:18.077 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 05:13:18.078 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 05:13:18.095 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
-2024-06-10 05:13:18.111 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
-2024-06-10 05:13:18.117 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:18.117 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:19.689 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:19.689 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:20.832 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:20.832 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:21.329 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:21.329 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:21.840 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:21.840 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:22.857 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:22.858 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:28.030 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:28.031 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:28.759 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:28.760 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:30.630 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:30.630 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:31.173 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:31.174 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:13:31.594 INFO  com.dream.nusblog.service.EbookService            :43   [32m                  [0;39m 总行数：9
-2024-06-10 05:13:31.594 INFO  com.dream.nusblog.service.EbookService            :44   [32m                  [0;39m 总页数：1
-2024-06-10 05:14:13.342 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2024-06-10 05:14:13.342 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:14:13.343 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
-2024-06-10 05:14:13.355 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
-2024-06-10 05:14:13.438 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 18632 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 05:14:13.438 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 05:14:13.677 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 05:14:13.678 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:14:13.678 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 05:14:13.678 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 05:14:13.693 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 05:14:13.693 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 252 ms
-2024-06-10 05:14:13.908 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:14:14.068 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 05:14:14.095 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 05:14:14.103 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:14:14.105 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 05:14:14.109 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.7 seconds (JVM running for 457.635)
-2024-06-10 05:14:14.110 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2024-06-10 05:14:14.111 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 05:14:14.111 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 05:14:15.665 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2024-06-10 05:14:15.667 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:14:15.776 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 18632 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 05:14:15.776 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 05:14:16.050 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 05:14:16.051 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:14:16.051 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 05:14:16.051 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 05:14:16.067 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 05:14:16.067 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 287 ms
-2024-06-10 05:14:16.287 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 05:14:16.456 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 05:14:16.484 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 05:14:16.492 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 05:14:16.494 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 05:14:16.498 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.755 seconds (JVM running for 460.024)
-2024-06-10 05:14:16.499 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2024-06-10 05:14:16.499 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 05:14:16.499 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 05:14:16.613 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 05:14:16.614 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 05:14:16.615 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 05:14:16.631 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
-2024-06-10 05:14:16.646 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
-2024-06-10 05:14:16.661 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:16.662 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:16.664 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:16.664 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:18.980 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:18.981 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:19.539 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:19.539 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:19.853 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:19.853 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:20.624 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:20.625 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:22.361 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:22.361 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:22.873 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:22.873 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:23.434 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:23.435 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:23.889 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:23.889 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:24.362 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:24.362 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:24.770 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:24.771 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:14:25.081 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:14:25.081 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:24.339 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:24.339 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:24.970 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:24.970 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:25.558 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:25.558 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:26.353 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:26.353 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:27.376 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:27.376 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:27.922 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:27.922 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:28.443 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:28.443 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:28.921 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:28.921 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:29.336 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:29.336 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:29.784 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:29.785 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:30.264 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:30.264 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:30.680 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:30.681 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:31.506 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:31.507 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:32.050 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:32.050 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:32.416 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:32.416 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:48.000 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:48.001 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:48.417 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:48.417 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:48.904 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:48.905 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:49.320 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:49.321 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:49.745 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:49.745 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:50.250 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:50.250 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:52.399 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:52.400 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:53.467 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:53.467 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:53.859 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:53.859 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:15:54.248 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:15:54.248 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:48:03.243 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:48:03.243 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:48:03.752 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 05:48:03.753 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 05:48:04.224 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:48:04.224 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:48:04.832 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 05:48:04.833 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 05:48:05.288 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 05:48:05.288 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 07:20:23.669 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2024-06-10 07:20:23.669 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 13552 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 07:20:23.673 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 07:20:23.720 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-10 07:20:23.721 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-10 07:20:24.724 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 07:20:24.731 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 07:20:24.731 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 07:20:24.731 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 07:20:24.785 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 07:20:24.786 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1065 ms
-2024-06-10 07:20:25.280 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 07:20:25.588 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 07:20:25.635 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 07:20:25.650 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 07:20:25.671 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 07:20:25.688 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.375 seconds (JVM running for 2.954)
-2024-06-10 07:20:25.690 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 07:20:25.691 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 07:20:53.942 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 07:20:53.943 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 07:20:53.944 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 07:20:53.993 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2024-06-10 07:20:54.263 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2024-06-10 07:20:59.471 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 07:20:59.471 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 07:21:00.710 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 07:21:00.711 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 07:21:18.974 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 07:21:18.975 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:09:03.717 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 24468 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 11:09:03.717 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
-2024-06-10 11:09:03.721 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 11:09:03.768 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-10 11:09:03.768 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-10 11:09:04.772 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 11:09:04.779 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 11:09:04.779 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 11:09:04.779 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 11:09:04.835 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 11:09:04.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1066 ms
-2024-06-10 11:09:05.342 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 11:09:05.623 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 11:09:05.668 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 11:09:05.682 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 11:09:05.699 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 11:09:05.711 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.341 seconds (JVM running for 2.924)
-2024-06-10 11:09:05.713 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 11:09:05.714 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 11:09:20.202 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 11:09:20.203 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 11:09:20.204 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 11:09:20.254 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2024-06-10 11:09:20.528 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2024-06-10 11:09:25.115 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:09:25.115 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:09:28.741 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:09:28.742 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:09:29.273 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:09:29.274 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:31:47.443 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:47.443 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:31:48.209 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:31:48.209 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:31:48.935 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:48.935 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:31:49.499 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:31:49.499 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:31:49.898 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:31:49.898 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:31:50.296 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:50.296 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:31:50.966 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:50.967 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:31:51.520 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:31:51.520 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:31:52.017 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:31:52.017 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:31:52.478 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:52.478 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:31:53.535 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:31:53.536 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:31:55.057 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:55.058 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:31:59.206 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:59.206 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:31:59.713 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:31:59.714 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:32:01.057 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:32:01.058 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:32:01.552 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:32:01.552 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:32:02.170 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:32:02.170 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:32:27.466 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:32:27.467 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:32:28.114 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:32:28.114 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:32:28.737 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:32:28.737 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:32:29.266 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:32:29.266 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:32:31.601 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 11:32:31.602 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 11:32:32.219 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 11:32:32.219 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:40:58.829 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:40:58.829 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:41:05.191 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:41:05.192 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:41:19.206 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:41:19.207 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:41:21.845 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:41:21.845 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:41:24.130 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:41:24.130 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:45:06.928 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【顺序】不能为空
-2024-06-10 11:45:06.930 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq) with 2 errors: [Field error in object 'docSaveReq' on field 'sort': rejected value [null]; codes [NotNull.docSaveReq.sort,NotNull.sort,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.sort,sort]; arguments []; default message [sort]]; default message [【顺序】不能为空]] [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] ]
-2024-06-10 11:45:08.802 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【电子书】不能为空
-2024-06-10 11:45:08.803 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] ]
-2024-06-10 11:45:16.482 WARN  c.d.nusblog.controller.ControllerExceptionHandler :25   [32m                  [0;39m 参数校验失败：【电子书】不能为空
-2024-06-10 11:45:16.483 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.dream.nusblog.resp.CommonResp com.dream.nusblog.controller.DocController.save(com.dream.nusblog.req.DocSaveReq): [Field error in object 'docSaveReq' on field 'ebookId': rejected value [null]; codes [NotNull.docSaveReq.ebookId,NotNull.ebookId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.ebookId,ebookId]; arguments []; default message [ebookId]]; default message [【电子书】不能为空]] ]
-2024-06-10 11:45:21.696 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:45:21.697 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 11:45:30.348 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 11:45:30.348 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 18:33:55.219 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 18:33:55.220 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 18:33:56.939 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 18:33:56.940 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 18:33:59.738 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 18:33:59.738 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 18:34:04.547 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 18:34:04.547 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 18:34:06.373 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 18:34:06.373 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 18:34:07.963 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 18:34:07.963 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 18:34:09.516 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 18:34:09.517 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 18:34:21.073 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 18:34:21.073 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 18:34:21.886 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 18:34:21.886 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 18:34:23.439 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：0
-2024-06-10 18:34:23.439 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：0
-2024-06-10 18:34:25.014 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：1
-2024-06-10 18:34:25.014 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 19:12:33.857 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 19:12:33.857 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 19:30:34.810 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 19:30:34.811 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 23:39:48.493 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 23:39:48.494 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 23:42:12.909 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 23:42:12.910 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 23:58:23.572 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
-2024-06-10 23:58:23.573 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2024-06-10 23:58:23.574 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2024-06-10 23:58:23.582 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2024-06-10 23:58:23.697 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 24468 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
-2024-06-10 23:58:23.697 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2024-06-10 23:58:23.993 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2024-06-10 23:58:23.994 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2024-06-10 23:58:23.994 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2024-06-10 23:58:23.994 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2024-06-10 23:58:24.010 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2024-06-10 23:58:24.010 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 310 ms
-2024-06-10 23:58:24.242 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2024-06-10 23:58:24.406 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
-2024-06-10 23:58:24.433 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2024-06-10 23:58:24.446 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2024-06-10 23:58:24.448 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2024-06-10 23:58:24.451 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.79 seconds (JVM running for 46163.326)
-2024-06-10 23:58:24.453 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2024-06-10 23:58:24.453 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
-2024-06-10 23:58:24.453 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2024-06-10 23:58:28.394 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-10 23:58:28.395 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2024-06-10 23:58:28.396 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2024-06-10 23:58:28.399 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2024-06-10 23:58:28.412 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2024-06-10 23:58:28.459 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 23:58:28.459 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 23:58:30.309 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 23:58:30.310 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
-2024-06-10 23:58:33.426 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
-2024-06-10 23:58:33.427 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 00:03:11.476 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 00:03:11.478 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 00:04:02.996 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 00:04:02.997 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 00:04:02.999 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2024-06-11 00:04:03.010 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2024-06-11 00:04:03.096 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 24468 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 00:04:03.096 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 00:04:03.353 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 00:04:03.354 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:04:03.354 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 00:04:03.354 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 00:04:03.371 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 00:04:03.371 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 272 ms
+2024-06-11 00:04:03.593 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 00:04:03.781 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 00:04:03.813 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 00:04:03.820 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:04:03.826 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 00:04:03.834 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.765 seconds (JVM running for 46502.709)
+2024-06-11 00:04:03.837 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 00:04:03.838 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 00:04:03.838 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 00:04:58.684 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 00:04:58.685 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 00:04:58.686 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 00:04:58.690 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2024-06-11 00:04:58.706 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2024-06-11 00:05:26.667 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-11 00:05:26.668 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-11 00:05:26.668 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2024-06-11 00:05:26.682 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2024-06-11 00:05:26.810 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 24468 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 00:05:26.811 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 00:05:27.109 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 00:05:27.110 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:05:27.110 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 00:05:27.110 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 00:05:27.131 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 00:05:27.132 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 318 ms
+2024-06-11 00:05:27.405 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 00:05:27.578 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 00:05:27.607 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 00:05:27.628 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:05:27.631 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 00:05:27.636 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.861 seconds (JVM running for 46586.511)
+2024-06-11 00:05:27.639 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-11 00:05:27.639 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 00:05:27.639 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 00:23:33.247 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 00:23:33.248 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 00:23:33.249 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 00:23:33.265 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2024-06-11 00:23:33.286 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2024-06-11 00:24:47.693 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 00:24:47.694 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 5908 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 00:24:47.697 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 00:24:47.745 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 00:24:47.745 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 00:24:48.731 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 00:24:48.738 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:24:48.739 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 00:24:48.739 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 00:24:48.794 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 00:24:48.794 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1048 ms
+2024-06-11 00:24:49.302 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 00:24:49.599 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 00:24:49.646 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 00:24:49.662 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:24:49.696 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 00:24:49.710 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.357 seconds (JVM running for 2.96)
+2024-06-11 00:24:49.712 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 00:24:49.712 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 00:25:26.079 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 00:25:26.080 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 00:25:26.081 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 00:25:26.157 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 00:25:26.456 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 00:35:03.385 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 00:35:03.386 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 6636 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 00:35:03.389 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 00:35:03.435 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 00:35:03.435 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 00:35:04.399 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 00:35:04.405 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:35:04.406 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 00:35:04.406 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 00:35:04.459 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 00:35:04.459 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1023 ms
+2024-06-11 00:35:04.935 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 00:35:05.234 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 00:35:05.280 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 00:35:05.295 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 00:35:05.311 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 00:35:05.324 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.293 seconds (JVM running for 2.885)
+2024-06-11 00:35:05.326 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 00:35:05.327 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 00:35:33.106 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 00:35:33.107 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 00:35:33.108 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 00:35:33.166 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 00:35:33.470 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 00:35:37.764 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 00:35:37.765 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
+2024-06-11 10:17:49.221 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 22168 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-11 10:17:49.221 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-11 10:17:49.225 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-11 10:17:49.282 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-11 10:17:49.282 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-11 10:17:50.302 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-11 10:17:50.309 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-11 10:17:50.310 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-11 10:17:50.310 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-11 10:17:50.365 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-11 10:17:50.366 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1083 ms
+2024-06-11 10:17:50.865 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-11 10:17:51.159 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-11 10:17:51.204 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-11 10:17:51.219 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-11 10:17:51.235 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-11 10:17:51.249 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.4 seconds (JVM running for 2.982)
+2024-06-11 10:17:51.251 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-11 10:17:51.252 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-11 10:18:14.160 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-11 10:18:14.161 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-11 10:18:14.162 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-11 10:18:14.223 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-11 10:18:14.499 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-11 10:18:16.728 INFO  com.dream.nusblog.service.EbookService            :46   [32m                  [0;39m 总行数：9
+2024-06-11 10:18:16.729 INFO  com.dream.nusblog.service.EbookService            :47   [32m                  [0;39m 总页数：1
