@@ -4,6 +4,7 @@ import About from '../views/about.vue'
 import AdminEbook from '../views/admin/admin-ebook.vue'
 import AdminCategory from '../views/admin/admin-category.vue'
 import AdminDoc from '../views/admin/admin-doc.vue'
+import Doc from '../views/doc.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -20,6 +21,13 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     // component: () => import(/* webpackChunkName: "about" */ '../views/about.vue')
   },
+
+  {
+    path: '/doc',
+    name: 'Doc',
+    component: Doc
+  },
+
   {
     path: '/admin/ebook',
     name: 'AdminEbook',
