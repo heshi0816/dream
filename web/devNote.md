@@ -197,6 +197,13 @@ it can't be deleted by the delete function in mapper
 when I add a new field "content" in Req class, getter and setter has to come alone otherwise the field 
 is not activated and no error is reported hard to debug 
 
+# JUNE 12th
+```$xslt
+<style scoped>
+</style>
+```
+means the style is only going to work in this page
+
  
  
  
