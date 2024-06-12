@@ -13,6 +13,11 @@ const routes: Array<RouteRecordRaw> = [
     component: Home
   },
   {
+    path: '/admin/user',
+    name: 'AdminUser',
+    component: AdminUser
+  },
+  {
     path: '/about',
     name: 'About',
     component: About

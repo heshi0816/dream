@@ -329,10 +329,14 @@
                     ebookId: route.query.ebookId
                 };
 
-                treeSelectData.value = Tool.copy(level1.value);
 
-                // 为选择树添加一个"无"
-                treeSelectData.value.unshift({id: 0, name: '无'});
+                if (level1.value.length === 0) {
+                    treeSelectData.value = [{id: 0, name: '无'}];
+                } else {
+                    // 为选择树添加一个"无"
+                    treeSelectData.value = Tool.copy(level1.value);
+                    treeSelectData.value.unshift({id: 0, name: '无'});
+                }
             };
 
             const handleDelete = (id: number) => {

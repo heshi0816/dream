@@ -204,8 +204,27 @@ is not activated and no error is reported hard to debug
 ```
 means the style is only going to work in this page
 
- 
- 
+```$xslt
+            const add = () => {
+                // 清空富文本框
+                editor.txt.html("");
+                modalVisible.value = true;
+                doc.value = {
+                    ebookId: route.query.ebookId
+                };
+
+
+                if (level1.value.length === 0) {
+                    treeSelectData.value = [{id: 0, name: '无'}];
+                } else {
+                    // 为选择树添加一个"无"
+                    treeSelectData.value = Tool.copy(level1.value);
+                    treeSelectData.value.unshift({id: 0, name: '无'});
+                }
+            };
+``` 
+treeSelectData.value.unshift({id: 0, name: '无'});, wouldn't work if treeSelectData.value is
+empty, so we have to do an empty check.  
  
  # web
 
