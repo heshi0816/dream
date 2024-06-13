@@ -10121,3 +10121,57 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 2024-06-13 21:44:04.308 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
 2024-06-13 21:44:04.309 INFO  com.dream.nusblog.service.UserService             :47   [32m                  [0;39m 总行数：3
 2024-06-13 21:44:04.310 INFO  com.dream.nusblog.service.UserService             :48   [32m                  [0;39m 总页数：1
+2024-06-13 23:20:09.506 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2024-06-13 23:20:09.507 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==> Parameters: 
+2024-06-13 23:20:09.509 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-13 23:20:09.509 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==        Row: 3
+2024-06-13 23:20:09.510 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m <==      Total: 1
+2024-06-13 23:20:09.510 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2024-06-13 23:20:09.511 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-06-13 23:20:09.512 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-13 23:20:09.512 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, fhnfg, fwf, c3398d6bd3c0089879ab121a9748ed11
+2024-06-13 23:20:09.513 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456438201532420096, fghrth, 123, 7999dd4dc701809b977178fec2fff75d
+2024-06-13 23:20:09.513 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456450126639140864, tjtjt, 33, 13124gg
+2024-06-13 23:20:09.514 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2024-06-13 23:20:09.514 INFO  com.dream.nusblog.service.UserService             :47   [32m                  [0;39m 总行数：3
+2024-06-13 23:20:09.514 INFO  com.dream.nusblog.service.UserService             :48   [32m                  [0;39m 总页数：1
+2024-06-13 23:20:10.852 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-13 23:20:10.853 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-13 23:20:10.855 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-06-13 23:20:10.859 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-06-13 23:20:10.953 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 16260 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-13 23:20:10.953 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-13 23:20:11.232 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-13 23:20:11.233 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-13 23:20:11.233 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-13 23:20:11.233 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-13 23:20:11.254 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-13 23:20:11.254 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 298 ms
+2024-06-13 23:20:11.526 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-13 23:20:11.699 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-13 23:20:11.728 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-13 23:20:11.738 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-13 23:20:11.741 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-13 23:20:11.745 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.824 seconds (JVM running for 5782.428)
+2024-06-13 23:20:11.747 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-13 23:20:11.747 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-13 23:20:11.748 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-13 23:20:13.281 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-13 23:20:13.282 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-13 23:20:13.353 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 16260 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-13 23:20:13.354 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-13 23:20:13.614 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-13 23:20:13.614 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-13 23:20:13.615 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-13 23:20:13.615 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-13 23:20:13.633 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-13 23:20:13.633 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 277 ms
+2024-06-13 23:20:13.879 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-13 23:20:14.028 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-13 23:20:14.055 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-13 23:20:14.063 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-13 23:20:14.065 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-13 23:20:14.068 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.74 seconds (JVM running for 5784.751)
+2024-06-13 23:20:14.069 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-13 23:20:14.070 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-13 23:20:14.070 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
