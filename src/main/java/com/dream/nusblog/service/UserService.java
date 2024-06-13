@@ -6,7 +6,6 @@ import com.dream.nusblog.exception.BusinessException;
 import com.dream.nusblog.exception.BusinessExceptionCode;
 import com.dream.nusblog.mapper.UserMapper;
 import com.dream.nusblog.req.UserQueryReq;
-import com.dream.nusblog.req.UserResetPasswordReq;
 import com.dream.nusblog.req.UserSaveReq;
 import com.dream.nusblog.resp.PageResp;
 import com.dream.nusblog.resp.UserQueryResp;
@@ -83,9 +82,7 @@ public class UserService {
                 throw new BusinessException(BusinessExceptionCode.USER_LOGIN_NAME_EXIST);
             }
         } else {
-            // 更新
             user.setLoginName(null);
-            user.setPassword(null);
             userMapper.updateByPrimaryKeySelective(user);
         }
     }
@@ -104,14 +101,5 @@ public class UserService {
         } else {
             return userList.get(0);
         }
-    }
-
-
-    /**
-     * 修改密码
-     */
-    public void resetPassword(UserResetPasswordReq req) {
-        User user = CopyUtil.copy(req, User.class);
-        userMapper.updateByPrimaryKeySelective(user);
     }
 }

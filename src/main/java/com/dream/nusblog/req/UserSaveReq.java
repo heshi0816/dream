@@ -14,7 +14,7 @@ public class UserSaveReq {
 
     @NotNull(message = "【密码】不能为空")
     // @Length(min = 6, max = 20, message = "【密码】6~20位")
-    @Pattern(regexp = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,32}$", message = "【密码】至少包含 数字和英文，长度6-32")
+    @Pattern(regexp = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$", message = "【密码】至少包含 数字和英文，长度6-20")
     private String password;
 
     public Long getId() {
@@ -45,6 +45,7 @@ public class UserSaveReq {
         return password;
     }
 
+    @Pattern(regexp = "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,32}$", message = "【密码】至少包含 数字和英文，长度6-32")
     public void setPassword(String password) {
         this.password = password;
     }
