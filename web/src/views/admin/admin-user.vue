@@ -58,7 +58,7 @@
     >
         <a-form :model="user" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
             <a-form-item label="登陆名">
-                <a-input v-model:value="user.loginName" :disabled="!!user.id"/>
+                <a-input v-model:value="user.loginName" />
             </a-form-item>
             <a-form-item label="昵称">
                 <a-input v-model:value="user.name" />
@@ -75,9 +75,6 @@
     import axios from 'axios';
     import { message } from 'ant-design-vue';
     import {Tool} from "@/util/tool";
-
-    declare let hexMd5: any;
-    declare let KEY: any;
 
     export default defineComponent({
         name: 'AdminUser',
@@ -157,9 +154,6 @@
             const modalLoading = ref(false);
             const handleModalOk = () => {
                 modalLoading.value = true;
-
-                user.value.password = hexMd5(user.value.password + KEY);
-
                 axios.post("/user/save", user.value).then((response) => {
                     modalLoading.value = false;
                     const data = response.data; // data = commonResp
