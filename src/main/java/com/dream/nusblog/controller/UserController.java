@@ -1,10 +1,12 @@
 package com.dream.nusblog.controller;
 
+import com.dream.nusblog.req.UserLoginReq;
 import com.dream.nusblog.req.UserQueryReq;
 import com.dream.nusblog.req.UserResetPasswordReq;
 import com.dream.nusblog.req.UserSaveReq;
 import com.dream.nusblog.resp.CommonResp;
 import com.dream.nusblog.resp.PageResp;
+import com.dream.nusblog.resp.UserLoginResp;
 import com.dream.nusblog.resp.UserQueryResp;
 import com.dream.nusblog.service.UserService;
 import org.springframework.util.DigestUtils;
@@ -48,6 +50,15 @@ public class UserController {
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp resp = new CommonResp<>();
         userService.resetPassword(req);
+        return resp;
+    }
+
+    @PostMapping("/login")
+    public CommonResp login(@Valid @RequestBody UserLoginReq req) {
+        req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        CommonResp<UserLoginResp> resp = new CommonResp<>();
+        UserLoginResp userLoginResp = userService.login(req);
+        resp.setContent(userLoginResp);
         return resp;
     }
 }

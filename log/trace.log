@@ -2230,3 +2230,139 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'User' in 'field lis
 2024-06-14 00:15:32.594 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
 2024-06-14 00:15:32.594 INFO  com.dream.nusblog.service.UserService             :47   [32m                  [0;39m 总行数：3
 2024-06-14 00:15:32.594 INFO  com.dream.nusblog.service.UserService             :48   [32m                  [0;39m 总页数：1
+2024-06-14 15:22:15.560 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-06-14 15:22:15.560 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 11332 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-14 15:22:15.563 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-14 15:22:15.605 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-14 15:22:15.605 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-14 15:22:16.558 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-14 15:22:16.564 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-14 15:22:16.564 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-14 15:22:16.565 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-14 15:22:16.615 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-14 15:22:16.616 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1010 ms
+2024-06-14 15:22:17.116 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-14 15:22:17.463 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-14 15:22:17.517 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-14 15:22:17.534 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-14 15:22:17.553 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-14 15:22:17.568 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 2.364 seconds (JVM running for 3.017)
+2024-06-14 15:22:17.571 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-14 15:22:17.571 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-14 15:22:25.441 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 15:22:25.442 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-14 15:22:25.443 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-14 15:22:25.565 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2024-06-14 15:22:25.842 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2024-06-14 15:22:25.875 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2024-06-14 15:22:25.894 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==> Parameters: 
+2024-06-14 15:22:25.909 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-14 15:22:25.909 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==        Row: 3
+2024-06-14 15:22:25.911 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m <==      Total: 1
+2024-06-14 15:22:25.913 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2024-06-14 15:22:25.914 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-06-14 15:22:25.915 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-14 15:22:25.915 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, fhnfg, fwf, c3398d6bd3c0089879ab121a9748ed11
+2024-06-14 15:22:25.916 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456438201532420096, fghrth, 123, 7999dd4dc701809b977178fec2fff75d
+2024-06-14 15:22:25.916 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456450126639140864, tjtjt, 33, 13124gg
+2024-06-14 15:22:25.916 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2024-06-14 15:22:25.918 INFO  com.dream.nusblog.service.UserService             :49   [32m                  [0;39m 总行数：3
+2024-06-14 15:22:25.919 INFO  com.dream.nusblog.service.UserService             :50   [32m                  [0;39m 总页数：1
+2024-06-14 15:23:27.469 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2024-06-14 15:23:27.470 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: tjtjt(String)
+2024-06-14 15:23:27.471 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-14 15:23:27.472 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456450126639140864, tjtjt, 33, 13124gg
+2024-06-14 15:23:27.472 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 1
+2024-06-14 15:23:27.472 INFO  com.dream.nusblog.service.UserService             :135  [32m                  [0;39m 密码不对, 输入密码：cb1f644f19c42872b850334387c32f30, 数据库密码：13124gg
+2024-06-14 15:23:27.474 WARN  c.d.nusblog.controller.ControllerExceptionHandler :42   [32m                  [0;39m 业务异常：用户名不存在或密码错误
+2024-06-14 15:23:27.476 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.dream.nusblog.exception.BusinessException: 用户名不存在或密码错误]
+2024-06-14 15:46:47.768 DEBUG c.d.n.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==>  Preparing: update user SET `password` = ? where id = ?
+2024-06-14 15:46:47.769 DEBUG c.d.n.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==> Parameters: 5c8ee3676e6d22e778a2cc740975564f(String), 1(Long)
+2024-06-14 15:46:47.783 DEBUG c.d.n.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m <==    Updates: 1
+2024-06-14 15:46:47.827 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2024-06-14 15:46:47.828 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==> Parameters: 
+2024-06-14 15:46:47.830 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-14 15:46:47.831 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==        Row: 3
+2024-06-14 15:46:47.831 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m <==      Total: 1
+2024-06-14 15:46:47.832 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2024-06-14 15:46:47.833 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-06-14 15:46:47.835 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-14 15:46:47.836 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, fhnfg, fwf, 5c8ee3676e6d22e778a2cc740975564f
+2024-06-14 15:46:47.837 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456438201532420096, fghrth, 123, 7999dd4dc701809b977178fec2fff75d
+2024-06-14 15:46:47.838 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456450126639140864, tjtjt, 33, 13124gg
+2024-06-14 15:46:47.839 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2024-06-14 15:46:47.840 INFO  com.dream.nusblog.service.UserService             :49   [32m                  [0;39m 总行数：3
+2024-06-14 15:46:47.840 INFO  com.dream.nusblog.service.UserService             :50   [32m                  [0;39m 总页数：1
+2024-06-14 15:47:00.809 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2024-06-14 15:47:00.809 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: fhnfg(String)
+2024-06-14 15:47:00.811 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-14 15:47:00.811 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, fhnfg, fwf, 5c8ee3676e6d22e778a2cc740975564f
+2024-06-14 15:47:00.812 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 1
+2024-06-14 16:23:42.945 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2024-06-14 16:23:42.946 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==> Parameters: 
+2024-06-14 16:23:42.947 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-14 16:23:42.948 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==        Row: 3
+2024-06-14 16:23:42.949 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m <==      Total: 1
+2024-06-14 16:23:42.950 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2024-06-14 16:23:42.950 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-06-14 16:23:42.951 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-14 16:23:42.951 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, fhnfg, fwf, 5c8ee3676e6d22e778a2cc740975564f
+2024-06-14 16:23:42.952 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456438201532420096, fghrth, 123, 7999dd4dc701809b977178fec2fff75d
+2024-06-14 16:23:42.952 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456450126639140864, tjtjt, 33, 13124gg
+2024-06-14 16:23:42.952 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2024-06-14 16:23:42.953 INFO  com.dream.nusblog.service.UserService             :49   [32m                  [0;39m 总行数：3
+2024-06-14 16:23:42.953 INFO  com.dream.nusblog.service.UserService             :50   [32m                  [0;39m 总页数：1
+2024-06-14 16:24:07.112 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2024-06-14 16:24:07.113 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==> Parameters: 
+2024-06-14 16:24:07.115 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-14 16:24:07.116 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==        Row: 3
+2024-06-14 16:24:07.117 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m <==      Total: 1
+2024-06-14 16:24:07.118 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2024-06-14 16:24:07.119 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-06-14 16:24:07.120 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-14 16:24:07.120 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, fhnfg, fwf, 5c8ee3676e6d22e778a2cc740975564f
+2024-06-14 16:24:07.121 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456438201532420096, fghrth, 123, 7999dd4dc701809b977178fec2fff75d
+2024-06-14 16:24:07.121 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456450126639140864, tjtjt, 33, 13124gg
+2024-06-14 16:24:07.121 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2024-06-14 16:24:07.122 INFO  com.dream.nusblog.service.UserService             :49   [32m                  [0;39m 总行数：3
+2024-06-14 16:24:07.122 INFO  com.dream.nusblog.service.UserService             :50   [32m                  [0;39m 总页数：1
+2024-06-14 16:24:13.005 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-06-14 16:24:13.006 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-14 16:24:13.008 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-06-14 16:24:13.025 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-06-14 16:24:13.114 INFO  com.dream.nusblog.NusblogApplication              :55   [32m                  [0;39m Starting NusblogApplication using Java 11.0.4 on X99-480 with PID 11332 (E:\nusblog\target\classes started by Administrator in E:\nusblog)
+2024-06-14 16:24:13.115 INFO  com.dream.nusblog.NusblogApplication              :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-06-14 16:24:13.416 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-06-14 16:24:13.417 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-06-14 16:24:13.417 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-14 16:24:13.418 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-06-14 16:24:13.436 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-14 16:24:13.436 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 318 ms
+2024-06-14 16:24:13.697 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-14 16:24:13.850 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-06-14 16:24:13.874 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-14 16:24:13.882 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-06-14 16:24:13.884 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-06-14 16:24:13.888 INFO  com.dream.nusblog.NusblogApplication              :61   [32m                  [0;39m Started NusblogApplication in 0.804 seconds (JVM running for 3719.337)
+2024-06-14 16:24:13.889 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-14 16:24:13.889 INFO  com.dream.nusblog.NusblogApplication              :28   [32m                  [0;39m 启动成功！！
+2024-06-14 16:24:13.889 INFO  com.dream.nusblog.NusblogApplication              :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2024-06-14 16:24:16.629 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 16:24:16.630 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-14 16:24:16.632 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-14 16:24:16.665 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2024-06-14 16:24:16.692 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2024-06-14 16:24:16.693 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2024-06-14 16:24:16.694 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==> Parameters: 
+2024-06-14 16:24:16.695 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==    Columns: count(0)
+2024-06-14 16:24:16.695 TRACE c.d.n.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==        Row: 3
+2024-06-14 16:24:16.696 DEBUG c.d.n.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m <==      Total: 1
+2024-06-14 16:24:16.696 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2024-06-14 16:24:16.697 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2024-06-14 16:24:16.698 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2024-06-14 16:24:16.698 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, fhnfg, fwf, 5c8ee3676e6d22e778a2cc740975564f
+2024-06-14 16:24:16.698 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456438201532420096, fghrth, 123, 7999dd4dc701809b977178fec2fff75d
+2024-06-14 16:24:16.699 TRACE c.dream.nusblog.mapper.UserMapper.selectByExample :143  [32m                  [0;39m <==        Row: 456450126639140864, tjtjt, 33, 13124gg
+2024-06-14 16:24:16.699 DEBUG c.dream.nusblog.mapper.UserMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2024-06-14 16:24:16.699 INFO  com.dream.nusblog.service.UserService             :49   [32m                  [0;39m 总行数：3
+2024-06-14 16:24:16.700 INFO  com.dream.nusblog.service.UserService             :50   [32m                  [0;39m 总页数：1
