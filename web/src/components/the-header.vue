@@ -7,36 +7,39 @@
                 :style="{ lineHeight: '64px' }"
         >
             <a-menu-item key="/">
-                <router-link to="/">home page</router-link>
+                <router-link to="/">首页</router-link>
             </a-menu-item>
             <a-menu-item key="/admin/user">
-                <router-link to="/admin/user">user admin</router-link>
+                <router-link to="/admin/user">用户管理</router-link>
             </a-menu-item>
             <a-menu-item key="/admin/ebook">
-                <router-link to="/admin/ebook">ebook admin</router-link>
+                <router-link to="/admin/ebook">电子书管理</router-link>
             </a-menu-item>
             <a-menu-item key="/admin/category">
-                <router-link to="/admin/category">category admin</router-link>
+                <router-link to="/admin/category">分类管理</router-link>
             </a-menu-item>
             <a-menu-item key="/about">
-                <router-link to="/about">about us</router-link>
+                <router-link to="/about">关于我们</router-link>
             </a-menu-item>
-            <a class="login-menu" @click="showLoginModal">
-                <span>login</span>
+            <a class="login-menu" v-show="user.id">
+                <span>您好：{{user.name}}</span>
+            </a>
+            <a class="login-menu" v-show="!user.id" @click="showLoginModal">
+                <span>登录</span>
             </a>
         </a-menu>
 
         <a-modal
-                title="login"
+                title="登录"
                 v-model:visible="loginModalVisible"
                 :confirm-loading="loginModalLoading"
                 @ok="login"
         >
             <a-form :model="loginUser" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
-                <a-form-item label="login name">
+                <a-form-item label="登录名">
                     <a-input v-model:value="loginUser.loginName" />
                 </a-form-item>
-                <a-form-item label="password">
+                <a-form-item label="密码">
                     <a-input v-model:value="loginUser.password" type="password" />
                 </a-form-item>
             </a-form>
@@ -55,9 +58,14 @@
     export default defineComponent({
         name: 'the-header',
         setup () {
+            // 登录后保存
+            const user = ref();
+            user.value = {};
+
+            // 用来登录
             const loginUser = ref({
                 loginName: "test",
-                password: "test"
+                password: "test123"
             });
             const loginModalVisible = ref(false);
             const loginModalLoading = ref(false);
@@ -76,6 +84,7 @@
                     if (data.success) {
                         loginModalVisible.value = false;
                         message.success("登录成功！");
+                        user.value = data.content;
                     } else {
                         message.error(data.message);
                     }
@@ -87,7 +96,8 @@
                 loginModalLoading,
                 showLoginModal,
                 loginUser,
-                login
+                login,
+                user
             }
         }
     });
@@ -97,7 +107,5 @@
     .login-menu {
         float: right;
         color: white;
-        background-color: yellowgreen;
-        font-size: 20px;
     }
 </style>
