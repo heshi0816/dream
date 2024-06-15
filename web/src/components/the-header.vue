@@ -96,6 +96,7 @@
                         message.success("登录成功！");
 
                         store.commit("setUser", data.content);
+
                     } else {
                         message.error(data.message);
                     }
