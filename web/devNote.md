@@ -276,6 +276,20 @@ empty, so we have to do an empty check.
 ```
 storing the status by using the vuex
 
+```$xslt
+  {
+    path: '/admin/category',
+    name: 'AdminCategory',
+    component: AdminCategory,
+    meta: {
+      loginRequire: true
+    }
+  }
+```
+in the router adding loginRequire to mark the pages that needs to be logined in to access
+
+
+
 ## Project setup
 ```
 npm install
