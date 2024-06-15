@@ -231,6 +231,51 @@ empty, so we have to do an empty check.
  long time on debugging the request should require the 32 byte password
  # web
 
+ #JUNE 15th
+ 
+ ```$xslt
+            const login = () => {
+                console.log("开始登录");
+                loginModalLoading.value = true;
+                loginUser.value.password = hexMd5(loginUser.value.password + KEY);
+                axios.post('/user/login', loginUser.value).then((response) => {
+                    loginModalLoading.value = false;
+                    const data = response.data;
+                    if (data.success) {
+                        loginModalVisible.value = false;
+                        message.success("登录成功！");
+
+                        store.commit("setUser", user.value);
+                    } else {
+                        message.error(data.message);
+                    }
+                });
+            };
+    @PostMapping("/login")
+    public CommonResp login(@Valid @RequestBody UserLoginReq req) {
+        req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        CommonResp<UserLoginResp> resp = new CommonResp<>();
+        UserLoginResp userLoginResp = userService.login(req);
+
+        Long token = snowFlake.nextId();
+        LOG.info("生成单点登录token：{}，并放入redis中", token);
+        userLoginResp.setToken(token.toString());
+        redisTemplate.opsForValue().set(token, JSONObject.toJSONString(userLoginResp), 3600 * 24, TimeUnit.SECONDS);
+
+        resp.setContent(userLoginResp);
+        return resp;
+    }
+
+``` 
+  generating a random number by using snowflake algorithm, then create a token field(string) 
+  in the request type. And set the token in the redis and also using the vuex to store the status of
+  login in.
+  
+```$xslt
+  store.commit("setUser", user.value);
+```
+storing the status by using the vuex
+
 ## Project setup
 ```
 npm install
