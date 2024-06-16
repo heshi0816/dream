@@ -95,7 +95,8 @@
     declare let hexMd5: any;
     declare let KEY: any;
 
-    export default defineComponent({
+    export default
+    defineComponent({
         name: 'AdminUser',
         setup() {
             const param = ref();
@@ -271,7 +272,6 @@
                 loading,
                 handleTableChange,
                 handleQuery,
-
                 edit,
                 add,
 
@@ -289,6 +289,7 @@
             }
         }
     });
+
 </script>
 
 <style scoped>

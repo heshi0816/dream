@@ -5,6 +5,7 @@ import com.dream.nusblog.domain.Doc;
 import com.dream.nusblog.domain.DocExample;
 import com.dream.nusblog.mapper.ContentMapper;
 import com.dream.nusblog.mapper.DocMapper;
+import com.dream.nusblog.mapper.DocMapperCust;
 import com.dream.nusblog.req.DocQueryReq;
 import com.dream.nusblog.req.DocSaveReq;
 import com.dream.nusblog.resp.DocQueryResp;
@@ -28,6 +29,9 @@ public class DocService {
 
     @Resource
     private DocMapper docMapper;
+
+    @Resource
+    private DocMapperCust docMapperCust;
 
     @Resource
     private ContentMapper contentMapper;
@@ -84,10 +88,11 @@ public class DocService {
     public void save(DocSaveReq req) {
         Doc doc = CopyUtil.copy(req, Doc.class);
         Content content = CopyUtil.copy(req, Content.class);
-        LOG.info("data get");
         if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
             doc.setId(snowFlake.nextId());
+            doc.setViewCount(0);
+            doc.setVoteCount(0);
             docMapper.insert(doc);
 
             content.setId(doc.getId());
@@ -115,6 +120,8 @@ public class DocService {
 
     public String findContent(Long id) {
         Content content = contentMapper.selectByPrimaryKey(id);
+        // 文档阅读数+1
+        docMapperCust.increaseViewCount(id);
         if (ObjectUtils.isEmpty(content)) {
             return "";
         } else {

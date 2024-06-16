@@ -288,7 +288,13 @@ storing the status by using the vuex
 ```
 in the router adding loginRequire to mark the pages that needs to be logined in to access
 
+#JUNE 16th
 
+the generated xml file can't be changed so in order to add increaseViewCount function we 
+have to create a new mapper and write a new xml, the DocMapperCust.
+```$xslt
+
+```
 
 ## Project setup
 ```
