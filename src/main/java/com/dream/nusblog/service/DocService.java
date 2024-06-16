@@ -3,6 +3,8 @@ package com.dream.nusblog.service;
 import com.dream.nusblog.domain.Content;
 import com.dream.nusblog.domain.Doc;
 import com.dream.nusblog.domain.DocExample;
+import com.dream.nusblog.exception.BusinessException;
+import com.dream.nusblog.exception.BusinessExceptionCode;
 import com.dream.nusblog.mapper.ContentMapper;
 import com.dream.nusblog.mapper.DocMapper;
 import com.dream.nusblog.mapper.DocMapperCust;
@@ -11,6 +13,8 @@ import com.dream.nusblog.req.DocSaveReq;
 import com.dream.nusblog.resp.DocQueryResp;
 import com.dream.nusblog.resp.PageResp;
 import com.dream.nusblog.util.CopyUtil;
+import com.dream.nusblog.util.RedisUtil;
+import com.dream.nusblog.util.RequestContext;
 import com.dream.nusblog.util.SnowFlake;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -38,6 +42,9 @@ public class DocService {
 
     @Resource
     private SnowFlake snowFlake;
+
+    @Resource
+    public RedisUtil redisUtil;
 
     public List<DocQueryResp> all(Long ebookId) {
         DocExample docExample = new DocExample();
@@ -126,6 +133,17 @@ public class DocService {
             return "";
         } else {
             return content.getContent();
+        }
+    }
+
+    public void vote(Long id) {
+        // docMapperCust.increaseVoteCount(id);
+        // 远程IP+doc.id作为key，24小时内不能重复
+        String ip = RequestContext.getRemoteAddr();
+        if (redisUtil.validateRepeat("DOC_VOTE_" + id + "_" + ip, 3600 * 24 * 365)) {
+            docMapperCust.increaseVoteCount(id);
+        } else {
+            throw new BusinessException(BusinessExceptionCode.VOTE_REPEAT);
         }
     }
 }
