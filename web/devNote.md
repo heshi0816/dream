@@ -292,9 +292,31 @@ in the router adding loginRequire to mark the pages that needs to be logined in 
 
 the generated xml file can't be changed so in order to add increaseViewCount function we 
 have to create a new mapper and write a new xml, the DocMapperCust.
-```$xslt
 
+# JUNE 17th
+```$xslt
+    @Scheduled(fixedRate = 1000)
+    public void simple() throws InterruptedException {
+        SimpleDateFormat formatter = new SimpleDateFormat("mm:ss");
+        String dateString = formatter.format(new Date());
+        Thread.sleep(2000);
+        LOG.info("每隔5秒钟执行一次： {}", dateString);
+    }
+
+    /**
+     * 自定义cron表达式跑批
+     * 只有等上一次执行完成，下一次才会在下一个时间点执行，错过就错过
+     */
+    @Scheduled(cron = "*/1 * * * * ?")
+    public void cron() throws InterruptedException {
+        SimpleDateFormat formatter = new SimpleDateFormat("mm:ss SSS");
+        String dateString = formatter.format(new Date());
+        Thread.sleep(1500);
+        LOG.info("每隔1秒钟执行一次： {}", dateString);
+    }
 ```
+the @scheduled annotation works on a singe thread instead of parallel, so one will
+wait till the other one finished running.
 
 ## Project setup
 ```
