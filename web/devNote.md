@@ -331,6 +331,8 @@ a single ip address can only vote once, each address!!!!
 the @scheduled annotation works on a singe thread instead of parallel, so both of them
 will wait till the other one finish running before themselves moving on.
 
+for reporting information integrate the webSocket package 
+
 ## Project setup
 ```
 npm install
