@@ -228,24 +228,28 @@
             const resetModalLoading = ref(false);
             const handleResetModalOk = () => {
                 resetModalLoading.value = true;
-
-                user.value.password = hexMd5(user.value.password + KEY);
-
-                axios.post("/user/reset-password", user.value).then((response) => {
+                if (user.value.password.length > 20 || user.value.password.length < 6) {
+                    message.error("length has to be in between 6 and 20!")
                     resetModalLoading.value = false;
-                    const data = response.data; // data = commonResp
-                    if (data.success) {
-                        resetModalVisible.value = false;
+                } else {
+                    user.value.password = hexMd5(user.value.password + KEY);
 
-                        // 重新加载列表
-                        handleQuery({
-                            page: pagination.value.current,
-                            size: pagination.value.pageSize,
-                        });
-                    } else {
-                        message.error(data.message);
-                    }
-                });
+                    axios.post("/user/reset-password", user.value).then((response) => {
+                        resetModalLoading.value = false;
+                        const data = response.data; // data = commonResp
+                        if (data.success) {
+                            resetModalVisible.value = false;
+
+                            // 重新加载列表
+                            handleQuery({
+                                page: pagination.value.current,
+                                size: pagination.value.pageSize,
+                            });
+                        } else {
+                            message.error(data.message);
+                        }
+                    });
+                }
             };
 
             /**
