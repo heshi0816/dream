@@ -292,6 +292,19 @@ in the router adding loginRequire to mark the pages that needs to be logined in 
 
 the generated xml file can't be changed so in order to add increaseViewCount function we 
 have to create a new mapper and write a new xml, the DocMapperCust.
+```$xslt
+    public void vote(Long id) {
+        // docMapperCust.increaseVoteCount(id);
+        // 远程IP+doc.id作为key，24小时内不能重复
+        String ip = RequestContext.getRemoteAddr();
+        if (redisUtil.validateRepeat("DOC_VOTE_" + id + "_" + ip, 3600 * 24)) {
+            docMapperCust.increaseVoteCount(id);
+        } else {
+            throw new BusinessException(BusinessExceptionCode.VOTE_REPEAT);
+        }
+    }
+```
+a single ip address can only vote once, each address!!!!
 
 # JUNE 17th
 ```$xslt
@@ -315,8 +328,8 @@ have to create a new mapper and write a new xml, the DocMapperCust.
         LOG.info("每隔1秒钟执行一次： {}", dateString);
     }
 ```
-the @scheduled annotation works on a singe thread instead of parallel, so one will
-wait till the other one finished running.
+the @scheduled annotation works on a singe thread instead of parallel, so both of them
+will wait till the other one finish running before themselves moving on.
 
 ## Project setup
 ```
