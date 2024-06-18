@@ -356,6 +356,23 @@ backend to database can't reach the database
 websocket problem in the footer stay unsolved still using a fixed ip address, the address
 written in env.dev isn't working 
 
+```
+    @Async
+    public void sendInfo(String message, String logId) {
+        MDC.put("LOG_ID", logId);
+        webSocketServer.sendInfo(message);
+    }
+```
+for asyncronous running @Async annotation should be in a different service class to run
+on different threads
+
+```$xslt
+    @Transactional
+```
+ a powerful annotation that prevents database get into an inconsistent state, whenever exceptions
+ occurs the execution rolls back. It wouldn't work when the method is used by another method
+ in the same service class
+
 ## Project setup
 ```
 npm install
