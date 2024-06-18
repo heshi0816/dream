@@ -5,6 +5,7 @@ public enum BusinessExceptionCode {
     USER_LOGIN_NAME_EXIST("login name exist"),
     LOGIN_USER_ERROR("login name doesn't exist or wrong password"),
     VOTE_REPEAT("you have already liked this doc"),
+    Null_Pointer("null pointer"),
     ;
 
     private String desc;

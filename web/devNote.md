@@ -331,7 +331,30 @@ a single ip address can only vote once, each address!!!!
 the @scheduled annotation works on a singe thread instead of parallel, so both of them
 will wait till the other one finish running before themselves moving on.
 
-for reporting information integrate the webSocket package 
+
+# JUNE 18th
+
+```$xslt
+@Configuration
+public class JacksonConfig {
+    @Bean
+    public ObjectMapper jacksonObjectMapper(Jackson2ObjectMapperBuilder builder) {
+        ObjectMapper objectMapper = builder.createXmlMapper(false).build();
+        SimpleModule simpleModule = new SimpleModule();
+        simpleModule.addSerializer(Long.class, ToStringSerializer.instance);
+        objectMapper.registerModule(simpleModule);
+        return objectMapper;
+    }
+}
+```
+Jackson Config solves the snowflake precision problem which incurred that changes passed from 
+backend to database can't reach the database
+
+```$xslt
+   websocket = new WebSocket("ws://127.0.0.1:8880"+ '/ws/' + token);
+```
+websocket problem in the footer stay unsolved still using a fixed ip address, the address
+written in env.dev isn't working 
 
 ## Project setup
 ```

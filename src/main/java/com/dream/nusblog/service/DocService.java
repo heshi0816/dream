@@ -50,7 +50,6 @@ public class DocService {
     @Resource
     public WebSocketServer webSocketServer;
 
-
     public List<DocQueryResp> all(Long ebookId) {
         DocExample docExample = new DocExample();
         docExample.createCriteria().andEbookIdEqualTo(ebookId);
@@ -141,7 +140,11 @@ public class DocService {
         }
     }
 
+    /**
+     * 点赞
+     */
     public void vote(Long id) {
+
         // docMapperCust.increaseVoteCount(id);
         // 远程IP+doc.id作为key，24小时内不能重复
         String ip = RequestContext.getRemoteAddr();
@@ -154,10 +157,10 @@ public class DocService {
         // 推送消息
         Doc docDb = docMapper.selectByPrimaryKey(id);
         webSocketServer.sendInfo("【" + docDb.getName() + "】被点赞！");
+
     }
 
     public void updateEbookInfo() {
         docMapperCust.updateEbookInfo();
     }
 }
-
