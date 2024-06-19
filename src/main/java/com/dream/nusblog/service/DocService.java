@@ -155,15 +155,16 @@ public class DocService {
         // 远程IP+doc.id作为key，24小时内不能重复
         String ip = RequestContext.getRemoteAddr();
         if (redisUtil.validateRepeat("DOC_VOTE_" + id + "_" + ip, 3600 * 24)) {
+
             docMapperCust.increaseVoteCount(id);
+
+            // 推送消息
+            Doc docDb = docMapper.selectByPrimaryKey(id);
+            String logId = MDC.get("LOG_ID");
+            wsService.sendInfo("【" + docDb.getName() + "】is liked！", logId);
         } else {
             throw new BusinessException(BusinessExceptionCode.VOTE_REPEAT);
         }
-
-        // 推送消息
-        Doc docDb = docMapper.selectByPrimaryKey(id);
-        String logId = MDC.get("LOG_ID");
-        wsService.sendInfo("【" + docDb.getName() + "】被点赞！", logId);
 
     }
 

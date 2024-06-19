@@ -371,8 +371,16 @@ on different threads
 ```
  a powerful annotation that prevents database get into an inconsistent state, whenever exceptions
  occurs the execution rolls back. It wouldn't work when the method is used by another method
- in the same service cla  ss
+ in the same service class
 
+
+# JUNE 19th
+
+```$xslt
+  unique key `ebook_id_date_unique` (`ebook_id`, `date`)
+```
+unique keyword in database can promise there's only one record and keep get updated instead of
+creating a new one for the same record
 ## Project setup
 ```
 npm install
