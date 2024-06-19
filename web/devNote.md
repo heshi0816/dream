@@ -371,7 +371,7 @@ on different threads
 ```
  a powerful annotation that prevents database get into an inconsistent state, whenever exceptions
  occurs the execution rolls back. It wouldn't work when the method is used by another method
- in the same service class
+ in the same service cla  ss
 
 ## Project setup
 ```
