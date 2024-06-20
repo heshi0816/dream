@@ -381,6 +381,11 @@ on different threads
 ```
 unique keyword in database can promise there's only one record and keep get updated instead of
 creating a new one for the same record
+
+#JUNE 20th
+ 
+
+any external compnents that does not belong to vues needs to be declared first
 ## Project setup
 ```
 npm install
