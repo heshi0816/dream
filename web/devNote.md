@@ -383,9 +383,11 @@ unique keyword in database can promise there's only one record and keep get upda
 creating a new one for the same record
 
 #JUNE 20th
- 
-
+ ```$xslt
+    declare let echarts: any;
+```
 any external compnents that does not belong to vues needs to be declared first
+  
 ## Project setup
 ```
 npm install
