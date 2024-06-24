@@ -1,3 +1,30 @@
+#JUNE 23th
+服務器sql版本是5.7，不支持8.0的utf8mb4_0900_ai_ci 校对规则，
+导致用8.0的sql文件创建的ebook表的id变为int而不是bigint，
+从而导致装不下雪花算法产生的32为的id而不能新增加数据。改变的方方法是用mysql5.0支持的语法来创建ebook表。
+可以使用 utf8mb4_unicode_ci 或 utf8mb4_general_ci，这些是在更早版本的 MySQL 中普遍支持的校对规则来创建ebook表。
+ ```$xslt
+    CREATE TABLE `ebook` (
+       `id` bigint NOT NULL COMMENT 'id',
+       `name` varchar(50) DEFAULT NULL COMMENT '名称',
+       `category1_id` bigint DEFAULT NULL COMMENT '分类1',
+       `category2_id` bigint DEFAULT NULL COMMENT '分类2',
+       `description` varchar(200) DEFAULT NULL COMMENT '描述',
+       `cover` varchar(200) DEFAULT NULL COMMENT '封面',
+       `doc_count` int DEFAULT NULL COMMENT '文档数',
+       `view_count` int DEFAULT NULL COMMENT '阅读数',
+       `vote_count` int DEFAULT NULL COMMENT '点赞数',
+       PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='电子书';
+
+```
+要把创建数据库的sql文件中的将 COLLATE=utf8mb4_0900_ai_ci 都更改为 COLLATE=utf8mb4_unicode_ci。
+原all.sql未加特定校验规制，为了在sql5.0服务器正常使用，可以用gpt把all.sql加上COLLATE=utf8mb4_unicode_ci校验就可以了。
+已经用这种方式把all.sql修改为all-gai-saq5-1.sql文件，经测试可用。
+另一个的办法是把服务器的sql升级为8.0版本，这样保证其他表也不会出错。
+## Project setup
+```
+
 ## gpt出现问题，可以清除浏览器缓存在使用。
 # 一.数据库服务器重启
 ## 数据库服务器ID=1dc4beefef0f
