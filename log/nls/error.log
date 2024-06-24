@@ -1,0 +1,14 @@
+2024-06-25 00:06:47.369 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter   40   restartedMain                     
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 18000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 18000 or configure this application to listen on another port.
+

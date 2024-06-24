@@ -1,0 +1,66 @@
+2024-06-25 00:06:44.612 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 20820 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-06-25 00:06:44.615 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-06-25 00:06:44.662 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-25 00:06:44.662 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-25 00:06:45.558 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 10924 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-06-25 00:06:45.560 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-06-25 00:06:45.600 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-25 00:06:45.600 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-25 00:06:45.790 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-06-25 00:06:45.799 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:06:45.801 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-06-25 00:06:45.801 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-06-25 00:06:45.857 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-06-25 00:06:45.857 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1194 ms
+2024-06-25 00:06:46.510 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-06-25 00:06:46.524 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:06:46.543 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-06-25 00:06:46.552 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 2.459 seconds (process running for 3.415)
+2024-06-25 00:06:46.555 INFO  com.heshi.nls.business.BusinessApplication         14   restartedMain                     启动成功！
+2024-06-25 00:06:46.555 INFO  com.heshi.nls.business.BusinessApplication         15   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-06-25 00:06:46.626 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-06-25 00:06:46.634 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:06:46.635 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-06-25 00:06:46.636 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-06-25 00:06:46.685 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-06-25 00:06:46.686 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1086 ms
+2024-06-25 00:06:47.319 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer     62   restartedMain                     Unable to start LiveReload server
+2024-06-25 00:06:47.332 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:06:47.335 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 624  restartedMain                     Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-06-25 00:06:47.339 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Pausing ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:06:47.339 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Stopping service [Tomcat]
+2024-06-25 00:06:47.344 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Stopping ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:06:47.345 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Destroying ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:06:47.351 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger    82   restartedMain                     
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-25 00:06:47.369 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter   40   restartedMain                     
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 18000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 18000 or configure this application to listen on another port.
+
+2024-06-25 00:07:11.122 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 6256 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-06-25 00:07:11.124 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-06-25 00:07:11.165 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-25 00:07:11.166 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-25 00:07:12.197 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-06-25 00:07:12.205 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:07:12.207 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-06-25 00:07:12.207 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-06-25 00:07:12.258 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-06-25 00:07:12.259 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1092 ms
+2024-06-25 00:07:12.941 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-06-25 00:07:12.955 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-06-25 00:07:12.973 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-06-25 00:07:12.982 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 2.327 seconds (process running for 2.824)
+2024-06-25 00:07:12.984 INFO  com.heshi.nls.business.BusinessApplication         14   restartedMain                     启动成功！
+2024-06-25 00:07:12.985 INFO  com.heshi.nls.business.BusinessApplication         15   restartedMain                     测试地址：http://localhost:18000/nls/hello
