@@ -7,7 +7,7 @@ Accept: application/json
 
 ###
 
-GET http://localhost:18000/nls/query
+GET http://localhost:18000/nls/query?mobile=1
 Accept: application/json
 
 ###
