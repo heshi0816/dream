@@ -24,7 +24,9 @@ import TheSider from "../components/the-sider.vue";
 import axios from "axios";
 
 axios.get("http://localhost:18000/nls/query", {
-  mobile: "1"
+  params: {
+    mobile: "1"
+  }
 }).then(response => {
   console.log(response);
 })
