@@ -12,7 +12,8 @@
         <a-layout-content
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
-          Content
+          {{ resp }}
+          <a-input v-model:value="resp" @change="onChange"/>
         </a-layout-content>
       </a-layout>
     </a-layout>
@@ -22,15 +23,30 @@
 import TheHeader from "../components/the-header.vue";
 import TheSider from "../components/the-sider.vue";
 import axios from "axios";
+import {ref} from "vue";
+import {message} from "ant-design-vue";
 
-axios.get("http://localhost:18000/nls/query", {
+const resp = ref();
+
+axios.get("/nls/query", {
   params: {
     mobile: "1"
   }
 }).then(response => {
   // console.log(response);
+  let data = response.data
+  if (data.success) {
+    resp.value = data.content;
+  } else {
+    message.error(data.message)
+  }
 })
+
+const onChange = () => {
+  console.log(resp.value)
+}
 </script>
+
 <style scoped>
 .site-layout-background {
   background: #fff;
