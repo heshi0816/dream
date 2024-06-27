@@ -42,6 +42,7 @@
                              type="XMLMAPPER"/>
 
         <!--<table tableName="demo" domainObjectName="Demo"/>-->
-        <table tableName="sms_code" domainObjectName="SmsCode"/>
+        <!--<table tableName="sms_code" domainObjectName="SmsCode"/>-->
+        <table tableName="member" domainObjectName="Member"/>
     </context>
 </generatorConfiguration>
