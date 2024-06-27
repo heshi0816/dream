@@ -3,9 +3,11 @@ package com.heshi.nls.business.service;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
+import com.heshi.nls.business.domain.Member;
 import com.heshi.nls.business.domain.SmsCode;
 import com.heshi.nls.business.domain.SmsCodeExample;
 import com.heshi.nls.business.enums.SmsCodeStatusEnum;
+import com.heshi.nls.business.enums.SmsCodeUseEnum;
 import com.heshi.nls.business.exception.BusinessException;
 import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.SmsCodeMapper;
@@ -27,7 +29,18 @@ public class SmsCodeService {
      * @param mobile 手机号
      * @param use 用途
      */
-    public void sendCode(String mobile, String use) {
+    @Resource
+    private MemberService memberService;
+
+    public void sendCodeForRegister(String mobile) {
+        Member member = memberService.selectByMobile(mobile);
+        if (member != null) {
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_HAD_REGISTER);
+        }
+        sendCode(mobile, SmsCodeUseEnum.REGISTER.getCode());
+    }
+
+    private void sendCode(String mobile, String use) {
         Date now = new Date();
         String code = RandomUtil.randomNumbers(6);
 

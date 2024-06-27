@@ -22,7 +22,7 @@ public class WebSmsCodeController {
     //@RequestBody allows the input to be a json body, @Valid allows the limit you grant on the field in request
     @PostMapping("/send-for-register")
     public CommonResp<Object> sendForRegister(@Valid @RequestBody RegisterSmsCodeReq req) {
-        smsCodeService.sendCode(req.getMobile(), SmsCodeUseEnum.REGISTER.getCode());
+        smsCodeService.sendCodeForRegister(req.getMobile());
         return new CommonResp<>();
     }
 }
