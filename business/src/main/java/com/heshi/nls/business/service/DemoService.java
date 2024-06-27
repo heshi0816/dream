@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
 import com.heshi.nls.business.domain.Demo;
 import com.heshi.nls.business.domain.DemoExample;
+import com.heshi.nls.business.enums.SmsCodeStatusEnum;
 import com.heshi.nls.business.exception.BusinessException;
 import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.DemoMapper;
@@ -39,6 +40,7 @@ public class DemoService {
         if (StrUtil.isBlank(mobile)) {
             throw new BusinessException(BusinessExceptionEnum.DEMO_MOBILE_NOT_NULL);
         }
+        SmsCodeStatusEnum.USED.getCode();
         criteria.andMobileEqualTo(mobile);
         List<Demo> list = demoMapper.selectByExample(demoExample);
         return BeanUtil.copyToList(list, DemoQueryResp.class);

@@ -41,6 +41,7 @@
                              targetPackage="com.heshi.nls.business.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="demo" domainObjectName="Demo"/>
+        <!--<table tableName="demo" domainObjectName="Demo"/>-->
+        <table tableName="sms_code" domainObjectName="SmsCode"/>
     </context>
 </generatorConfiguration>
