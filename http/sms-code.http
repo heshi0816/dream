@@ -1,0 +1,6 @@
+POST http://localhost:18000/nls/web/sms-code/send-for-register?mobile=123
+Content-Type: application/x-www-form-urlencoded
+
+
+
+###
