@@ -13,7 +13,7 @@
         >
           <a-form-item
               name="mobile" class="form-item"
-              :rules="[{ required: true, message: '请输入手机号' }]"
+              :rules="[{ required: true, message: '请输入手机号', trigger: 'blur' }, { pattern: /^\d{11}$/, message: '手机号为11位数字', trigger: 'blur' }]"
           >
             <a-input v-model:value="registerMember.mobile" placeholder="手机号" size="large">
               <template #prefix>
@@ -22,12 +22,14 @@
             </a-input>
           </a-form-item>
 
-          <a-form-item name="code" class="form-item">
+          <a-form-item name="code" class="form-item"
+                       :rules="[{ required: true, message: '请输入短信验证码', trigger: 'blur' }]">
             <a-input-search
                 v-model:value="registerMember.code"
                 placeholder="短信验证码"
                 :enter-button="sendText"
                 @search="sendRegisterSmsCode"
+                :loading="sendBtnLoading"
             >
               <template #prefix>
                 <MessageOutlined style="margin-left: 15px"/>
@@ -36,8 +38,8 @@
           </a-form-item>
 
           <a-form-item
-              name="password" class="form-item"
-              :rules="[{ required: true, message: '请输入密码' }]"
+              name="passwordOri" class="form-item"
+              :rules="[{ required: true, message: '请输入密码', trigger: 'blur' }, { pattern: /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/, message: '密码包含数字和英文，长度6-20', trigger: 'blur' }]"
           >
             <a-input-password v-model:value="registerMember.passwordOri" placeholder="密码" size="large">
               <template #prefix>
@@ -47,7 +49,7 @@
           </a-form-item>
 
           <a-form-item
-              name="password" class="form-item"
+              name="passwordConfirm" class="form-item"
               :rules="[{ required: true, message: '请输入确认密码' }]"
           >
             <a-input-password v-model:value="registerMember.passwordConfirm" placeholder="确认密码" size="large">
@@ -72,16 +74,75 @@
 </template>
 <script setup>
 import { ref } from 'vue';
+import axios from "axios";
+import {message} from "ant-design-vue";
+import {useRouter} from "vue-router";
+
+let router = useRouter();
+
 const registerMember = ref({
   mobile: '',
+  code: '',
+  password: '',
   passwordOri: '',
   passwordConfirm: ''
 });
 const register = values => {
   console.log('开始注册:', values);
+  if (registerMember.value.passwordOri !== registerMember.value.passwordConfirm) {
+    message.error("密码和确认密码不一致!");
+    return;
+  }
+  registerMember.value.password = registerMember.value.passwordOri
+  axios.post("/nls/web/member/register", {
+    mobile: registerMember.value.mobile,
+    code: registerMember.value.code,
+    password: registerMember.value.password,
+  }).then(response => {
+    let data = response.data;
+    if (data.success) {
+      message.success("注册成功！");
+      router.push("/login");
+    } else {
+      message.error(data.message);
+    }
+  })
+};
+
+// ----------- 短信验证码 --------------------
+const sendBtnLoading = ref(false);
+const sendText = ref("获取验证码");
+const COUNTDOWN = 5;
+let countdown = ref(COUNTDOWN);
+const setTime = () => {
+  if (countdown.value === 0) {
+    sendBtnLoading.value = false;
+    sendText.value = "获取验证码";
+    countdown.value = COUNTDOWN;
+    return;
+  } else {
+    sendBtnLoading.value = true;
+    sendText.value = "重新发送(" + countdown.value + ")";
+    countdown.value--;
+  }
+  setTimeout(function () {
+    setTime();
+  }, 1000);
 };
 const sendRegisterSmsCode = () => {
   console.log('发送短信验证码:');
+  sendBtnLoading.value = true;
+  axios.post("/nls/web/sms-code/send-for-register", {
+    mobile: registerMember.value.mobile
+  }).then(response => {
+    let data = response.data;
+    if (data.success) {
+      setTime();
+      message.success("短信发送成功！");
+    } else {
+      sendBtnLoading.value = false;
+      message.error(data.message);
+    }
+  })
 };
-const sendText = ref("获取验证码");
 </script>
