@@ -1,4 +1,4 @@
-package com.heshi.nls.business.controller;
+package com.heshi.nls.business.controller.web;
 
 import cn.hutool.crypto.digest.DigestUtil;
 import com.heshi.nls.business.enums.SmsCodeUseEnum;

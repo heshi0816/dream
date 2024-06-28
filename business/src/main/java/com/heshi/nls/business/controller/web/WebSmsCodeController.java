@@ -1,8 +1,8 @@
-package com.heshi.nls.business.controller;
+package com.heshi.nls.business.controller.web;
 
-import com.heshi.nls.business.enums.SmsCodeUseEnum;
 import com.heshi.nls.business.req.RegisterSmsCodeReq;
 import com.heshi.nls.business.resp.CommonResp;
+import com.heshi.nls.business.service.KaptchaService;
 import com.heshi.nls.business.service.SmsCodeService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
@@ -18,10 +18,15 @@ public class WebSmsCodeController {
     @Resource
     private SmsCodeService smsCodeService;
 
+    @Resource
+    private KaptchaService kaptchaService;
 
-    //@RequestBody allows the input to be a json body, @Valid allows the limit you grant on the field in request
     @PostMapping("/send-for-register")
     public CommonResp<Object> sendForRegister(@Valid @RequestBody RegisterSmsCodeReq req) {
+
+        // 校验图片验证码，防止短信攻击，不加的话，只能防止同一手机攻击，加上图片验证码，可防止不同的手机号攻击
+        kaptchaService.validCode(req.getImageCode(), req.getImageCodeToken());
+
         smsCodeService.sendCodeForRegister(req.getMobile());
         return new CommonResp<>();
     }
