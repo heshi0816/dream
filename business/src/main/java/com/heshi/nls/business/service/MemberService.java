@@ -1,7 +1,9 @@
 package com.heshi.nls.business.service;
 
+import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
+import cn.hutool.jwt.JWTUtil;
 import com.heshi.nls.business.domain.Member;
 import com.heshi.nls.business.domain.MemberExample;
 import com.heshi.nls.business.exception.BusinessException;
@@ -16,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Slf4j
@@ -71,7 +74,12 @@ public class MemberService {
             log.info("登录成功，{}", req.getMobile());
             MemberLoginResp memberLoginResp = new MemberLoginResp();
             memberLoginResp.setName(memberDB.getName());
-            memberLoginResp.setToken("");
+
+            Map<String, Object> map = BeanUtil.beanToMap(memberLoginResp);
+            // 密钥/盐值
+            String key = "JiawaNLS";
+            String token = JWTUtil.createToken(map, key.getBytes());
+            memberLoginResp.setToken(token);
             return memberLoginResp;
         } else {
             log.warn("密码错误，{}", req.getMobile());
