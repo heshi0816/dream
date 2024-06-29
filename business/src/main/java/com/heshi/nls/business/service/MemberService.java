@@ -3,7 +3,6 @@ package com.heshi.nls.business.service;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
-import cn.hutool.jwt.JWTUtil;
 import com.heshi.nls.business.domain.Member;
 import com.heshi.nls.business.domain.MemberExample;
 import com.heshi.nls.business.exception.BusinessException;
@@ -12,6 +11,7 @@ import com.heshi.nls.business.mapper.MemberMapper;
 import com.heshi.nls.business.req.MemberLoginReq;
 import com.heshi.nls.business.req.MemberRegisterReq;
 import com.heshi.nls.business.resp.MemberLoginResp;
+import com.heshi.nls.business.util.JwtUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -20,8 +20,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-@Service
 @Slf4j
+@Service
 public class MemberService {
 
     @Resource
@@ -44,6 +44,9 @@ public class MemberService {
         }
     }
 
+    /**
+     * 注册
+     */
     public void register(MemberRegisterReq req) {
         Date now = new Date();
         String mobile = req.getMobile();
@@ -61,6 +64,9 @@ public class MemberService {
         memberMapper.insert(member);
     }
 
+    /**
+     * 登录
+     */
     public MemberLoginResp login(MemberLoginReq req) {
         Member memberDB = selectByMobile(req.getMobile());
         if (memberDB == null) {
@@ -68,17 +74,13 @@ public class MemberService {
             throw new BusinessException(BusinessExceptionEnum.MEMBER_LOGIN_ERROR);
         }
 
-        log.info(memberDB.getPassword());
-        log.info(req.getPassword());
         if (memberDB.getPassword().equalsIgnoreCase(req.getPassword())) {
             log.info("登录成功，{}", req.getMobile());
             MemberLoginResp memberLoginResp = new MemberLoginResp();
             memberLoginResp.setName(memberDB.getName());
 
             Map<String, Object> map = BeanUtil.beanToMap(memberLoginResp);
-            // 密钥/盐值
-            String key = "JiawaNLS";
-            String token = JWTUtil.createToken(map, key.getBytes());
+            String token = JwtUtil.createLoginToken(map);
             memberLoginResp.setToken(token);
             return memberLoginResp;
         } else {
@@ -87,4 +89,5 @@ public class MemberService {
         }
 
     }
+
 }
