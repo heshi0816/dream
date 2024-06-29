@@ -422,8 +422,61 @@ in case any authenication error
 npm install
 ```
 
+#June 25th
 
+```aidl
+@ResponseBody
+```
+make the method returning a "response" without this annotation the api returns a web.
+
+#June 26th
+```aidl
+    @ExceptionHandler(value = Exception.class)
+    @ResponseBody
+    public CommonResp<Object> exceptionHandler(Exception e) {
+        CommonResp<Object> commonResp = new CommonResp<>();
+        log.error("系统异常：", e);
+        commonResp.setSuccess(false);
+        commonResp.setMessage("系统出现异常，请联系管理员");
+        return commonResp;
+    }
+```
+@ExceptionHandler interceptes the specified Exception type in value and execute the function
+
+```
+nvm install
+nvm use
+nvm list
+```
+nvm is the tool that can freely switch different versions of the node.js
+first download the nvm tool configure nvm tool in the environment variable. Then use nvm install to download
+different versions of node.js. To use the wanted versions you also have to put them in environment configuration.
+then restart all the intellij. Through using the "nvm list" you can check your current node.js version and what other
+options do you have. Use the "nvm use" switch from one version to another.
+
+
+#JUNE 27th
+
+```aidl
+@Configuration
+public class CorsConfig implements WebMvcConfigurer {
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOriginPatterns("*")
+                .allowedHeaders(CorsConfiguration.ALL)
+                .allowedMethods(CorsConfiguration.ALL)
+                .allowCredentials(true)
+                .maxAge(3600); // 1小时内不需要再预检（发OPTIONS请求）
+    }
+
+}
+```
+CorseConfig file solves the cross domain problem in between frontend and backend
 ### Compiles and hot-reloads for development
+
+environment file should be under the web folder otherwise environment variable can't be find
 ```
 npm run serve
 ```
