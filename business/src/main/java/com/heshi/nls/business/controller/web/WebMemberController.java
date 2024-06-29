@@ -2,8 +2,10 @@ package com.heshi.nls.business.controller.web;
 
 import cn.hutool.crypto.digest.DigestUtil;
 import com.heshi.nls.business.enums.SmsCodeUseEnum;
+import com.heshi.nls.business.req.MemberLoginReq;
 import com.heshi.nls.business.req.MemberRegisterReq;
 import com.heshi.nls.business.resp.CommonResp;
+import com.heshi.nls.business.resp.MemberLoginResp;
 import com.heshi.nls.business.service.MemberService;
 import com.heshi.nls.business.service.SmsCodeService;
 import jakarta.annotation.Resource;
@@ -27,7 +29,7 @@ public class WebMemberController {
 
     @PostMapping("/register")
     public CommonResp<Object> register(@Valid @RequestBody MemberRegisterReq req) {
-        req.setPassword(DigestUtil.md5Hex(req.getPassword()));
+        req.setPassword(DigestUtil.md5Hex(req.getPassword().toLowerCase()));
 
         log.info("会员注册开始：{}", req.getMobile());
 
@@ -36,5 +38,15 @@ public class WebMemberController {
 
         memberService.register(req);
         return new CommonResp<>();
+    }
+
+    @PostMapping("/login")
+    public CommonResp<MemberLoginResp> login(@Valid @RequestBody MemberLoginReq req) {
+        req.setPassword(DigestUtil.md5Hex(req.getPassword().toLowerCase()));
+
+        log.info("会员登录开始：{}", req.getMobile());
+        MemberLoginResp memberLoginResp = memberService.login(req);
+
+        return new CommonResp<>(memberLoginResp);
     }
 }

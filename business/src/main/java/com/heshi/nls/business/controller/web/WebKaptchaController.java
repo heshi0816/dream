@@ -1,21 +1,16 @@
 package com.heshi .nls.business.controller.web;
 
-import cn.hutool.crypto.digest.DigestUtil;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
-import com.heshi.nls.business.enums.SmsCodeUseEnum;
-import com.heshi.nls.business.req.MemberRegisterReq;
-import com.heshi.nls.business.resp.CommonResp;
-import com.heshi.nls.business.service.MemberService;
-import com.heshi.nls.business.service.SmsCodeService;
 import jakarta.annotation.Resource;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -63,28 +58,4 @@ public class WebKaptchaController {
         responseOutputStream.close();
     }
 
-    @Slf4j
-    @RestController
-    @RequestMapping("/web/member")
-    public static class WebMemberController {
-
-        @Resource
-        private MemberService memberService;
-
-        @Resource
-        private SmsCodeService smsCodeService;
-
-        @PostMapping("/register")
-        public CommonResp<Object> register(@Valid @RequestBody MemberRegisterReq req) {
-            req.setPassword(DigestUtil.md5Hex(req.getPassword()));
-
-            log.info("会员注册开始：{}", req.getMobile());
-
-            smsCodeService.validCode(req.getMobile(), SmsCodeUseEnum.REGISTER.getCode(), req.getCode());
-            log.info("注册验证码校验通过：{}", req.getMobile());
-
-            memberService.register(req);
-            return new CommonResp<>();
-        }
-    }
 }

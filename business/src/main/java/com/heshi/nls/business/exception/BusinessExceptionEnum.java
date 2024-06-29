@@ -12,6 +12,8 @@ public enum BusinessExceptionEnum {
     IMAGE_CODE_ERROR("图片验证码不正确或已过期"),
 
     MEMBER_MOBILE_HAD_REGISTER("手机号已注册"),
+    MEMBER_LOGIN_ERROR("手机号未注册或密码错误"),
+
 ;
     @Getter
     private final String desc;
