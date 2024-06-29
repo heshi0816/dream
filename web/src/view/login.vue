@@ -49,11 +49,28 @@
 </template>
 <script setup>
 import { ref } from 'vue';
+import axios from "axios";
+import {message} from "ant-design-vue";
+import {useRouter} from "vue-router";
+
+let router = useRouter();
+
 const loginMember = ref({
   mobile: '',
   password: ''
 });
 const login = values => {
-  console.log('开始登录:', values);
+  axios.post("/nls/web/member/login", {
+    mobile: loginMember.value.mobile,
+    password: hexMd5Key(loginMember.value.password),
+  }).then(response => {
+    let data = response.data;
+    if (data.success) {
+      message.success("登录成功！");
+      router.push("/home");
+    } else {
+      message.error(data.message);
+    }
+  })
 };
 </script>
