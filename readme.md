@@ -87,15 +87,8 @@ Completed backend managing system: the backend admin can check the statistics fr
 9
 deploy to the cloud for users to test and use: the web will be eventually deployed on a cloud server and we are super grateful for anybody who wants to use and test our web.
 Website running preview picture
-image
-image
-image
-image
-image
-image
-image
-image
-image
+![Uploading screenshot-1719760137593.png…]()
+
 Getting Started
 Reference Documentation
 For further reference, please consider the following sections:
