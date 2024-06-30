@@ -1,4 +1,4 @@
-![screenshot-1719760340824](https://github.com/heshi0816/dream/assets/169445335/b2645db9-ac94-4858-b181-0c10a476102e)
+
 software display address http://8.137.95.225:8080/
 administrators' access
 **Username: admin
@@ -87,7 +87,13 @@ Completed backend managing system: the backend admin can check the statistics fr
 9
 deploy to the cloud for users to test and use: the web will be eventually deployed on a cloud server and we are super grateful for anybody who wants to use and test our web.
 Website running preview picture
-![Uploading screenshot-1719760137593.png…]()
+![screenshot-1719760340824](https://github.com/heshi0816/dream/blob/nusblog/web/public/image/screenshot-1719760137593.png)
+![screenshot-1719760340824](https://github.com/heshi0816/dream/assets/169445335/b2645db9-ac94-4858-b181-0c10a476102e)
+![screenshot-1719760340824](https://github.com/heshi0816/dream/blob/nusblog/web/public/image/screenshot-1719760156574.png)
+![screenshot-1719760340824](https://github.com/heshi0816/dream/blob/nusblog/web/public/image/screenshot-1719760180383.png)
+![screenshot-1719760340824](https://github.com/heshi0816/dream/blob/nusblog/web/public/image/screenshot-1719760195316.png)
+![screenshot-1719760340824](https://github.com/heshi0816/dream/blob/nusblog/web/public/image/screenshot-1719760231322.png)
+![screenshot-1719760340824](https://github.com/heshi0816/dream/blob/nusblog/web/public/image/screenshot-1719760256520.png)
 
 Getting Started
 Reference Documentation
