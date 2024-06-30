@@ -9,12 +9,12 @@
                         <a-form layout="inline" :model="param">
                             <a-form-item>
                                 <a-button type="primary" @click="handleQuery()">
-                                    查询
+                                    search
                                 </a-button>
                             </a-form-item>
                             <a-form-item>
                                 <a-button type="primary" @click="add()">
-                                    新增
+                                    add
                                 </a-button>
                             </a-form-item>
                         </a-form>
@@ -35,16 +35,16 @@
                         <template v-slot:action="{ text, record }">
                             <a-space size="small">
                                 <a-button type="primary" @click="edit(record)" size="small">
-                                    编辑
+                                    edit
                                 </a-button>
                                 <a-popconfirm
-                                        title="删除后不可恢复，确认删除?"
-                                        ok-text="是"
-                                        cancel-text="否"
+                                        title="confirm the delete?"
+                                        ok-text="yes"
+                                        cancel-text="no"
                                         @confirm="handleDelete(record.id)"
                                 >
                                     <a-button type="danger" size="small">
-                                        删除
+                                        delete
                                     </a-button>
                                 </a-popconfirm>
                             </a-space>
@@ -56,14 +56,14 @@
                         <a-form layout="inline" :model="param">
                             <a-form-item>
                                 <a-button type="primary" @click="handleSave()">
-                                    保存
+                                    save
                                 </a-button>
                             </a-form-item>
                         </a-form>
                     </p>
                     <a-form :model="doc" layout="vertical">
                         <a-form-item>
-                            <a-input v-model:value="doc.name" placeholder="名称"/>
+                            <a-input v-model:value="doc.name" placeholder="name"/>
                         </a-form-item>
                         <a-form-item>
                             <a-tree-select
@@ -71,18 +71,18 @@
                                     style="width: 100%"
                                     :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
                                     :tree-data="treeSelectData"
-                                    placeholder="请选择父文档"
+                                    placeholder="select parent category"
                                     tree-default-expand-all
                                     :replaceFields="{title: 'name', key: 'id', value: 'id'}"
                             >
                             </a-tree-select>
                         </a-form-item>
                         <a-form-item>
-                            <a-input v-model:value="doc.sort" placeholder="顺序"/>
+                            <a-input v-model:value="doc.sort" placeholder="priority"/>
                         </a-form-item>
                         <a-form-item>
                             <a-button type="primary" @click="handlePreviewContent()">
-                                <EyeOutlined /> 内容预览
+                                <EyeOutlined /> content preview
                             </a-button>
                         </a-form-item>
                         <a-form-item>
@@ -139,7 +139,7 @@
 
             const columns = [
                 {
-                    title: '名称',
+                    title: 'name',
                     dataIndex: 'name',
                     slots: { customRender: 'name' }
                 },
@@ -183,12 +183,12 @@
                         console.log("树形结构：", level1);
 
                         if (level1.value.length === 0) {
-                            treeSelectData.value = [{id: 0, name: '无'}];
+                            treeSelectData.value = [{id: 0, name: 'none'}];
                         } else {
                             // 父文档下拉框初始化，相当于点击新增
                             treeSelectData.value = Tool.copy(level1.value);
                             // 为选择树添加一个"无"
-                            treeSelectData.value.unshift({id: 0, name: '无'});
+                            treeSelectData.value.unshift({id: 0, name: 'none'});
                         }
                     } else {
                         message.error(data.message);
@@ -214,7 +214,7 @@
                     const data = response.data; // data = commonResp
                     if (data.success) {
                         // modalVisible.value = false;
-                        message.success("保存成功！");
+                        message.success("save successfully！");
 
                         // 重新加载列表
                         handleQuery();
@@ -319,7 +319,7 @@
                 setDisable(treeSelectData.value, record.id);
 
                 // 为选择树添加一个"无"
-                treeSelectData.value.unshift({id: 0, name: '无'});
+                treeSelectData.value.unshift({id: 0, name: 'none'});
             };
 
             /**
@@ -330,16 +330,17 @@
                 editor.txt.html("");
                 modalVisible.value = true;
                 doc.value = {
-                    ebookId: route.query.ebookId
+                    ebookId: route.query.ebookId,
+                    sort: 0
                 };
 
 
                 if (level1.value.length === 0) {
-                    treeSelectData.value = [{id: 0, name: '无'}];
+                    treeSelectData.value = [{id: 0, name: 'none'}];
                 } else {
                     // 为选择树添加一个"无"
                     treeSelectData.value = Tool.copy(level1.value);
-                    treeSelectData.value.unshift({id: 0, name: '无'});
+                    treeSelectData.value.unshift({id: 0, name: 'none'});
                 }
             };
 
@@ -350,9 +351,9 @@
                 deleteNames.length = 0;
                 getDeleteIds(level1.value, id);
                 Modal.confirm({
-                    title: '重要提醒',
+                    title: 'reminder',
                     icon: createVNode(ExclamationCircleOutlined),
-                    content: '将删除：【' + deleteNames.join("，") + "】删除后不可恢复，确认删除？",
+                    content: 'delete：【' + deleteNames.join("，") + "】confirm the delete？",
                     onOk() {
                         // console.log(ids)
                         axios.delete("/doc/delete/" + deleteIds.join(",")).then((response) => {

@@ -1,6 +1,6 @@
 <template>
     <a-layout-footer style="text-align: center">
-        甲蛙电子书<span v-show="user.id">，欢迎：{{user.name}}</span>
+        <span v-show="user.id">，welcome：{{user.name}}</span>
     </a-layout-footer>
 </template>
 
@@ -23,7 +23,7 @@
             const onMessage = (event: any) => {
                 console.log('WebSocket收到消息：', event.data);
                 notification['info']({
-                    message: '收到消息',
+                    message: 'recieve information',
                     description: event.data,
                 });
             };

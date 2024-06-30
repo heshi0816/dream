@@ -7,12 +7,12 @@
                 <a-form layout="inline" :model="param">
                     <a-form-item>
                         <a-button type="primary" @click="handleQuery()">
-                            查询
+                            search
                         </a-button>
                     </a-form-item>
                     <a-form-item>
                         <a-button type="primary" @click="add()">
-                            新增
+                            add
                         </a-button>
                     </a-form-item>
                 </a-form>
@@ -30,16 +30,16 @@
                 <template v-slot:action="{ text, record }">
                     <a-space size="small">
                         <a-button type="primary" @click="edit(record)">
-                            编辑
+                            edit
                         </a-button>
                         <a-popconfirm
-                                title="删除后不可恢复，确认删除?"
-                                ok-text="是"
-                                cancel-text="否"
+                                title="confirm the delete?"
+                                ok-text="yes"
+                                cancel-text="no"
                                 @confirm="handleDelete(record.id)"
                         >
                             <a-button type="danger">
-                                删除
+                                delete
                             </a-button>
                         </a-popconfirm>
                     </a-space>
@@ -49,29 +49,29 @@
     </a-layout>
 
     <a-modal
-            title="分类表单"
+            title="new category"
             v-model:visible="modalVisible"
             :confirm-loading="modalLoading"
             @ok="handleModalOk"
     >
         <a-form :model="category" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
-            <a-form-item label="名称">
+            <a-form-item label="name">
                 <a-input v-model:value="category.name" />
             </a-form-item>
-            <a-form-item label="父分类">
+            <a-form-item label="parent category">
                 <a-select
                         v-model:value="category.parent"
                         ref="select"
                 >
                     <a-select-option value="0">
-                        无
+                        none
                     </a-select-option>
                     <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="category.id === c.id">
                         {{c.name}}
                     </a-select-option>
                 </a-select>
             </a-form-item>
-            <a-form-item label="顺序">
+            <a-form-item label="priority">
                 <a-input v-model:value="category.sort" />
             </a-form-item>
         </a-form>
@@ -94,16 +94,16 @@
 
             const columns = [
                 {
-                    title: '名称',
+                    title: 'name',
                     dataIndex: 'name'
                 },
                 {
-                    title: '父分类',
+                    title: 'parent',
                     key: 'parent',
                     dataIndex: 'parent'
                 },
                 {
-                    title: '顺序',
+                    title: 'priority',
                     dataIndex: 'sort'
                 },
                 {
@@ -182,7 +182,7 @@
              */
             const add = () => {
                 modalVisible.value = true;
-                category.value = {};
+                category.value = {sort: 0};
             };
 
             const handleDelete = (id: number) => {

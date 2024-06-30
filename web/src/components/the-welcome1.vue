@@ -1,33 +1,34 @@
 <template>
+
     <div>
-        <div class="carousel">
-            <div class="carousel-inner">
-                <img src="https://github.com/heshi0816/dream/blob/branch_he/user/src/main/resources/static/map/65eebfe46a70534320b78c56.jpg?raw=true" alt="Image 1">
-                <img src="https://github.com/heshi0816/dream/blob/branch_he/user/src/main/resources/static/map/h3.jpg?raw=true" alt="Image 2">
-                <img src="https://github.com/heshi0816/dream/blob/branch_he/user/src/main/resources/static/map/carousel1.c6ea8933ef46f1dcbbcc.jpeg?raw=true" alt="Image 3">
-            </div>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <img src="https://github.com/heshi0816/dream/blob/branch_he/user/src/main/resources/static/map/65eebfe46a70534320b78c56.jpg?raw=true" alt="Image 1">
+          <img src="https://github.com/heshi0816/dream/blob/branch_he/user/src/main/resources/static/map/h3.jpg?raw=true" alt="Image 2">
+          <img src="https://github.com/heshi0816/dream/blob/branch_he/user/src/main/resources/static/map/carousel1.c6ea8933ef46f1dcbbcc.jpeg?raw=true" alt="Image 3">
         </div>
+      </div>
 
         <a-row>
             <a-col :span="24">
                 <a-card>
                     <a-row>
                         <a-col :span="8">
-                            <a-statistic title="total viewCount" :value="statistic.viewCount">
+                            <a-statistic title="总阅读量" :value="statistic.viewCount">
                                 <template #suffix>
                                     <UserOutlined />
                                 </template>
                             </a-statistic>
                         </a-col>
                         <a-col :span="8">
-                            <a-statistic title="total voteCount" :value="statistic.voteCount">
+                            <a-statistic title="总点赞量" :value="statistic.voteCount">
                                 <template #suffix>
                                     <like-outlined />
                                 </template>
                             </a-statistic>
                         </a-col>
                         <a-col :span="8">
-                            <a-statistic title="rate of like" :value="statistic.voteCount / statistic.viewCount * 100"
+                            <a-statistic title="点赞率" :value="statistic.voteCount / statistic.viewCount * 100"
                                          :precision="2"
                                          suffix="%"
                                          :value-style="{ color: '#cf1322' }">
@@ -46,14 +47,14 @@
                 <a-card>
                     <a-row>
                         <a-col :span="12">
-                            <a-statistic title="today's viewCount" :value="statistic.todayViewCount" style="margin-right: 50px">
+                            <a-statistic title="今日阅读" :value="statistic.todayViewCount" style="margin-right: 50px">
                                 <template #suffix>
                                     <UserOutlined />
                                 </template>
                             </a-statistic>
                         </a-col>
                         <a-col :span="12">
-                            <a-statistic title="today's voteCount" :value="statistic.todayVoteCount">
+                            <a-statistic title="今日点赞" :value="statistic.todayVoteCount">
                                 <template #suffix>
                                     <like-outlined />
                                 </template>
@@ -67,7 +68,7 @@
                     <a-row>
                         <a-col :span="12">
                             <a-statistic
-                                    title="expected viewCount"
+                                    title="预计今日阅读"
                                     :value="statistic.todayViewIncrease"
                                     :value-style="{ color: '#0000ff' }"
                             >
@@ -78,7 +79,7 @@
                         </a-col>
                         <a-col :span="12">
                             <a-statistic
-                                    title="expected increase"
+                                    title="预计今日阅读增长"
                                     :value="statistic.todayViewIncreaseRateAbs"
                                     :precision="2"
                                     suffix="%"
@@ -154,13 +155,13 @@
                 // 指定图表的配置项和数据
                 const option = {
                     title: {
-                        text: 'trend of 30 days'
+                        text: '30天趋势图'
                     },
                     tooltip: {
                         trigger: 'axis'
                     },
                     legend: {
-                        data: ['total viewCount', 'total voteCount']
+                        data: ['总阅读量', '总点赞量']
                     },
                     grid: {
                         left: '1%',
@@ -183,14 +184,14 @@
                     },
                     series: [
                         {
-                            name: 'total viewCount',
+                            name: '总阅读量',
                             type: 'line',
                             // stack: '总量', 不堆叠
                             data: seriesView,
                             smooth: true
                         },
                         {
-                            name: 'total voteCount',
+                            name: '总点赞量',
                             type: 'line',
                             // stack: '总量', 不堆叠
                             data: seriesVote,
@@ -228,26 +229,27 @@
         }
     });
 </script>
+
 <style scoped>
-    .carousel {
-        width:  100%;
-        height: 100%; /* Adjust as needed */
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-    .carousel-inner {
-        display: flex;
-        width: 300%; /* For 3 images */
-        animation: slide 30s infinite linear;
-    }
-    .carousel-inner img {
-        width: 33.3333%; /* Each image takes 33.3333% */
-        flex-shrink: 0;
-    }
-    @keyframes slide {
-        0%, 11.11% { transform: translateX(0%); }
-        11.12%, 33.33% { transform: translateX(-33.3333%); }
-        33.34%, 55.55% { transform: translateX(-66.6667%); }
-        55.56%, 100% { transform: translateX(0%); }
-    }
+.carousel {
+  width:  1090px;
+  height: 300px; /* Adjust as needed */
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.carousel-inner {
+  display: flex;
+  width: 300%; /* For 3 images */
+  animation: slide 30s infinite linear;
+}
+.carousel-inner img {
+  width: 33.3333%; /* Each image takes 33.3333% */
+  flex-shrink: 0;
+}
+@keyframes slide {
+  0%, 11.11% { transform: translateX(0%); }
+  11.12%, 33.33% { transform: translateX(-33.3333%); }
+  33.34%, 55.55% { transform: translateX(-66.6667%); }
+  55.56%, 100% { transform: translateX(0%); }
+}
 </style>

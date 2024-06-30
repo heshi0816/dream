@@ -1,7 +1,7 @@
 <template>
     <a-layout>
         <a-layout-content :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }">
-            <h3 v-if="level1.length === 0">对不起，找不到相关文档！</h3>
+            <h3 v-if="level1.length === 0">can't find any doc！</h3>
             <a-row>
                 <a-col :span="6">
                     <a-tree
@@ -18,15 +18,15 @@
                     <div>
                         <h2>{{doc.name}}</h2>
                         <div>
-                            <span>阅读数：{{doc.viewCount}}</span> &nbsp; &nbsp;
-                            <span>点赞数：{{doc.voteCount}}</span>
+                            <span>viewCount：{{doc.viewCount}}</span> &nbsp; &nbsp;
+                            <span>voteCount：{{doc.voteCount}}</span>
                         </div>
                         <a-divider style="height: 2px; background-color: #9999cc"/>
                     </div>
                     <div class="wangeditor" :innerHTML="html"></div>
                     <div class="vote-div">
                         <a-button type="primary" shape="round" :size="'large'" @click="vote">
-                            <template #icon><LikeOutlined /> &nbsp;点赞：{{doc.voteCount}} </template>
+                            <template #icon><LikeOutlined /> &nbsp;voteCount：{{doc.voteCount}} </template>
                         </a-button>
                     </div>
                 </a-col>

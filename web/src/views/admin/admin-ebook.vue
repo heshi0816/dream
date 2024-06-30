@@ -6,17 +6,17 @@
             <p>
                 <a-form layout="inline" :model="param">
                     <a-form-item>
-                        <a-input v-model:value="param.name" placeholder="名称">
+                        <a-input v-model:value="param.name" placeholder="name">
                         </a-input>
                     </a-form-item>
                     <a-form-item>
                         <a-button type="primary" @click="handleQuery({page: 1, size: pagination.pageSize})">
-                            查询
+                            search
                         </a-button>
                     </a-form-item>
                     <a-form-item>
                         <a-button type="primary" @click="add()">
-                            新增
+                            add
                         </a-button>
                     </a-form-item>
                 </a-form>
@@ -39,20 +39,20 @@
                     <a-space size="small">
                         <router-link :to="'/admin/doc?ebookId=' + record.id">
                             <a-button type="primary">
-                                文档管理
+                                document editing
                             </a-button>
                         </router-link>
                         <a-button type="primary" @click="edit(record)">
-                            编辑
+                            edit
                         </a-button>
                         <a-popconfirm
-                                title="删除后不可恢复，确认删除?"
-                                ok-text="是"
-                                cancel-text="否"
+                                title="confirm the delete?"
+                                ok-text="yes"
+                                cancel-text="no"
                                 @confirm="handleDelete(record.id)"
                         >
                             <a-button type="danger">
-                                删除
+                                delete
                             </a-button>
                         </a-popconfirm>
                     </a-space>
@@ -68,20 +68,20 @@
             @ok="handleModalOk"
     >
         <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
-            <a-form-item label="封面">
+            <a-form-item label="cover">
                 <a-input v-model:value="ebook.cover" />
             </a-form-item>
-            <a-form-item label="名称">
+            <a-form-item label="name">
                 <a-input v-model:value="ebook.name" />
             </a-form-item>
-            <a-form-item label="分类">
+            <a-form-item label="category">
                 <a-cascader
                         v-model:value="categoryIds"
                         :field-names="{ label: 'name', value: 'id', children: 'children' }"
                         :options="level1"
                 />
             </a-form-item>
-            <a-form-item label="描述">
+            <a-form-item label="description">
                 <a-input v-model:value="ebook.description" type="textarea" />
             </a-form-item>
         </a-form>
@@ -109,28 +109,28 @@
 
             const columns = [
                 {
-                    title: '封面',
+                    title: 'cover',
                     dataIndex: 'cover',
                     slots: { customRender: 'cover' }
                 },
                 {
-                    title: '名称',
+                    title: 'name',
                     dataIndex: 'name'
                 },
                 {
-                    title: '分类',
+                    title: 'category',
                     slots: { customRender: 'category' }
                 },
                 {
-                    title: '文档数',
+                    title: 'docCount',
                     dataIndex: 'docCount'
                 },
                 {
-                    title: '阅读数',
+                    title: 'viewCount',
                     dataIndex: 'viewCount'
                 },
                 {
-                    title: '点赞数',
+                    title: 'voteCount',
                     dataIndex: 'voteCount'
                 },
                 {
