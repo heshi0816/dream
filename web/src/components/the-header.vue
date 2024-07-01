@@ -1,6 +1,12 @@
 <template>
   <a-layout-header class="header">
     <div class="logo" />
+    <div style="float: right; color: white;">
+      您好：{{member.name}} &nbsp;&nbsp;
+      <router-link to="/login" style="color: white;">
+        退出登录
+      </router-link>
+    </div>
     <a-menu
         v-model:selectedKeys="selectedKeys1"
         theme="dark"
@@ -16,7 +22,11 @@
 
 <script setup>
 import { ref } from 'vue';
+import store from "../store/index.js";
+
 const selectedKeys1 = ref(['2']);
+
+const member = store.state.member;
 </script>
 
 <style scoped>

@@ -64,6 +64,7 @@ import { ref } from 'vue';
 import axios from "axios";
 import {message} from "ant-design-vue";
 import {useRouter} from "vue-router";
+import store from "../store/index.js";
 
 let router = useRouter();
 
@@ -83,6 +84,7 @@ const login = values => {
     let data = response.data;
     if (data.success) {
       message.success("登录成功！");
+      store.commit("setMember", data.content);
       router.push("/home");
     } else {
       message.error(data.message);
