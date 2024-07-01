@@ -33,6 +33,18 @@
             </a-input-password>
           </a-form-item>
 
+          <a-form-item name="imageCode" class="form-item"
+                       :rules="[{ required: true, message: '请输入图片验证码', trigger: 'blur' }]">
+            <a-input v-model:value="loginMember.imageCode" placeholder="图片验证码">
+              <template #prefix>
+                <SafetyOutlined style="margin-left: 15px"/>
+              </template>
+              <template #suffix>
+                <img v-show="!!imageCodeSrc" :src="imageCodeSrc" alt="验证码" v-on:click="loadImageCode()"/>
+              </template>
+            </a-input>
+          </a-form-item>
+
           <a-form-item class="form-item">
             <a-button type="primary" block html-type="submit" class="login-btn" size="large">
               登&nbsp;录
@@ -57,12 +69,16 @@ let router = useRouter();
 
 const loginMember = ref({
   mobile: '',
-  password: ''
+  password: '',
+  imageCode: ''
 });
 const login = values => {
+  console.log('开始登录:', values);
   axios.post("/nls/web/member/login", {
     mobile: loginMember.value.mobile,
     password: hexMd5Key(loginMember.value.password),
+    imageCode: loginMember.value.imageCode,
+    imageCodeToken: imageCodeToken.value,
   }).then(response => {
     let data = response.data;
     if (data.success) {
@@ -73,4 +89,17 @@ const login = values => {
     }
   })
 };
+
+// ----------- 图形验证码 --------------------
+const imageCodeToken = ref();
+const imageCodeSrc = ref();
+/**
+ * 加载图形验证码
+ */
+const loadImageCode = () => {
+  loginMember.value.imageCode = "";
+  imageCodeToken.value = Tool.uuid(8);
+  imageCodeSrc.value = import.meta.env.VITE_SERVER + '/nls/web/kaptcha/image-code/' + imageCodeToken.value;
+};
+loadImageCode();
 </script>

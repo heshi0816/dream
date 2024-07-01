@@ -6,6 +6,7 @@ import com.heshi.nls.business.req.MemberLoginReq;
 import com.heshi.nls.business.req.MemberRegisterReq;
 import com.heshi.nls.business.resp.CommonResp;
 import com.heshi.nls.business.resp.MemberLoginResp;
+import com.heshi.nls.business.service.KaptchaService;
 import com.heshi.nls.business.service.MemberService;
 import com.heshi.nls.business.service.SmsCodeService;
 import jakarta.annotation.Resource;
@@ -27,6 +28,9 @@ public class WebMemberController {
     @Resource
     private SmsCodeService smsCodeService;
 
+    @Resource
+    private KaptchaService kaptchaService;
+
     @PostMapping("/register")
     public CommonResp<Object> register(@Valid @RequestBody MemberRegisterReq req) {
         req.setPassword(DigestUtil.md5Hex(req.getPassword().toLowerCase()));
@@ -43,6 +47,10 @@ public class WebMemberController {
     @PostMapping("/login")
     public CommonResp<MemberLoginResp> login(@Valid @RequestBody MemberLoginReq req) {
         req.setPassword(DigestUtil.md5Hex(req.getPassword().toLowerCase()));
+
+        // 校验图片验证码，防止机器人
+        kaptchaService.validCode(req.getImageCode(), req.getImageCodeToken());
+
 
         log.info("会员登录开始：{}", req.getMobile());
         MemberLoginResp memberLoginResp = memberService.login(req);
