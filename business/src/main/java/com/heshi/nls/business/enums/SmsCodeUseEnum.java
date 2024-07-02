@@ -6,7 +6,7 @@ import lombok.Getter;
 public enum SmsCodeUseEnum {
 
     REGISTER("0", "注册"),
-    FORGET_PASSWORD("1", "忘记密码");
+    RESET("1", "重置密码");
 
     @Getter
     private String code;

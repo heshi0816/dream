@@ -41,6 +41,14 @@ public class SmsCodeService {
         }
         sendCode(mobile, SmsCodeUseEnum.REGISTER.getCode());
     }
+    public void sendCodeForReset(String mobile) {
+        Member member = memberService.selectByMobile(mobile);
+        if (member == null) {
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_NOT_REGISTER);
+        }
+        sendCode(mobile, SmsCodeUseEnum.RESET.getCode());
+    }
+
 
     private void sendCode(String mobile, String use) {
         Date now = new Date();

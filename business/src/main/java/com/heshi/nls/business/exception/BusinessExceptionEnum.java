@@ -10,7 +10,7 @@ public enum BusinessExceptionEnum {
     SMS_CODE_ERROR("短信验证码不正确"),
     SMS_CODE_EXPIRED("短信验证码未发送或已过期，请重新发送短信"),
     IMAGE_CODE_ERROR("图片验证码不正确或已过期"),
-
+    MEMBER_MOBILE_NOT_REGISTER("手机号未注册"),
     MEMBER_MOBILE_HAD_REGISTER("手机号已注册"),
     MEMBER_LOGIN_ERROR("手机号未注册或密码错误"),
 
