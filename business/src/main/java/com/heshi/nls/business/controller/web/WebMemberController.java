@@ -4,6 +4,7 @@ import cn.hutool.crypto.digest.DigestUtil;
 import com.heshi.nls.business.enums.SmsCodeUseEnum;
 import com.heshi.nls.business.req.MemberLoginReq;
 import com.heshi.nls.business.req.MemberRegisterReq;
+import com.heshi.nls.business.req.MemberResetReq;
 import com.heshi.nls.business.resp.CommonResp;
 import com.heshi.nls.business.resp.MemberLoginResp;
 import com.heshi.nls.business.service.KaptchaService;
@@ -12,10 +13,7 @@ import com.heshi.nls.business.service.SmsCodeService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -56,5 +54,18 @@ public class WebMemberController {
         MemberLoginResp memberLoginResp = memberService.login(req);
 
         return new CommonResp<>(memberLoginResp);
+    }
+
+    @PostMapping("/reset")
+    public CommonResp<Object> reset(@Valid @RequestBody MemberResetReq req) {
+        req.setPassword(DigestUtil.md5Hex(req.getPassword()));
+
+        log.info("会员忘记密码开始：{}", req.getMobile());
+
+        smsCodeService.validCode(req.getMobile(), SmsCodeUseEnum.RESET.getCode(), req.getCode());
+        log.info("忘记密码验证码校验通过：{}", req.getMobile());
+
+        memberService.reset(req);
+        return new CommonResp<>();
     }
 }

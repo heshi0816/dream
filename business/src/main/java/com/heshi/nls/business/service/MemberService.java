@@ -10,6 +10,7 @@ import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.MemberMapper;
 import com.heshi.nls.business.req.MemberLoginReq;
 import com.heshi.nls.business.req.MemberRegisterReq;
+import com.heshi.nls.business.req.MemberResetReq;
 import com.heshi.nls.business.resp.MemberLoginResp;
 import com.heshi.nls.business.util.JwtUtil;
 import jakarta.annotation.Resource;
@@ -62,6 +63,20 @@ public class MemberService {
         member.setCreatedAt(now);
         member.setUpdatedAt(now);
         memberMapper.insert(member);
+    }
+
+    public void reset(MemberResetReq req) {
+        Date now = new Date();
+        String mobile = req.getMobile();
+        Member memberDB = selectByMobile(mobile);
+        if (memberDB == null) {
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_NOT_REGISTER);
+        }
+        Member member = new Member();
+        member.setId(memberDB.getId());
+        member.setPassword(req.getPassword());
+        member.setUpdatedAt(now);
+        memberMapper.updateByPrimaryKeySelective(member);
     }
 
     /**
