@@ -3,6 +3,8 @@ import Home from "../view/home.vue"
 import Login from "../view/login.vue";
 import Register from "../view/register.vue";
 import Reset from "../view/reset.vue";
+import Help from "../view/home/help.vue";
+import Welcome from "../view/home/welcome.vue";
 
 const routes = [{
     path: "/",
@@ -15,7 +17,14 @@ const routes = [{
     component: Login
 }, {
     path: "/home",
-    component: Home
+    component: Home,
+    children : [{
+        path : "welcome",
+        compoent: Welcome,
+    }, {
+        path:"help",
+        component: Help,
+    }]
 }, {
     path: "/reset",
     component: Reset
