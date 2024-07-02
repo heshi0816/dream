@@ -20,7 +20,7 @@ const routes = [{
     component: Home,
     children : [{
         path : "welcome",
-        compoent: Welcome,
+        component: Welcome,
     }, {
         path:"help",
         component: Help,
