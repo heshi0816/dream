@@ -30,10 +30,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref, watch} from 'vue';
 import store from "../store/index.js";
+import {useRouter} from "vue-router";
 
 const selectedKeys = ref(['/home/welcome']);
+const router = useRouter();
+
+watch(() => router.currentRoute.value.path, (newValue, oldValue) => {
+  console.log('watch', newValue, oldValue);
+  selectedKeys.value = [];
+  selectedKeys.value.push(newValue);
+}, {immediate: true});
 
 const member = store.state.member;
 </script>

@@ -17,7 +17,7 @@ axios.get("/nls/query", {
 }).then(response => {
   let data = response.data
   if (data.success) {
-    resp.value = data.content;
+    resp.value = JSON.stringify(data.content);
   } else {
     message.error(data.message)
   }
