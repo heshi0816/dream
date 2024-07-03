@@ -14,8 +14,11 @@
   </a-modal>
 </template>
 <script setup>
-import { ref } from 'vue';
-import {notification} from "ant-design-vue";
+import {ref} from 'vue';
+import {message, notification} from "ant-design-vue";
+import axios from "axios";
+import store from "../../store/index.js";
+
 const open = ref(false);
 const showModal = () => {
   open.value = true;
@@ -33,6 +36,59 @@ const selectFile = () => {
 }
 
 // -------------- 上传文件 ---------------
+let uploadAuth;
+let uploadAddress;
+let videoId;
+
+const uploader = new AliyunUpload.Vod({
+  //userID，必填，只需有值即可。
+  userId: "122",
+  //分片大小默认1 MB (1048576)，不能小于100 KB
+  partSize: 104858,
+  //并行上传分片个数，默认5
+  parallel: 5,
+  //网络原因失败时，重新上传次数，默认为3
+  retryCount: 3,
+  //网络原因失败时，重新上传间隔时间，默认为2秒
+  retryDuration: 2,
+  //是否上报上传日志到视频点播，默认为true
+  enableUploadProgress: true,
+  //开始上传
+  'onUploadstarted': function (uploadInfo) {
+    console.log("文件上传开始:" + uploadInfo.file.name + ", endpoint:" + uploadInfo.endpoint + ", bucket:" + uploadInfo.bucket + ", object:" + uploadInfo.object);
+    //从视频点播服务获取的uploadAuth、uploadAddress和videoId，设置到SDK里
+    uploader.setUploadAuthAndAddress(uploadInfo, uploadAuth, uploadAddress, videoId);
+  },
+  //文件上传成功
+  'onUploadSucceed': function (uploadInfo) {
+    console.log("文件上传成功: " + uploadInfo.file.name + ", endpoint:" + uploadInfo.endpoint + ", bucket:" + uploadInfo.bucket + ", object:" + uploadInfo.object);
+    let fileUrl = uploadInfo.endpoint.replace("https://", "https://" + uploadInfo.bucket + ".") + "/" + uploadInfo.object;
+    console.log("文件地址: " + fileUrl);
+  },
+  //文件上传失败
+  'onUploadFailed': function (uploadInfo, code, message) {
+    console.log("文件上传失败: file:" + uploadInfo.file.name + ",code:" + code + ", message:" + message);
+  },
+  //文件上传进度，单位：字节
+  'onUploadProgress': function (uploadInfo, totalSize, loadedPercent) {
+    console.log("文件上传中 :file:" + uploadInfo.file.name + ", fileSize:" + totalSize + ", percent:" + Math.ceil(loadedPercent * 100) + "%");
+  },
+  //上传凭证超时
+  'onUploadTokenExpired': function (uploadInfo) {
+    console.log("onUploadTokenExpired");
+    //实现时，根据uploadInfo.videoId调用刷新视频上传凭证接口重新获取UploadAuth
+    //从点播服务刷新的uploadAuth，设置到SDK里
+
+    uploader.resumeUploadWithAuth(uploadAuth);
+  },
+  //全部文件上传结束
+  'onUploadEnd': function (uploadInfo) {
+    console.log("文件上传结束");
+    // 上传结束后，清空上传控件里的值，否则多次选择同一个文件会不触发change事件
+    fileUploadCom.value.value = "";
+  }
+});
+
 const uploadFile = () => {
   const file = fileUploadCom.value.files[0];
   console.log(file)
@@ -47,6 +103,33 @@ const uploadFile = () => {
     });
     return;
   }
+
+  // 调用后端接口获取上传凭证
+  let key = b64_md5(file.name + file.type + file.size + file.lastModified);
+  axios.post("/nls/web/vod/get-upload-auth", {
+    name: file.name,
+    key: key
+  }).then(response => {
+    let data = response.data;
+    if (data.success) {
+      let content = data.content;
+      if (content.fileUrl) {
+        console.log("文件已上传过，地址：", content.fileUrl);
+      } else {
+        console.log("获取上传凭证成功：", content);
+        uploadAuth = content.uploadAuth;
+        uploadAddress = content.uploadAddress;
+        videoId = content.videoId;
+        uploader.addFile(file, null, null, null, null);
+        uploader.startUpload();
+      }
+    } else {
+      notification['error']({
+        message: '系统提示',
+        description: "上传文件失败",
+      });
+    }
+  })
 }
 
 // 使用 defineExpose 向外暴露指定的数据和方法
