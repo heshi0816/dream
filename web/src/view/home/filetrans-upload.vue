@@ -20,13 +20,38 @@
   </a-modal>
 </template>
 <script setup>
-import { ref } from 'vue';
+import {onMounted, onUnmounted, ref} from 'vue';
 import {message, notification} from "ant-design-vue";
 import axios from "axios";
 import store from "../../store/index.js";
+
 const open = ref(false);
+
+// onMounted(() => {
+//   console.log(1);
+// });
+//
+// onUnmounted(() => {
+//   console.log(2);
+// });
+
+// 在每次打开上传对话框时，都对重要的变量进行初始化
+const init = () => {
+  filetrans.value = {
+    name: "",
+    percent: 0
+  }
+
+  if (fileUploadCom.value) {
+    console.log("fileUploadCom")
+    fileUploadCom.value.value = "";
+  }
+  // setTimeout(() => fileUploadCom.value.value = "", 1000);
+}
+
 const showModal = () => {
   open.value = true;
+  init();
 };
 const handleOk = e => {
   console.log(e);
@@ -45,14 +70,10 @@ let uploadAuth;
 let uploadAddress;
 let videoId;
 let filetrans = ref();
-filetrans.value = {
-  name: "",
-  percent: 0
-}
 
 const uploader = new AliyunUpload.Vod({
   //userID，必填，只需有值即可。
-  userId:"122",
+  userId: "122",
   //分片大小默认1 MB (1048576)，不能小于100 KB
   partSize: 104858,
   //并行上传分片个数，默认5
@@ -94,7 +115,7 @@ const uploader = new AliyunUpload.Vod({
     uploader.resumeUploadWithAuth(uploadAuth);
   },
   //全部文件上传结束
-  'onUploadEnd':function(uploadInfo){
+  'onUploadEnd': function (uploadInfo) {
     console.log("文件上传结束");
     // 上传结束后，清空上传控件里的值，否则多次选择同一个文件会不触发change事件
     fileUploadCom.value.value = "";
