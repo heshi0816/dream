@@ -31,3 +31,27 @@ create table `member` (
                           primary key (`id`),
                           unique key `mobile_unique` (`mobile`)
 ) engine=innodb default charset=utf8 comment='会员表';
+
+# filetrans 语音识别表
+drop table if exists `filetrans`;
+create table `filetrans` (
+                             `id` bigint not null comment 'id',
+                             `member_id` bigint not null comment '会员ID',
+                             `name` varchar(200) not null comment '名称',
+                             `second` int comment '音频文件时长|秒',
+                             `amount` decimal(6,2) comment '金额|元，second*单价',
+                             `audio` varchar(500) comment '文件链接',
+                             `file_sign` char(32) comment '文件签名md5',
+                             `pay_status` char(2) comment '支付状态|枚举[FiletransPayStatusEnum];',
+                             `status` char(2) comment '识别状态|枚举[FiletransStatusEnum];',
+                             `lang` char(16) not null comment '音频语言|枚举[FiletransLangEnum]',
+                             `vod` char(32) comment 'VOD|videoId',
+                             `task_id` char(32) comment '任务ID',
+                             `trans_status_code` int comment '转换状态码',
+                             `trans_status_text` varchar(200) comment '转换状态说明',
+                             `trans_time` datetime(3) comment '转换时间|开始转换的时间',
+                             `solve_time` datetime(3) comment '完成时间|录音文件识别完成的时间',
+                             `created_at` datetime(3) comment '创建时间',
+                             `updated_at` datetime(3) comment '修改时间',
+                             primary key (`id`)
+) engine=innodb default charset=utf8mb4 comment='语音识别表';
