@@ -5,7 +5,7 @@
   </div>
 </template>
 <script setup>
-import FiletransUpload from "./filetrans-upload.vue.vue";
+import FiletransUpload from "./filetrans-upload.vue";
 import {ref} from "vue";
 
 const filetransUploadCom = ref();
