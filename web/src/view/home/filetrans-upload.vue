@@ -1,24 +1,29 @@
 <template>
   <a-modal v-model:open="open" title="Basic Modal" @ok="handleOk">
-    <a-button type="primary" @click="selectFile" size="large">
-      <span><UploadOutlined /> 选择音频</span>
-    </a-button>
-    <input type="file"
-           style="display: none"
-           ref="fileUploadCom"
-           accept=".mp3,.wav,.m4a"
-           @change="uploadFile"/>
-    <p>Some contents...</p>
-    <p>Some contents...</p>
+    <p>
+      <a-button type="primary" @click="selectFile" size="large">
+        <span><UploadOutlined /> 选择音频</span>
+      </a-button>
+      <input type="file"
+             style="display: none"
+             ref="fileUploadCom"
+             accept=".mp3,.wav,.m4a"
+             @change="uploadFile"/>
+    </p>
+    <p>
+      已选择文件：{{filetrans.name}}
+    </p>
+    <p>
+      <a-progress :percent="Number(filetrans.percent.toFixed(1))"/>
+    </p>
     <p>Some contents...</p>
   </a-modal>
 </template>
 <script setup>
-import {ref} from 'vue';
+import { ref } from 'vue';
 import {message, notification} from "ant-design-vue";
 import axios from "axios";
 import store from "../../store/index.js";
-
 const open = ref(false);
 const showModal = () => {
   open.value = true;
@@ -39,10 +44,15 @@ const selectFile = () => {
 let uploadAuth;
 let uploadAddress;
 let videoId;
+let filetrans = ref();
+filetrans.value = {
+  name: "",
+  percent: 0
+}
 
 const uploader = new AliyunUpload.Vod({
   //userID，必填，只需有值即可。
-  userId: "122",
+  userId:"122",
   //分片大小默认1 MB (1048576)，不能小于100 KB
   partSize: 104858,
   //并行上传分片个数，默认5
@@ -72,6 +82,8 @@ const uploader = new AliyunUpload.Vod({
   //文件上传进度，单位：字节
   'onUploadProgress': function (uploadInfo, totalSize, loadedPercent) {
     console.log("文件上传中 :file:" + uploadInfo.file.name + ", fileSize:" + totalSize + ", percent:" + Math.ceil(loadedPercent * 100) + "%");
+    // 进度条
+    filetrans.value.percent = loadedPercent * 100;
   },
   //上传凭证超时
   'onUploadTokenExpired': function (uploadInfo) {
@@ -82,7 +94,7 @@ const uploader = new AliyunUpload.Vod({
     uploader.resumeUploadWithAuth(uploadAuth);
   },
   //全部文件上传结束
-  'onUploadEnd': function (uploadInfo) {
+  'onUploadEnd':function(uploadInfo){
     console.log("文件上传结束");
     // 上传结束后，清空上传控件里的值，否则多次选择同一个文件会不触发change事件
     fileUploadCom.value.value = "";
@@ -104,6 +116,12 @@ const uploadFile = () => {
     return;
   }
 
+  // 初始化
+  filetrans.value = {
+    name: file.name,
+    percent: 0
+  }
+
   // 调用后端接口获取上传凭证
   let key = b64_md5(file.name + file.type + file.size + file.lastModified);
   axios.post("/nls/web/vod/get-upload-auth", {
@@ -115,6 +133,7 @@ const uploadFile = () => {
       let content = data.content;
       if (content.fileUrl) {
         console.log("文件已上传过，地址：", content.fileUrl);
+        filetrans.value.percent = 100;
       } else {
         console.log("获取上传凭证成功：", content);
         uploadAuth = content.uploadAuth;
