@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 
-@RestController("webVodController")
+@RestController
 @RequestMapping("/web/vod")
 public class WebVodController {
 
