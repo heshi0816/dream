@@ -9,4 +9,6 @@ public class MemberLoginResp {
     private String name;
 
     private String token;
+
+    private Long id;
 }

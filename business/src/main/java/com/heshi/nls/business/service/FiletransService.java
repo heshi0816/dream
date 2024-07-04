@@ -2,6 +2,7 @@ package com.heshi.nls.business.service;
 
 import cn.hutool.core.util.IdUtil;
 import com.aliyuncs.vod.model.v20170321.GetVideoInfoResponse;
+import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.Filetrans;
 import com.heshi.nls.business.enums.FiletransPayStatusEnum;
 import com.heshi.nls.business.enums.FiletransStatusEnum;
@@ -29,6 +30,7 @@ public class FiletransService {
 
         Filetrans filetrans = new Filetrans();
         filetrans.setId(IdUtil.getSnowflakeNextId());
+        filetrans.setMemberId(LoginMemberContext.getId());
         filetrans.setMemberId(req.getMemberId());
         filetrans.setName(req.getName());
         filetrans.setSecond(second);

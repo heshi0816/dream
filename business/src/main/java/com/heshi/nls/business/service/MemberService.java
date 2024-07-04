@@ -93,6 +93,7 @@ public class MemberService {
             log.info("登录成功，{}", req.getMobile());
             MemberLoginResp memberLoginResp = new MemberLoginResp();
             memberLoginResp.setName(memberDB.getName());
+            memberLoginResp.setId(memberDB.getId());
 
             Map<String, Object> map = BeanUtil.beanToMap(memberLoginResp);
             String token = JwtUtil.createLoginToken(map);
