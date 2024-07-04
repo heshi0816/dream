@@ -6,13 +6,14 @@ import 'ant-design-vue/dist/reset.css';
 import * as Icons from '@ant-design/icons-vue';
 import router from "./router"
 import axios from "axios";
+import store from "./store/index.js";
 
 const app = createApp(App);
 app.use(Antd).use(router).mount('#app');
 
 // 全局使用图标
 const icons
-  = Icons;
+    = Icons;
 for (const i in icons) {
   app.component(i, icons[i]);
 }
@@ -22,6 +23,11 @@ for (const i in icons) {
  */
 axios.interceptors.request.use(function (config) {
   console.log('请求参数：', config);
+  let _token = store.state.member.token;
+  if (_token) {
+    config.headers.token = _token;
+    console.log("请求headers增加token: ", _token);
+  }
   return config;
 }, error => {
   return Promise.reject(error);
