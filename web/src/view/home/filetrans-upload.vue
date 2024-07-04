@@ -16,7 +16,16 @@
     <p>
       <a-progress :percent="Number(filetrans.percent.toFixed(1))"/>
     </p>
-    <p>Some contents...</p>
+    <p>
+      音频语言：
+      <a-select v-model:value="filetrans.lang" style="width: 120px">
+        <a-select-option v-for="o in FILETRANS_LANG_ARRAY" :value="o.code">{{o.desc}}</a-select-option>
+        <a-select-option value="jack">Jack</a-select-option>
+        <a-select-option value="lucy">Lucy</a-select-option>
+        <a-select-option value="disabled" disabled>Disabled</a-select-option>
+        <a-select-option value="Yiminghe">yiminghe</a-select-option>
+      </a-select>
+    </p>
   </a-modal>
 </template>
 <script setup>
@@ -25,6 +34,7 @@ import {message, notification} from "ant-design-vue";
 import axios from "axios";
 import store from "../../store/index.js";
 const open = ref(false);
+const FILETRANS_LANG_ARRAY = ref(window.FILETRANS_LANG_ARRAY);
 
 // onMounted(() => {
 //   console.log(1);
@@ -39,7 +49,8 @@ const init = () => {
   filetrans.value = {
     name: "",
     percent: 0,
-    amount: 0
+    amount: 0,
+    lang: ""
   }
 
   if (fileUploadCom.value) {
@@ -73,7 +84,7 @@ let filetrans = ref();
 
 const uploader = new AliyunUpload.Vod({
   //userID，必填，只需有值即可。
-  userId: "122",
+  userId:"122",
   //分片大小默认1 MB (1048576)，不能小于100 KB
   partSize: 104858,
   //并行上传分片个数，默认5
@@ -115,7 +126,7 @@ const uploader = new AliyunUpload.Vod({
     uploader.resumeUploadWithAuth(uploadAuth);
   },
   //全部文件上传结束
-  'onUploadEnd': function (uploadInfo) {
+  'onUploadEnd':function(uploadInfo){
     console.log("文件上传结束");
     // 上传结束后，清空上传控件里的值，否则多次选择同一个文件会不触发change事件
     fileUploadCom.value.value = "";
