@@ -1,5 +1,5 @@
 <template>
-  <a-modal v-model:open="open" title="Basic Modal" @ok="handleOk">
+  <a-modal v-model:open="open" title="Basic Modal" @ok="pay" ok-text="结算" cancel-text="取消">
     <p>
       <a-button type="primary" @click="selectFile" size="large">
         <span><UploadOutlined /> 选择音频</span>
@@ -20,10 +20,6 @@
       音频语言：
       <a-select v-model:value="filetrans.lang" style="width: 120px">
         <a-select-option v-for="o in FILETRANS_LANG_ARRAY" :value="o.code">{{o.desc}}</a-select-option>
-        <a-select-option value="jack">Jack</a-select-option>
-        <a-select-option value="lucy">Lucy</a-select-option>
-        <a-select-option value="disabled" disabled>Disabled</a-select-option>
-        <a-select-option value="Yiminghe">yiminghe</a-select-option>
       </a-select>
     </p>
   </a-modal>
@@ -50,7 +46,10 @@ const init = () => {
     name: "",
     percent: 0,
     amount: 0,
-    lang: ""
+    lang: "",
+    audio: "",
+    fileSign: "",
+    vod: ""
   }
 
   if (fileUploadCom.value) {
@@ -63,10 +62,6 @@ const init = () => {
 const showModal = () => {
   open.value = true;
   init();
-};
-const handleOk = e => {
-  console.log(e);
-  open.value = false;
 };
 
 // -------------- 选择文件 ---------------
@@ -106,6 +101,7 @@ const uploader = new AliyunUpload.Vod({
     console.log("文件上传成功: " + uploadInfo.file.name + ", endpoint:" + uploadInfo.endpoint + ", bucket:" + uploadInfo.bucket + ", object:" + uploadInfo.object);
     let fileUrl = uploadInfo.endpoint.replace("https://", "https://" + uploadInfo.bucket + ".") + "/" + uploadInfo.object;
     console.log("文件地址: " + fileUrl);
+    filetrans.value.audio = fileUrl;
   },
   //文件上传失败
   'onUploadFailed': function (uploadInfo, code, message) {
@@ -157,6 +153,7 @@ const uploadFile = () => {
 
   // 调用后端接口获取上传凭证
   let key = b64_md5(file.name + file.type + file.size + file.lastModified);
+  filetrans.value.fileSign = key;
   axios.post("/nls/web/vod/get-upload-auth", {
     name: file.name,
     key: key
@@ -168,6 +165,7 @@ const uploadFile = () => {
         console.log("文件已上传过，地址：", content.fileUrl);
         filetrans.value.percent = 100;
         videoId = content.videoId;
+        filetrans.value.audio = content.fileUrl
       } else {
         console.log("获取上传凭证成功：", content);
         uploadAuth = content.uploadAuth;
@@ -176,6 +174,7 @@ const uploadFile = () => {
         uploader.addFile(file, null, null, null, null);
         uploader.startUpload();
       }
+      filetrans.value.vod = videoId;
       calAmount();
     } else {
       notification['error']({
@@ -200,6 +199,47 @@ const calAmount = () => {
     }
   })
 }
+
+// -------------- 结算 ---------------
+const pay = e => {
+  console.log("准备结算：", JSON.stringify(filetrans.value));
+  if (Tool.isEmpty(filetrans.value.audio)) {
+    notification['error']({
+      message: '系统提示',
+      description: "请先上传音频文件",
+    });
+    return;
+  }
+  if (Tool.isEmpty(filetrans.value.lang)) {
+    notification['error']({
+      message: '系统提示',
+      description: "请选择【音频语言】",
+    });
+    return;
+  }
+  if (filetrans.value.amount === 0) {
+    notification['error']({
+      message: '系统提示',
+      description: "金额为0，不能转换",
+    });
+    return;
+  }
+
+  axios.post('/nls/web/filetrans/pay', filetrans.value).then((response)=>{
+    let resp = response.data;
+    if (resp.success) {
+      notification['success']({
+        message: '系统提示',
+        description: "下单成功",
+      });
+    } else {
+      notification['error']({
+        message: '系统提示',
+        description: "下单失败",
+      });
+    }
+  })
+};
 
 // 使用 defineExpose 向外暴露指定的数据和方法
 defineExpose({
