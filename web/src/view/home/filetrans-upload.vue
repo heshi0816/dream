@@ -11,7 +11,7 @@
              @change="uploadFile"/>
     </p>
     <p>
-      已选择文件：{{filetrans.name}}
+      已选择文件：{{filetrans.name}}<span v-show="filetrans.amount !== 0">，金额：<b style="color: red; font-size: 18px">{{filetrans.amount}}</b> &nbsp;元</span>
     </p>
     <p>
       <a-progress :percent="Number(filetrans.percent.toFixed(1))"/>
@@ -24,7 +24,6 @@ import {onMounted, onUnmounted, ref} from 'vue';
 import {message, notification} from "ant-design-vue";
 import axios from "axios";
 import store from "../../store/index.js";
-
 const open = ref(false);
 
 // onMounted(() => {
@@ -39,7 +38,8 @@ const open = ref(false);
 const init = () => {
   filetrans.value = {
     name: "",
-    percent: 0
+    percent: 0,
+    amount: 0
   }
 
   if (fileUploadCom.value) {
@@ -140,7 +140,8 @@ const uploadFile = () => {
   // 初始化
   filetrans.value = {
     name: file.name,
-    percent: 0
+    percent: 0,
+    amount: 0
   }
 
   // 调用后端接口获取上传凭证
@@ -155,6 +156,7 @@ const uploadFile = () => {
       if (content.fileUrl) {
         console.log("文件已上传过，地址：", content.fileUrl);
         filetrans.value.percent = 100;
+        videoId = content.videoId;
       } else {
         console.log("获取上传凭证成功：", content);
         uploadAuth = content.uploadAuth;
@@ -163,10 +165,26 @@ const uploadFile = () => {
         uploader.addFile(file, null, null, null, null);
         uploader.startUpload();
       }
+      calAmount();
     } else {
       notification['error']({
         message: '系统提示',
         description: "上传文件失败",
+      });
+    }
+  })
+}
+
+// -------------- 计算收费金额 ---------------
+const calAmount = () => {
+  axios.get("/nls/web/vod/cal-amount/" + videoId).then(response => {
+    let data = response.data;
+    if (data.success) {
+      filetrans.value.amount = data.content;
+    } else {
+      notification['error']({
+        message: '系统提示',
+        description: "计算收费金额异常",
       });
     }
   })
