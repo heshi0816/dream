@@ -13,6 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+
 @RestController("webVodController")
 @RequestMapping("/web/vod")
 public class WebVodController {
@@ -55,5 +57,11 @@ public class WebVodController {
         }
         LOG.info("获取上传凭证结束");
         return commonResp;
+    }
+
+    @GetMapping("/cal-amount/{videoId}")
+    public CommonResp<BigDecimal> calAmount(@PathVariable String videoId) {
+        BigDecimal amount = VodUtil.calAmount(videoId);
+        return new CommonResp<>(amount);
     }
 }

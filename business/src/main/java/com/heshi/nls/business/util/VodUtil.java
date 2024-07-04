@@ -8,6 +8,8 @@ import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.http.FormatType;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.vod.model.v20170321.*;
+import com.heshi.nls.business.exception.BusinessException;
+import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.InputStream;
+import java.math.BigDecimal;
 
 @Slf4j
 @Component
@@ -32,6 +35,13 @@ public class VodUtil {
     @Value("${vod.accessKeySecret}")
     public void setAccessKeySecret(String accessKeySecret) {
         VodUtil.accessKeySecret = accessKeySecret;
+    }
+
+    private static BigDecimal filetransAudioPrice;
+
+    @Value("${filetrans.audio.price}")
+    public void setFiletransAudioPrice(BigDecimal filetransAudioPrice) {
+        VodUtil.filetransAudioPrice = filetransAudioPrice;
     }
 
     /**
@@ -296,6 +306,26 @@ public class VodUtil {
      */
     private static JSONObject decodeBase64(String uploadAuth) {
         return JSONObject.parseObject(Base64.decodeBase64(uploadAuth), JSONObject.class);
+    }
+
+    /**
+     * 计算音频转字幕应收金额
+     */
+    public static BigDecimal calAmount(String videoId) {
+        try {
+            GetVideoInfoResponse videoInfo = VodUtil.getVideoInfo(videoId);
+            Float duration = videoInfo.getVideo().getDuration();
+            log.info("视频：{}，时长：{}，单价：{}", videoId, duration, filetransAudioPrice);
+            BigDecimal amount = new BigDecimal(duration).multiply(filetransAudioPrice).divide(new BigDecimal("60"), 2, BigDecimal.ROUND_HALF_UP);
+            // 最低收1分钱
+            if (amount.compareTo(BigDecimal.ZERO) == 0) {
+                amount = new BigDecimal("0.01");
+            }
+            return amount;
+        } catch (Exception e) {
+            log.error("计算音频转字幕应收金额异常", e);
+            throw new BusinessException(BusinessExceptionEnum.FILETRANS_CAL_AMOUNT_ERROR);
+        }
     }
 
 }

@@ -13,6 +13,7 @@ public enum BusinessExceptionEnum {
     MEMBER_MOBILE_NOT_REGISTER("手机号未注册"),
     MEMBER_MOBILE_HAD_REGISTER("手机号已注册"),
     MEMBER_LOGIN_ERROR("手机号未注册或密码错误"),
+    FILETRANS_CAL_AMOUNT_ERROR("收费金额计算异常"),
 
 ;
     @Getter
