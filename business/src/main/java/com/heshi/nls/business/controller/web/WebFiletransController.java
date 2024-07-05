@@ -21,8 +21,8 @@ public class WebFiletransController {
     @PostMapping("/pay")
     public CommonResp<Object> pay(@Valid @RequestBody FiletransPayReq req) throws Exception {
         log.info("语音识别支付开始");
-        filetransService.pay(req);
+        String result = filetransService.pay(req);
         log.info("语音识别支付结束");
-        return new CommonResp<>();
+        return new CommonResp<>(result);
     }
 }

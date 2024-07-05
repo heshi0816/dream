@@ -2,9 +2,14 @@ package com.heshi.nls.business.service;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
+import com.alipay.easysdk.payment.page.models.AlipayTradePagePayResponse;
+import com.heshi.nls.business.alipay.AliPayService;
 import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.OrderInfo;
+import com.heshi.nls.business.enums.OrderInfoChannelEnum;
 import com.heshi.nls.business.enums.OrderInfoStatusEnum;
+import com.heshi.nls.business.exception.BusinessException;
+import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.OrderInfoMapper;
 import com.heshi.nls.business.req.OrderInfoPayReq;
 import jakarta.annotation.Resource;
@@ -13,19 +18,23 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
-@Service
 @Slf4j
+@Service
 public class OrderInfoService {
 
     @Resource
     private OrderInfoMapper orderInfoMapper;
 
-    public void pay(OrderInfoPayReq req) {
+    @Resource
+    private AliPayService aliPayService;
+
+    public String pay(OrderInfoPayReq req) {
         Date now = new Date();
 
         OrderInfo orderInfo = new OrderInfo();
         orderInfo.setId(IdUtil.getSnowflakeNextId());
-        orderInfo.setOrderNo(genOrderNo());
+        String orderNo = genOrderNo();
+        orderInfo.setOrderNo(orderNo);
         orderInfo.setOrderAt(now);
         orderInfo.setOrderType(req.getOrderType());
         orderInfo.setInfo(req.getInfo());
@@ -41,6 +50,14 @@ public class OrderInfoService {
         orderInfoMapper.insert(orderInfo);
 
         // 请求支付宝接口
+        if (OrderInfoChannelEnum.ALIPAY.getCode().equals(req.getChannel())) {
+            // 调用支付宝下单接口
+            AlipayTradePagePayResponse response = aliPayService.pay(req.getDesc(), orderNo, req.getAmount().toPlainString());
+            return response.getBody();
+        } else {
+            log.warn("支付渠道【{}】不存在", req.getChannel());
+            throw new BusinessException(BusinessExceptionEnum.PAY_ERROR);
+        }
     }
 
     public String genOrderNo() {

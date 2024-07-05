@@ -26,7 +26,7 @@ public class FiletransService {
     @Resource
     private OrderInfoService orderInfoService;
 
-    public void pay(FiletransPayReq req) throws Exception {
+    public String pay(FiletransPayReq req) throws Exception {
         Date now = new Date();
 
         // 获取视频信息
@@ -66,7 +66,7 @@ public class FiletransService {
         orderInfoPayReq.setAmount(req.getAmount());
         orderInfoPayReq.setChannel(req.getChannel());
         orderInfoPayReq.setDesc("语音识别付费");
-        orderInfoService.pay(orderInfoPayReq);
+        return orderInfoService.pay(orderInfoPayReq);
 
     }
 }

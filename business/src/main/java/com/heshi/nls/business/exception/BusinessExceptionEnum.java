@@ -15,6 +15,9 @@ public enum BusinessExceptionEnum {
     MEMBER_LOGIN_ERROR("手机号未注册或密码错误"),
     FILETRANS_CAL_AMOUNT_ERROR("收费金额计算异常"),
 
+    ALIPAY_ERROR("调用支付宝接口失败"),
+    PAY_ERROR("调用支付接口失败"),
+
 ;
     @Getter
     private final String desc;
