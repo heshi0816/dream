@@ -38,4 +38,6 @@ public class FiletransPayReq {
 
     private Date solveTime;
 
+    private String channel;
+
 }

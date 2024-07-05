@@ -44,6 +44,7 @@
         <!--<table tableName="demo" domainObjectName="Demo"/>-->
         <!--<table tableName="sms_code" domainObjectName="SmsCode"/>-->
         <!--<table tableName="member" domainObjectName="Member"/>-->
-        <table tableName="filetrans" domainObjectName="Filetrans"/>
+        <!--<table tableName="filetrans" domainObjectName="Filetrans"/>-->
+        <table tableName="order_info" domainObjectName="OrderInfo"/>
     </context>
 </generatorConfiguration>

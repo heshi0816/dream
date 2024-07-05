@@ -49,7 +49,8 @@ const init = () => {
     lang: "",
     audio: "",
     fileSign: "",
-    vod: ""
+    vod: "",
+    channel: ""
   }
 
   if (fileUploadCom.value) {
