@@ -22,6 +22,12 @@
         <a-select-option v-for="o in FILETRANS_LANG_ARRAY" :value="o.code">{{o.desc}}</a-select-option>
       </a-select>
     </p>
+    <p>
+      支付方式：
+      <a-radio-group name="radioGroup" v-model:value="filetrans.channel">
+        <a-radio value="A"><img src="/image/alipay.jpg" alt="支付宝" style="height: 50px;"/></a-radio>
+      </a-radio-group>
+    </p>
   </a-modal>
 </template>
 <script setup>
@@ -80,7 +86,7 @@ let filetrans = ref();
 
 const uploader = new AliyunUpload.Vod({
   //userID，必填，只需有值即可。
-  userId: "122",
+  userId:"122",
   //分片大小默认1 MB (1048576)，不能小于100 KB
   partSize: 104858,
   //并行上传分片个数，默认5
@@ -123,7 +129,7 @@ const uploader = new AliyunUpload.Vod({
     uploader.resumeUploadWithAuth(uploadAuth);
   },
   //全部文件上传结束
-  'onUploadEnd': function (uploadInfo) {
+  'onUploadEnd':function(uploadInfo){
     console.log("文件上传结束");
     // 上传结束后，清空上传控件里的值，否则多次选择同一个文件会不触发change事件
     fileUploadCom.value.value = "";
@@ -227,13 +233,23 @@ const pay = e => {
     return;
   }
 
-  axios.post('/nls/web/filetrans/pay', filetrans.value).then((response) => {
+  axios.post('/nls/web/filetrans/pay', filetrans.value).then((response)=>{
     let resp = response.data;
     if (resp.success) {
       notification['success']({
         message: '系统提示',
         description: "下单成功",
       });
+      let divForm = document.getElementsByTagName('divform');
+      if (divForm.length) {
+        document.body.removeChild(divForm[0])
+      }
+      const div = document.createElement('divform');
+      // 支付宝返回的form
+      div.innerHTML = resp.content;
+      document.body.appendChild(div);
+      document.forms[0].setAttribute('target', '_blank');
+      document.forms[0].submit();
     } else {
       notification['error']({
         message: '系统提示',
