@@ -12,6 +12,7 @@ import com.heshi.nls.business.exception.BusinessException;
 import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.OrderInfoMapper;
 import com.heshi.nls.business.req.OrderInfoPayReq;
+import com.heshi.nls.business.resp.OrderInfoPayResp;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -28,7 +29,7 @@ public class OrderInfoService {
     @Resource
     private AliPayService aliPayService;
 
-    public String pay(OrderInfoPayReq req) {
+    public OrderInfoPayResp pay(OrderInfoPayReq req) {
         Date now = new Date();
 
         OrderInfo orderInfo = new OrderInfo();
@@ -50,10 +51,15 @@ public class OrderInfoService {
         orderInfoMapper.insert(orderInfo);
 
         // 请求支付宝接口
+        OrderInfoPayResp orderInfoPayResp = new OrderInfoPayResp();
+        orderInfoPayResp.setOrderNo(orderNo);
+
+        // 请求支付宝接口
         if (OrderInfoChannelEnum.ALIPAY.getCode().equals(req.getChannel())) {
             // 调用支付宝下单接口
             AlipayTradePagePayResponse response = aliPayService.pay(req.getDesc(), orderNo, req.getAmount().toPlainString());
-            return response.getBody();
+            orderInfoPayResp.setChannelResult(response.getBody());
+            return orderInfoPayResp;
         } else {
             log.warn("支付渠道【{}】不存在", req.getChannel());
             throw new BusinessException(BusinessExceptionEnum.PAY_ERROR);

@@ -2,6 +2,7 @@ package com.heshi.nls.business.controller.web;
 
 import com.heshi.nls.business.req.FiletransPayReq;
 import com.heshi.nls.business.resp.CommonResp;
+import com.heshi.nls.business.resp.OrderInfoPayResp;
 import com.heshi.nls.business.service.FiletransService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
@@ -19,9 +20,9 @@ public class WebFiletransController {
     private FiletransService filetransService;
 
     @PostMapping("/pay")
-    public CommonResp<Object> pay(@Valid @RequestBody FiletransPayReq req) throws Exception {
+    public CommonResp<OrderInfoPayResp> pay(@Valid @RequestBody FiletransPayReq req) throws Exception {
         log.info("语音识别支付开始");
-        String result = filetransService.pay(req);
+        OrderInfoPayResp result = filetransService.pay(req);
         log.info("语音识别支付结束");
         return new CommonResp<>(result);
     }

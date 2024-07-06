@@ -1,5 +1,5 @@
 <template>
-  <a-modal v-model:open="open" title="Basic Modal" @ok="pay" ok-text="结算" cancel-text="取消">
+  <a-modal v-model:open="open" title="" @ok="pay" ok-text="结算" cancel-text="取消">
     <p>
       <a-button type="primary" @click="selectFile" size="large">
         <span><UploadOutlined /> 选择音频</span>
@@ -238,7 +238,7 @@ const pay = e => {
     if (resp.success) {
       notification['success']({
         message: '系统提示',
-        description: "下单成功",
+        description: "下单成功，订单号：" + resp.content.orderNo,
       });
       let divForm = document.getElementsByTagName('divform');
       if (divForm.length) {
@@ -246,7 +246,7 @@ const pay = e => {
       }
       const div = document.createElement('divform');
       // 支付宝返回的form
-      div.innerHTML = resp.content;
+      div.innerHTML = resp.content.channelResult;
       document.body.appendChild(div);
       document.forms[0].setAttribute('target', '_blank');
       document.forms[0].submit();

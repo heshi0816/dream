@@ -10,6 +10,7 @@ import com.heshi.nls.business.enums.OrderInfoOrderTypeEnum;
 import com.heshi.nls.business.mapper.FiletransMapper;
 import com.heshi.nls.business.req.FiletransPayReq;
 import com.heshi.nls.business.req.OrderInfoPayReq;
+import com.heshi.nls.business.resp.OrderInfoPayResp;
 import com.heshi.nls.business.util.VodUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +27,7 @@ public class FiletransService {
     @Resource
     private OrderInfoService orderInfoService;
 
-    public String pay(FiletransPayReq req) throws Exception {
+    public OrderInfoPayResp pay(FiletransPayReq req) throws Exception {
         Date now = new Date();
 
         // 获取视频信息
