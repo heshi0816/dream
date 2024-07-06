@@ -29,12 +29,15 @@
       </a-radio-group>
     </p>
   </a-modal>
+
+  <the-alipay ref="theAlipayCom" @afterPay="handleAfterPay"></the-alipay>
 </template>
 <script setup>
 import {onMounted, onUnmounted, ref} from 'vue';
 import {message, notification} from "ant-design-vue";
 import axios from "axios";
 import store from "../../store/index.js";
+import TheAlipay from "../../components/the-alipay.vue";
 const open = ref(false);
 const FILETRANS_LANG_ARRAY = ref(window.FILETRANS_LANG_ARRAY);
 
@@ -240,16 +243,25 @@ const pay = e => {
         message: '系统提示',
         description: "下单成功，订单号：" + resp.content.orderNo,
       });
-      let divForm = document.getElementsByTagName('divform');
-      if (divForm.length) {
-        document.body.removeChild(divForm[0])
+      // let divForm = document.getElementsByTagName('divform');
+      // if (divForm.length) {
+      //   document.body.removeChild(divForm[0])
+      // }
+      // const div = document.createElement('divform');
+      // // 支付宝返回的form
+      // div.innerHTML = resp.content.channelResult;
+      // document.body.appendChild(div);
+      // document.forms[0].setAttribute('target', '_blank');
+      // document.forms[0].submit();
+      if (filetrans.value.channel === "A") {
+        payInfo.value = {
+          amount: filetrans.value.amount,
+          desc: "语音识别结算",
+          qrcode: resp.content.channelResult,
+          orderNo: resp.content.orderNo
+        };
+        theAlipayCom.value.handleOpen(payInfo.value);
       }
-      const div = document.createElement('divform');
-      // 支付宝返回的form
-      div.innerHTML = resp.content.channelResult;
-      document.body.appendChild(div);
-      document.forms[0].setAttribute('target', '_blank');
-      document.forms[0].submit();
     } else {
       notification['error']({
         message: '系统提示',
@@ -258,6 +270,13 @@ const pay = e => {
     }
   })
 };
+
+// ------------- 扫码支付 --------------
+const theAlipayCom = ref();
+const payInfo = ref();
+const handleAfterPay = () => {
+  open.value = false;
+}
 
 // 使用 defineExpose 向外暴露指定的数据和方法
 defineExpose({
