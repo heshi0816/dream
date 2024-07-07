@@ -1,6 +1,8 @@
 package com.heshi.nls.business.nls;
 
 import com.alibaba.fastjson.JSONObject;
+import com.heshi.nls.business.service.FiletransService;
+import jakarta.annotation.Resource;
 import jakarta.servlet.ServletInputStream;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -19,6 +21,9 @@ public class NlsFiletransCallBackController {
     private static final Pattern PATTERN_CLIENT_ERR = Pattern.compile("4105[0-9]*");
     // 以5开头的状态码是服务端错误。
     private static final Pattern PATTERN_SERVER_ERR = Pattern.compile("5105[0-9]*");
+
+    @Resource
+    private FiletransService filetransService;
     // 必须是post方式
     @PostMapping("/filetrans/callback")
     public void GetResult(HttpServletRequest request) {
@@ -39,6 +44,10 @@ public class NlsFiletransCallBackController {
             log.info("录音转换回调结果: TaskId：{}，StatusCode：{}，StatusText：{}", taskId, statusCode, statusText);
             Matcher matcherClient = PATTERN_CLIENT_ERR.matcher(jsonResult.getString("StatusCode"));
             Matcher matcherServer = PATTERN_SERVER_ERR.matcher(jsonResult.getString("StatusCode"));
+
+            // 不管成功还是失败，都应该更新状态
+            filetransService.afterTrans(jsonResult);
+
             // 以2开头状态码为正常状态码，回调方式正常状态只返回“21050000”。
             if("21050000".equals(statusCode)) {
 

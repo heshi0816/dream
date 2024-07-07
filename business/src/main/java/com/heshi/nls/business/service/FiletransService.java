@@ -6,6 +6,7 @@ import com.aliyuncs.CommonResponse;
 import com.aliyuncs.vod.model.v20170321.GetVideoInfoResponse;
 import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.Filetrans;
+import com.heshi.nls.business.domain.FiletransExample;
 import com.heshi.nls.business.enums.FiletransPayStatusEnum;
 import com.heshi.nls.business.enums.FiletransStatusEnum;
 import com.heshi.nls.business.enums.OrderInfoOrderTypeEnum;
@@ -81,11 +82,12 @@ public class FiletransService {
      * 支付成功后处理
      */
     public void afterPaySuccess(Long id) {
+        Date now = new Date();
         Filetrans filetrans = new Filetrans();
         filetrans.setId(id);
         filetrans.setPayStatus(FiletransPayStatusEnum.S.getCode());
         filetrans.setStatus(FiletransStatusEnum.SUBTITLE_INIT.getCode());
-        filetrans.setUpdatedAt(new Date());
+        filetrans.setUpdatedAt(now);
         filetransMapper.updateByPrimaryKeySelective(filetrans);
 
         log.info("发起语音识别任务");
@@ -107,11 +109,35 @@ public class FiletransService {
             Filetrans filetransAfterNls = new Filetrans();
             filetransAfterNls.setId(id);
             filetransAfterNls.setStatus(FiletransStatusEnum.SUBTITLE_PENDING.getCode());
-            filetransAfterNls.setUpdatedAt(new Date());
+            filetransAfterNls.setUpdatedAt(now);
             filetransAfterNls.setTaskId(taskId);
+            filetransAfterNls.setTransTime(now);
             filetransAfterNls.setTransStatusCode(statusCode);
             filetransAfterNls.setTransStatusText(statusText);
             filetransMapper.updateByPrimaryKeySelective(filetransAfterNls);
         }
+    }
+
+    public void afterTrans(JSONObject jsonResult) {
+        Date now = new Date();
+        String taskId = jsonResult.getString("TaskId");
+        Integer statusCode = jsonResult.getInteger("StatusCode");
+        String statusText = jsonResult.getString("StatusText");
+
+        Filetrans filetrans = new Filetrans();
+        filetrans.setUpdatedAt(now);
+        filetrans.setTransStatusCode(statusCode);
+        filetrans.setTransStatusText(statusText);
+
+        if ("21050000".equals(statusCode.toString())) {
+            filetrans.setSolveTime(new Date(jsonResult.getLong("SolveTime")));
+            filetrans.setStatus(FiletransStatusEnum.SUBTITLE_SUCCESS.getCode());
+        } else {
+            filetrans.setStatus(FiletransStatusEnum.SUBTITLE_FAILURE.getCode());
+        }
+
+        FiletransExample filetransExample = new FiletransExample();
+        filetransExample.createCriteria().andTaskIdEqualTo(taskId).andStatusEqualTo(FiletransStatusEnum.SUBTITLE_PENDING.getCode());
+        filetransMapper.updateByExampleSelective(filetrans, filetransExample);
     }
 }
