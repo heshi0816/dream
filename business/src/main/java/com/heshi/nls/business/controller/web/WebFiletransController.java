@@ -6,13 +6,12 @@ import com.heshi.nls.business.req.FiletransQueryReq;
 import com.heshi.nls.business.resp.CommonResp;
 import com.heshi.nls.business.resp.FiletransQueryResp;
 import com.heshi.nls.business.resp.OrderInfoPayResp;
+import com.heshi.nls.business.resp.PageResp;
 import com.heshi.nls.business.service.FiletransService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Slf4j
 @RestController
@@ -30,9 +29,9 @@ public class WebFiletransController {
     }
 
     @GetMapping("/query")
-    public CommonResp<List<FiletransQueryResp>> query(@Valid FiletransQueryReq req)  {
+    public CommonResp<PageResp<FiletransQueryResp>> query(@Valid FiletransQueryReq req)  {
         req.setMemberId(LoginMemberContext.getId());
-        List<FiletransQueryResp> list = filetransService.query(req);
-        return new CommonResp<>(list);
+        PageResp<FiletransQueryResp> pageResp = filetransService.query(req);
+        return new CommonResp<>(pageResp);
     }
 }

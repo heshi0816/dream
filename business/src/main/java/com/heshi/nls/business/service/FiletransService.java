@@ -8,6 +8,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.CommonResponse;
 import com.aliyuncs.vod.model.v20170321.GetVideoInfoResponse;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.Filetrans;
 import com.heshi.nls.business.domain.FiletransExample;
@@ -23,6 +24,7 @@ import com.heshi.nls.business.req.FiletransQueryReq;
 import com.heshi.nls.business.req.OrderInfoPayReq;
 import com.heshi.nls.business.resp.FiletransQueryResp;
 import com.heshi.nls.business.resp.OrderInfoPayResp;
+import com.heshi.nls.business.resp.PageResp;
 import com.heshi.nls.business.util.VodUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -148,7 +150,7 @@ public class FiletransService {
         filetransMapper.updateByExampleSelective(filetrans, filetransExample);
     }
 
-    public List<FiletransQueryResp> query(FiletransQueryReq req) {
+    public PageResp<FiletransQueryResp> query(FiletransQueryReq req) {
 
         FiletransExample filetransExample = new FiletransExample();
         FiletransExample.Criteria criteria = filetransExample.createCriteria();
@@ -168,8 +170,18 @@ public class FiletransService {
 
         filetransExample.setOrderByClause("id desc");
 
-        PageHelper.startPage(2, 2);
+        PageHelper.startPage(req.getPage(), req.getSize());
         List<Filetrans> filetransList = filetransMapper.selectByExample(filetransExample);
-        return BeanUtil.copyToList(filetransList, FiletransQueryResp.class);
+
+        PageResp<FiletransQueryResp> pageResp = new PageResp<>();
+
+        PageInfo<Filetrans> pageInfo = new PageInfo<>(filetransList);
+        pageResp.setTotal(pageInfo.getTotal());
+
+        // 获取当前分页列表内容
+        List<FiletransQueryResp> filetransQueryRespList = BeanUtil.copyToList(filetransList, FiletransQueryResp.class);
+        pageResp.setList(filetransQueryRespList);
+
+        return pageResp;
     }
 }

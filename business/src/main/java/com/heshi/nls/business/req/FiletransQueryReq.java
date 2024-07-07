@@ -3,7 +3,7 @@ package com.heshi.nls.business.req;
 import lombok.Data;
 
 @Data
-public class FiletransQueryReq {
+public class FiletransQueryReq extends PageReq {
 
     private Long memberId;
 
