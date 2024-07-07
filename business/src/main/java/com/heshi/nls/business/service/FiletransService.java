@@ -1,12 +1,16 @@
 package com.heshi.nls.business.service;
 
 import cn.hutool.core.util.IdUtil;
+import com.alibaba.fastjson.JSONObject;
+import com.aliyuncs.CommonResponse;
 import com.aliyuncs.vod.model.v20170321.GetVideoInfoResponse;
 import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.Filetrans;
 import com.heshi.nls.business.enums.FiletransPayStatusEnum;
 import com.heshi.nls.business.enums.FiletransStatusEnum;
 import com.heshi.nls.business.enums.OrderInfoOrderTypeEnum;
+import com.heshi.nls.business.exception.BusinessException;
+import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.FiletransMapper;
 import com.heshi.nls.business.req.FiletransPayReq;
 import com.heshi.nls.business.req.OrderInfoPayReq;
@@ -84,8 +88,30 @@ public class FiletransService {
         filetrans.setUpdatedAt(new Date());
         filetransMapper.updateByPrimaryKeySelective(filetrans);
 
-        // 发起语音识别任务
+        log.info("发起语音识别任务");
         Filetrans filetransDB = filetransMapper.selectByPrimaryKey(id);
-        NlsUtil.trans(filetransDB.getAudio(), filetransDB.getLang());
+        CommonResponse commonResponse = NlsUtil.trans(filetransDB.getAudio(), filetransDB.getLang());
+        if (commonResponse.getHttpStatus() == 200) {
+            JSONObject result = JSONObject.parseObject(commonResponse.getData());
+            Integer statusCode = result.getInteger("StatusCode");
+            String statusText = result.getString("StatusText");
+            String taskId = result.getString("TaskId");
+            if ("SUCCESS".equals(statusText)) {
+                log.info("录音文件识别请求成功响应： " + result.toJSONString());
+            } else {
+                log.error("录音文件识别请求失败： " + result.toJSONString());
+                throw new BusinessException(BusinessExceptionEnum.FILETRANS_TRANS_ERROR);
+            }
+
+            log.info("更新语音识别状态为：生成字幕中");
+            Filetrans filetransAfterNls = new Filetrans();
+            filetransAfterNls.setId(id);
+            filetransAfterNls.setStatus(FiletransStatusEnum.SUBTITLE_PENDING.getCode());
+            filetransAfterNls.setUpdatedAt(new Date());
+            filetransAfterNls.setTaskId(taskId);
+            filetransAfterNls.setTransStatusCode(statusCode);
+            filetransAfterNls.setTransStatusText(statusText);
+            filetransMapper.updateByPrimaryKeySelective(filetransAfterNls);
+        }
     }
 }
