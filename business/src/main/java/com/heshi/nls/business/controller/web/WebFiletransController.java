@@ -1,16 +1,18 @@
 package com.heshi.nls.business.controller.web;
 
+import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.req.FiletransPayReq;
+import com.heshi.nls.business.req.FiletransQueryReq;
 import com.heshi.nls.business.resp.CommonResp;
+import com.heshi.nls.business.resp.FiletransQueryResp;
 import com.heshi.nls.business.resp.OrderInfoPayResp;
 import com.heshi.nls.business.service.FiletransService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -25,5 +27,12 @@ public class WebFiletransController {
         OrderInfoPayResp result = filetransService.pay(req);
         log.info("语音识别支付结束");
         return new CommonResp<>(result);
+    }
+
+    @GetMapping("/query")
+    public CommonResp<List<FiletransQueryResp>> query(@Valid FiletransQueryReq req) {
+        req.setMemberId(LoginMemberContext.getId());
+        List<FiletransQueryResp> list = filetransService.query(req);
+        return new CommonResp<>(list);
     }
 }

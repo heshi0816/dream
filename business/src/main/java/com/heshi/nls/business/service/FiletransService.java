@@ -1,6 +1,9 @@
 package com.heshi.nls.business.service;
 
+import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.ObjectUtil;
+import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.CommonResponse;
 import com.aliyuncs.vod.model.v20170321.GetVideoInfoResponse;
@@ -13,16 +16,19 @@ import com.heshi.nls.business.enums.OrderInfoOrderTypeEnum;
 import com.heshi.nls.business.exception.BusinessException;
 import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.FiletransMapper;
-import com.heshi.nls.business.req.FiletransPayReq;
-import com.heshi.nls.business.req.OrderInfoPayReq;
-import com.heshi.nls.business.resp.OrderInfoPayResp;
 import com.heshi.nls.business.nls.NlsUtil;
+import com.heshi.nls.business.req.FiletransPayReq;
+import com.heshi.nls.business.req.FiletransQueryReq;
+import com.heshi.nls.business.req.OrderInfoPayReq;
+import com.heshi.nls.business.resp.FiletransQueryResp;
+import com.heshi.nls.business.resp.OrderInfoPayResp;
 import com.heshi.nls.business.util.VodUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -139,5 +145,28 @@ public class FiletransService {
         FiletransExample filetransExample = new FiletransExample();
         filetransExample.createCriteria().andTaskIdEqualTo(taskId).andStatusEqualTo(FiletransStatusEnum.SUBTITLE_PENDING.getCode());
         filetransMapper.updateByExampleSelective(filetrans, filetransExample);
+    }
+
+    public List<FiletransQueryResp> query(FiletransQueryReq req) {
+        FiletransExample filetransExample = new FiletransExample();
+        FiletransExample.Criteria criteria = filetransExample.createCriteria();
+
+        if (ObjectUtil.isNotNull(req.getMemberId())) {
+            criteria.andMemberIdEqualTo(req.getMemberId());
+        }
+        if (StrUtil.isNotBlank(req.getLang())) {
+            criteria.andLangEqualTo(req.getLang());
+        }
+        if (StrUtil.isNotBlank(req.getStatus())) {
+            criteria.andStatusEqualTo(req.getStatus());
+        }
+        if (StrUtil.isNotBlank(req.getName())) {
+            criteria.andNameLike("%" + req.getName() + "%");
+        }
+
+        filetransExample.setOrderByClause("id desc");
+
+        List<Filetrans> filetransList = filetransMapper.selectByExample(filetransExample);
+        return BeanUtil.copyToList(filetransList, FiletransQueryResp.class);
     }
 }
