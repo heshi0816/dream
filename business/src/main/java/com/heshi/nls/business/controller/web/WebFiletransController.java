@@ -30,7 +30,7 @@ public class WebFiletransController {
     }
 
     @GetMapping("/query")
-    public CommonResp<List<FiletransQueryResp>> query(@Valid FiletransQueryReq req) {
+    public CommonResp<List<FiletransQueryResp>> query(@Valid FiletransQueryReq req)  {
         req.setMemberId(LoginMemberContext.getId());
         List<FiletransQueryResp> list = filetransService.query(req);
         return new CommonResp<>(list);

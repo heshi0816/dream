@@ -102,6 +102,12 @@
             <artifactId>alipay-easysdk</artifactId>
         </dependency>
 
+        <!-- mybatis分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+
         <!-- 支付宝支付 通用版SDK 异步通知需要 -->
         <dependency>
             <groupId>com.alipay.sdk</groupId>

@@ -7,6 +7,7 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.CommonResponse;
 import com.aliyuncs.vod.model.v20170321.GetVideoInfoResponse;
+import com.github.pagehelper.PageHelper;
 import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.Filetrans;
 import com.heshi.nls.business.domain.FiletransExample;
@@ -148,6 +149,7 @@ public class FiletransService {
     }
 
     public List<FiletransQueryResp> query(FiletransQueryReq req) {
+
         FiletransExample filetransExample = new FiletransExample();
         FiletransExample.Criteria criteria = filetransExample.createCriteria();
 
@@ -166,6 +168,7 @@ public class FiletransService {
 
         filetransExample.setOrderByClause("id desc");
 
+        PageHelper.startPage(2, 2);
         List<Filetrans> filetransList = filetransMapper.selectByExample(filetransExample);
         return BeanUtil.copyToList(filetransList, FiletransQueryResp.class);
     }
