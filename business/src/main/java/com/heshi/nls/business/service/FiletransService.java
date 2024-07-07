@@ -21,6 +21,7 @@ import java.util.Date;
 @Slf4j
 @Service
 public class FiletransService {
+
     @Resource
     private FiletransMapper filetransMapper;
 
@@ -69,5 +70,17 @@ public class FiletransService {
         orderInfoPayReq.setDesc("语音识别付费");
         return orderInfoService.pay(orderInfoPayReq);
 
+    }
+
+    /**
+     * 支付成功后处理
+     */
+    public void afterPaySuccess(Long id) {
+        Filetrans filetrans = new Filetrans();
+        filetrans.setId(id);
+        filetrans.setPayStatus(FiletransPayStatusEnum.S.getCode());
+        filetrans.setStatus(FiletransStatusEnum.SUBTITLE_INIT.getCode());
+        filetrans.setUpdatedAt(new Date());
+        filetransMapper.updateByPrimaryKeySelective(filetrans);
     }
 }

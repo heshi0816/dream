@@ -6,6 +6,7 @@ import com.alipay.easysdk.payment.page.models.AlipayTradePagePayResponse;
 import com.heshi.nls.business.alipay.AliPayService;
 import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.OrderInfo;
+import com.heshi.nls.business.domain.OrderInfoExample;
 import com.heshi.nls.business.enums.OrderInfoChannelEnum;
 import com.heshi.nls.business.enums.OrderInfoStatusEnum;
 import com.heshi.nls.business.exception.BusinessException;
@@ -16,8 +17,10 @@ import com.heshi.nls.business.resp.OrderInfoPayResp;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Date;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -50,7 +53,6 @@ public class OrderInfoService {
         orderInfo.setUpdatedAt(now);
         orderInfoMapper.insert(orderInfo);
 
-        // 请求支付宝接口
         OrderInfoPayResp orderInfoPayResp = new OrderInfoPayResp();
         orderInfoPayResp.setOrderNo(orderNo);
 
@@ -71,5 +73,42 @@ public class OrderInfoService {
         int random = (int) (Math.random() * 900 + 100);
         no = no + random;
         return no;
+    }
+
+    /**
+     * 查询本地订单状态并返回
+     * @param orderNo
+     * @return
+     */
+    public String queryOrderStatus(String orderNo) {
+        OrderInfo orderInfo = this.selectByOrderNo(orderNo);
+        return orderInfo.getStatus();
+    }
+
+    public OrderInfo selectByOrderNo(String orderNo) {
+        OrderInfoExample orderInfoExample = new OrderInfoExample();
+        OrderInfoExample.Criteria criteria = orderInfoExample.createCriteria();
+        criteria.andOrderNoEqualTo(orderNo);
+        List<OrderInfo> list = orderInfoMapper.selectByExample(orderInfoExample);
+        if (CollectionUtils.isEmpty(list)) {
+            return new OrderInfo();
+        }
+        return list.get(0);
+    }
+
+    /**
+     * 支付成功后，将订单更新成S，按状态更新，从I改成S
+     * @param orderNo
+     * @param channelTime
+     */
+    public int afterPaySuccess(String orderNo, Date channelTime) {
+        OrderInfo orderInfo = new OrderInfo();
+        orderInfo.setStatus(OrderInfoStatusEnum.S.getCode());
+        orderInfo.setChannelAt(channelTime);
+        orderInfo.setUpdatedAt(new Date());
+        OrderInfoExample orderInfoExample = new OrderInfoExample();
+        OrderInfoExample.Criteria criteria = orderInfoExample.createCriteria();
+        criteria.andOrderNoEqualTo(orderNo).andStatusEqualTo(OrderInfoStatusEnum.I.getCode());
+        return orderInfoMapper.updateByExampleSelective(orderInfo, orderInfoExample);
     }
 }

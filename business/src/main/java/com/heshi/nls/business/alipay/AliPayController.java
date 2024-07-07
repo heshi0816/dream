@@ -2,6 +2,7 @@ package com.heshi.nls.business.alipay;
 
 import cn.hutool.core.date.DateUtil;
 import com.alipay.api.internal.util.AlipaySignature;
+import com.heshi.nls.business.service.AfterPayService;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -23,6 +24,9 @@ public class AliPayController {
 
     @Value("${env}")
     private String env;
+
+    @Resource
+    private AfterPayService afterPayService;
 
     @PostMapping(value = "/alipay/callback")
     public String aliPayCallback(HttpServletRequest request) throws Exception {
