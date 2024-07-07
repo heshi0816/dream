@@ -15,7 +15,7 @@ import com.heshi.nls.business.mapper.FiletransMapper;
 import com.heshi.nls.business.req.FiletransPayReq;
 import com.heshi.nls.business.req.OrderInfoPayReq;
 import com.heshi.nls.business.resp.OrderInfoPayResp;
-import com.heshi.nls.business.util.NlsUtil;
+import com.heshi.nls.business.nls.NlsUtil;
 import com.heshi.nls.business.util.VodUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;

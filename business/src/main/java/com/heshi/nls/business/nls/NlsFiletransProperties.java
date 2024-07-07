@@ -1,4 +1,4 @@
-package com.heshi.nls.business.util;
+package com.heshi.nls.business.nls;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

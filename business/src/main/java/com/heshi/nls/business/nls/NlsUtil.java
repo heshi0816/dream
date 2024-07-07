@@ -1,4 +1,4 @@
-package com.heshi.nls.business.util;
+package com.heshi.nls.business.nls;
 
 import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.CommonRequest;
