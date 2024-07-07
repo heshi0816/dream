@@ -11,6 +11,7 @@ import com.heshi.nls.business.mapper.FiletransMapper;
 import com.heshi.nls.business.req.FiletransPayReq;
 import com.heshi.nls.business.req.OrderInfoPayReq;
 import com.heshi.nls.business.resp.OrderInfoPayResp;
+import com.heshi.nls.business.util.NlsUtil;
 import com.heshi.nls.business.util.VodUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -82,5 +83,9 @@ public class FiletransService {
         filetrans.setStatus(FiletransStatusEnum.SUBTITLE_INIT.getCode());
         filetrans.setUpdatedAt(new Date());
         filetransMapper.updateByPrimaryKeySelective(filetrans);
+
+        // 发起语音识别任务
+        Filetrans filetransDB = filetransMapper.selectByPrimaryKey(id);
+        NlsUtil.trans(filetransDB.getAudio(), filetransDB.getLang());
     }
 }

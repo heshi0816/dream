@@ -17,6 +17,7 @@ public enum BusinessExceptionEnum {
 
     ALIPAY_ERROR("调用支付宝接口失败"),
     PAY_ERROR("调用支付接口失败"),
+    FILETRANS_TRANS_ERROR("录音文件识别请求失败"),
 
 ;
     @Getter

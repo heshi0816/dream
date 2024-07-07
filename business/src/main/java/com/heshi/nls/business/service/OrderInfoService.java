@@ -2,6 +2,7 @@ package com.heshi.nls.business.service;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
+import com.alipay.easysdk.payment.common.models.AlipayTradeQueryResponse;
 import com.alipay.easysdk.payment.page.models.AlipayTradePagePayResponse;
 import com.heshi.nls.business.alipay.AliPayService;
 import com.heshi.nls.business.context.LoginMemberContext;
@@ -14,6 +15,7 @@ import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.OrderInfoMapper;
 import com.heshi.nls.business.req.OrderInfoPayReq;
 import com.heshi.nls.business.resp.OrderInfoPayResp;
+import com.heshi.nls.business.util.service.AfterPayService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -28,6 +30,9 @@ public class OrderInfoService {
 
     @Resource
     private OrderInfoMapper orderInfoMapper;
+
+    @Resource
+    private AfterPayService afterPayService;
 
     @Resource
     private AliPayService aliPayService;
@@ -82,6 +87,20 @@ public class OrderInfoService {
      */
     public String queryOrderStatus(String orderNo) {
         OrderInfo orderInfo = this.selectByOrderNo(orderNo);
+
+        // 全链路查询
+        if (OrderInfoStatusEnum.I.getCode().equals(orderInfo.getStatus())) {
+            if (OrderInfoChannelEnum.ALIPAY.getCode().equals(orderInfo.getChannel())) {
+                AlipayTradeQueryResponse response = aliPayService.query(orderNo);
+                String tradeStatus = response.getTradeStatus();
+                if ("TRADE_SUCCESS".equals(tradeStatus) || "TRADE_FINISHED".equals(tradeStatus)) {
+                    String sendPayDate = response.getSendPayDate();
+                    Date date = DateUtil.parse(sendPayDate, "yyyy-MM-dd HH:mm:ss");
+                    afterPayService.afterPaySuccess(orderNo, date);
+                    return OrderInfoStatusEnum.S.getCode();
+                }
+            }
+        }
         return orderInfo.getStatus();
     }
 
