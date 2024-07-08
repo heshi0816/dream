@@ -43,6 +43,9 @@ public class FiletransService {
     @Resource
     private OrderInfoService orderInfoService;
 
+    @Resource
+    private FiletransSubtitleService filetransSubtitleService;
+
     public OrderInfoPayResp pay(FiletransPayReq req) throws Exception {
         Date now = new Date();
 
@@ -147,7 +150,24 @@ public class FiletransService {
 
         FiletransExample filetransExample = new FiletransExample();
         filetransExample.createCriteria().andTaskIdEqualTo(taskId).andStatusEqualTo(FiletransStatusEnum.SUBTITLE_PENDING.getCode());
-        filetransMapper.updateByExampleSelective(filetrans, filetransExample);
+        int i = filetransMapper.updateByExampleSelective(filetrans, filetransExample);
+
+        if (i==0) {
+            log.info("未更新到taskId={}，状态={}/{}，不保存字幕表", taskId, FiletransStatusEnum.SUBTITLE_PENDING.getCode(), FiletransStatusEnum.SUBTITLE_PENDING.getDesc());
+            return;
+        }
+
+        if ("21050000".equals(statusCode.toString())) {
+            FiletransExample example = new FiletransExample();
+            example.createCriteria().andTaskIdEqualTo(taskId);
+            List<Filetrans> filetransList = filetransMapper.selectByExample(example);
+            Filetrans filetransDB = filetransList.get(0);
+
+            JSONObject result = jsonResult.getJSONObject("Result");
+
+            filetransSubtitleService.saveSubtitle(filetransDB.getId(), result);
+
+        }
     }
 
     public PageResp<FiletransQueryResp> query(FiletransQueryReq req) {

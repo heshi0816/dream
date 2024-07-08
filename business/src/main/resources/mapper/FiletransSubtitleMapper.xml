@@ -87,7 +87,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from filetrans_subtitle
     where id = #{id,jdbcType=BIGINT}
@@ -103,12 +103,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.heshi.nls.business.domain.FiletransSubtitle">
-    insert into filetrans_subtitle (id, filetrans_id, `index`, 
-      `begin`, `end`, `text`, created_at, 
-      updated_at)
-    values (#{id,jdbcType=BIGINT}, #{filetransId,jdbcType=BIGINT}, #{index,jdbcType=INTEGER}, 
-      #{begin,jdbcType=INTEGER}, #{end,jdbcType=INTEGER}, #{text,jdbcType=VARCHAR}, #{createdAt,jdbcType=TIMESTAMP}, 
-      #{updatedAt,jdbcType=TIMESTAMP})
+    insert into filetrans_subtitle (id, filetrans_id, `index`,
+                                    `begin`, `end`, `text`, created_at,
+                                    updated_at)
+    values (#{id,jdbcType=BIGINT}, #{filetransId,jdbcType=BIGINT}, #{index,jdbcType=INTEGER},
+            #{begin,jdbcType=INTEGER}, #{end,jdbcType=INTEGER}, #{text,jdbcType=VARCHAR}, #{createdAt,jdbcType=TIMESTAMP},
+            #{updatedAt,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.heshi.nls.business.domain.FiletransSubtitle">
     insert into filetrans_subtitle
@@ -206,13 +206,13 @@
   <update id="updateByExample" parameterType="map">
     update filetrans_subtitle
     set id = #{record.id,jdbcType=BIGINT},
-      filetrans_id = #{record.filetransId,jdbcType=BIGINT},
-      `index` = #{record.index,jdbcType=INTEGER},
-      `begin` = #{record.begin,jdbcType=INTEGER},
-      `end` = #{record.end,jdbcType=INTEGER},
-      `text` = #{record.text,jdbcType=VARCHAR},
-      created_at = #{record.createdAt,jdbcType=TIMESTAMP},
-      updated_at = #{record.updatedAt,jdbcType=TIMESTAMP}
+    filetrans_id = #{record.filetransId,jdbcType=BIGINT},
+    `index` = #{record.index,jdbcType=INTEGER},
+    `begin` = #{record.begin,jdbcType=INTEGER},
+    `end` = #{record.end,jdbcType=INTEGER},
+    `text` = #{record.text,jdbcType=VARCHAR},
+    created_at = #{record.createdAt,jdbcType=TIMESTAMP},
+    updated_at = #{record.updatedAt,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -247,12 +247,12 @@
   <update id="updateByPrimaryKey" parameterType="com.heshi.nls.business.domain.FiletransSubtitle">
     update filetrans_subtitle
     set filetrans_id = #{filetransId,jdbcType=BIGINT},
-      `index` = #{index,jdbcType=INTEGER},
-      `begin` = #{begin,jdbcType=INTEGER},
-      `end` = #{end,jdbcType=INTEGER},
-      `text` = #{text,jdbcType=VARCHAR},
-      created_at = #{createdAt,jdbcType=TIMESTAMP},
-      updated_at = #{updatedAt,jdbcType=TIMESTAMP}
+        `index` = #{index,jdbcType=INTEGER},
+        `begin` = #{begin,jdbcType=INTEGER},
+        `end` = #{end,jdbcType=INTEGER},
+        `text` = #{text,jdbcType=VARCHAR},
+        created_at = #{createdAt,jdbcType=TIMESTAMP},
+        updated_at = #{updatedAt,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>
