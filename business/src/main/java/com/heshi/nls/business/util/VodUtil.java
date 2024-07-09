@@ -283,21 +283,26 @@ public class VodUtil {
         return acsResponse;
     }
 
-    public static String uploadSubtitle(String subtitleFullPath) throws ClientException {
-        CreateUploadAttachedMediaResponse response;
+    public static String uploadSubtitle(String subtitleFullPath) {
+        try {
+            CreateUploadAttachedMediaResponse response;
 
-        response = getUploadAttachedMediaAuthSrt(subtitleFullPath);
-        log.info("获取辅助媒资地址和凭证：{}", JSON.toJSONString(response));
+            response = getUploadAttachedMediaAuthSrt(subtitleFullPath);
+            log.info("获取辅助媒资地址和凭证：{}", JSON.toJSONString(response));
 
-        JSONObject uploadAuth = decodeBase64(response.getUploadAuth());
-        JSONObject uploadAddress = decodeBase64(response.getUploadAddress());
+            JSONObject uploadAuth = decodeBase64(response.getUploadAuth());
+            JSONObject uploadAddress = decodeBase64(response.getUploadAddress());
 
-        OSSClient ossClient = initOssClient(uploadAuth, uploadAddress);
+            OSSClient ossClient = initOssClient(uploadAuth, uploadAddress);
 
-        uploadLocalFile(ossClient, uploadAddress, subtitleFullPath);
-        log.info("上传辅助媒资成功: {}", response.getFileURL());
-        return response.getFileURL();
+            uploadLocalFile(ossClient, uploadAddress, subtitleFullPath);
+            log.info("上传辅助媒资成功: {}", response.getFileURL());
+            return response.getFileURL();
+        } catch (Exception e) {
+            throw new BusinessException(BusinessExceptionEnum.GEN_SUBTITLE_ERROR);
+        }
     }
+
 
     /**
      * base64解码

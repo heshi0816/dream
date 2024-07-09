@@ -19,6 +19,8 @@ public enum BusinessExceptionEnum {
     PAY_ERROR("调用支付接口失败"),
     FILETRANS_TRANS_ERROR("录音文件识别请求失败"),
 
+    GEN_SUBTITLE_ERROR("生成字幕文件失败"),
+
 ;
     @Getter
     private final String desc;

@@ -29,8 +29,8 @@ public class WebFiletransSubtitleController {
 
 
     @GetMapping("/gen-subtitle")
-    public CommonResp<PageResp<FiletransSubtitleQueryResp>> genSubtitle(@Valid GenSubtitleReq req)  {
-        filetransSubtitleService.genSubtitle(req);
-        return new CommonResp<>();
+    public CommonResp<String> genSubtitle(@Valid GenSubtitleReq req)  {
+        String url = filetransSubtitleService.genSubtitle(req);
+        return new CommonResp<>(url);
     }
 }

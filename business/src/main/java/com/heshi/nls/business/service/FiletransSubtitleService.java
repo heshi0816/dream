@@ -14,6 +14,7 @@ import com.heshi.nls.business.req.FiletransSubtitleQueryReq;
 import com.heshi.nls.business.req.GenSubtitleReq;
 import com.heshi.nls.business.resp.FiletransSubtitleQueryResp;
 import com.heshi.nls.business.resp.PageResp;
+import com.heshi.nls.business.util.VodUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -90,7 +91,7 @@ public class FiletransSubtitleService {
     /**
      * 生成字幕文件
      */
-    public void genSubtitle(GenSubtitleReq req) {
+    public String genSubtitle(GenSubtitleReq req) {
         Long filetransId = req.getFiletransId();
         log.info("获取字幕");
         FiletransSubtitleExample filetransSubtitleExample = new FiletransSubtitleExample();
@@ -106,6 +107,14 @@ public class FiletransSubtitleService {
 
         FileUtil.mkdir(tempDir);
         FileUtil.writeBytes(buffer.toString().getBytes(), subtitleFullPath);
+
+        String url = VodUtil.uploadSubtitle(subtitleFullPath);
+        log.info("上传字幕到辅助媒资成功：{}", url);
+
+        log.info("删除本地字幕临时文件：{}", subtitleFullPath);
+        FileUtil.del(subtitleFullPath);
+
+        return url;
     }
 
     /**
