@@ -92,3 +92,18 @@ create table `filetrans_subtitle` (
                                       primary key (`id`),
                                       index filetrans_subtitle_filetrans_id (`filetrans_id`)
 ) engine=innodb default charset=utf8mb4 comment='语音识别字幕';
+
+-- 用户表
+drop table if exists `user`;
+create table `user` (
+                        `id` bigint not null comment 'ID',
+                        `login_name` varchar(50) not null comment '登录名',
+                        `password` char(32) not null comment '密码',
+                        primary key (`id`),
+                        unique key `login_name_unique` (`login_name`)
+) engine=innodb default charset=utf8mb4 comment='用户';
+
+-- 密码：7039ad9f5fe2a41b76d49a3de9f227c3 对应 a111111
+-- 算法：a111111拼接上盐值!@#$*&^%nls（写在md5.js），得到：a111111!@#$*&^%nls，对该值做两次md5（可以找一些在线md5工具）
+-- 如果想设置自己的密码，比如:123456，password=md5(md5(123456!@#$*&^%nls))
+insert into `user` (id, login_name, password) values (1, 'test', '7039ad9f5fe2a41b76d49a3de9f227c3');

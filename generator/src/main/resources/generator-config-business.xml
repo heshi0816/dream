@@ -46,6 +46,7 @@
         <!--<table tableName="member" domainObjectName="Member"/>-->
         <!--<table tableName="filetrans" domainObjectName="Filetrans"/>-->
         <!--<table tableName="order_info" domainObjectName="OrderInfo"/>-->
-        <table tableName="filetrans_subtitle" domainObjectName="FiletransSubtitle"/>
+        <!--<table tableName="filetrans_subtitle" domainObjectName="FiletransSubtitle"/>-->
+        <table tableName="user" domainObjectName="User"/>
     </context>
 </generatorConfiguration>
