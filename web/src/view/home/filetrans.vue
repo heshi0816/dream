@@ -1,6 +1,6 @@
 <template>
   <filetrans-upload ref="filetransUploadCom"></filetrans-upload>
-
+  <filetrans-subtitle ref="filetransSubtitleCom"></filetrans-subtitle>
   <p>
     <a-space>
       <a-button type="primary" @click="showModal">开始上传音频</a-button>
@@ -12,6 +12,40 @@
            :pagination="pagination"
            @change="handleTableChange"
            :loading="loading">
+    <template #bodyCell="{ column, record }">
+      <template v-if="column.dataIndex === 'status'">
+        <span v-for="item in FILETRANS_STATUS" :key="item.code">
+          <span v-if="item.code === record.status">
+            {{item.desc}}
+          </span>
+        </span>
+      </template>
+      <template v-else-if="column.dataIndex === 'payStatus'">
+        <span v-for="item in FILETRANS_PAY_STATUS" :key="item.code">
+          <span v-if="item.code === record.payStatus">
+            {{item.desc}}
+          </span>
+        </span>
+      </template>
+      <template v-else-if="column.dataIndex === 'lang'">
+        <span v-for="item in FILETRANS_LANG" :key="item.code">
+          <span v-if="item.code === record.lang">
+            {{item.desc}}
+          </span>
+        </span>
+      </template>
+      <template v-else-if="column.dataIndex === 'second'">
+        {{formatSecond(record.second)}}
+      </template>
+      <template v-else-if="column.dataIndex === 'operation'">
+        <a-space>
+          <a-button v-if="record.status === FILETRANS_STATUS.SUBTITLE_SUCCESS.code"
+                    type="primary" @click="showSubtitleModal(record)" size="small">
+            查看字幕
+          </a-button>
+        </a-space>
+      </template>
+    </template>
   </a-table>
 </template>
 <script setup>
@@ -19,11 +53,16 @@ import FiletransUpload from "./filetrans-upload.vue";
 import {ref} from "vue";
 import axios from "axios";
 import {notification} from "ant-design-vue";
+import FiletransSubtitle from "./filetrans-subtitle.vue";
 
 const filetransUploadCom = ref();
+const filetransSubtitleCom = ref();
 
 const showModal = () => {
   filetransUploadCom.value.showModal();
+};
+const showSubtitleModal = (filetrans) => {
+  filetransSubtitleCom.value.showModal(filetrans);
 };
 
 //----------------- 列表查询 -----------------
@@ -36,10 +75,17 @@ const pagination = ref({
 const loading = ref(false);
 const filetranss = ref();
 filetranss.value = [];
+const FILETRANS_STATUS = window.FILETRANS_STATUS;
+const FILETRANS_PAY_STATUS = window.FILETRANS_PAY_STATUS;
+const FILETRANS_LANG = window.FILETRANS_LANG;
+
 
 const columns = [{
   title: '名称',
   dataIndex: 'name',
+}, {
+  title: '支付状态',
+  dataIndex: 'payStatus',
 }, {
   title: '状态',
   dataIndex: 'status',
@@ -49,6 +95,9 @@ const columns = [{
 }, {
   title: '时长',
   dataIndex: 'second',
+}, {
+  title: '操作',
+  dataIndex: 'operation',
 }];
 
 const handleQuery = (param) => {
@@ -85,6 +134,15 @@ const handleTableChange = (pagination) => {
     page: pagination.current,
     size: pagination.pageSize
   });
+};
+
+/**
+ * 时间格式化，将"秒"格式化成"时:分:秒"
+ * @param second
+ * @returns {string}
+ */
+const formatSecond = (second) => {
+  return Tool.formatSecond(second);
 };
 
 handleQuery();
