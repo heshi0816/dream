@@ -2,6 +2,7 @@ package com.heshi.nls.business.controller.web;
 
 import com.heshi.nls.business.req.FiletransSubtitleQueryReq;
 import com.heshi.nls.business.req.GenSubtitleReq;
+import com.heshi.nls.business.req.GenTextReq;
 import com.heshi.nls.business.resp.CommonResp;
 import com.heshi.nls.business.resp.FiletransSubtitleQueryResp;
 import com.heshi.nls.business.resp.PageResp;
@@ -31,6 +32,12 @@ public class WebFiletransSubtitleController {
     @GetMapping("/gen-subtitle")
     public CommonResp<String> genSubtitle(@Valid GenSubtitleReq req)  {
         String url = filetransSubtitleService.genSubtitle(req);
+        return new CommonResp<>(url);
+    }
+
+    @GetMapping("/gen-text")
+    public CommonResp<String> genText(@Valid GenTextReq req) {
+        String url = filetransSubtitleService.genText(req);
         return new CommonResp<>(url);
     }
 }

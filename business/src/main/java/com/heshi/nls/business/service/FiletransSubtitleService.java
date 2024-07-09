@@ -12,6 +12,7 @@ import com.heshi.nls.business.domain.FiletransSubtitleExample;
 import com.heshi.nls.business.mapper.FiletransSubtitleMapper;
 import com.heshi.nls.business.req.FiletransSubtitleQueryReq;
 import com.heshi.nls.business.req.GenSubtitleReq;
+import com.heshi.nls.business.req.GenTextReq;
 import com.heshi.nls.business.resp.FiletransSubtitleQueryResp;
 import com.heshi.nls.business.resp.PageResp;
 import com.heshi.nls.business.util.VodUtil;
@@ -26,16 +27,15 @@ import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
-@Service
 @Slf4j
+@Service
 public class FiletransSubtitleService {
-
-    @Resource
-    FiletransSubtitleMapper filetransSubtitleMapper;
 
     @Value("${temp.dir}")
     private String tempDir;
 
+    @Resource
+    FiletransSubtitleMapper filetransSubtitleMapper;
 
     @Transactional
     public void saveSubtitle(Long filetransId, JSONObject result) {
@@ -87,11 +87,11 @@ public class FiletransSubtitleService {
         return pageResp;
     }
 
-
     /**
      * 生成字幕文件
      */
     public String genSubtitle(GenSubtitleReq req) {
+        String suffix = ".srt";
         Long filetransId = req.getFiletransId();
         log.info("获取字幕");
         FiletransSubtitleExample filetransSubtitleExample = new FiletransSubtitleExample();
@@ -102,17 +102,39 @@ public class FiletransSubtitleService {
         log.info("格式化字幕");
         StringBuffer buffer = this.formatSubtitle(filetransSubtitleList);
 
-        String subtitleFullPath = tempDir + filetransId + ".srt";
-        log.info("生成字幕文件：{}", subtitleFullPath);
+        return uploadFile(filetransId, buffer, suffix);
+    }
+
+    /**
+     * 生成纯文本文件
+     */
+    public String genText(GenTextReq req) {
+        String suffix = ".txt";
+        Long filetransId = req.getFiletransId();
+        log.info("获取文本");
+        FiletransSubtitleExample filetransSubtitleExample = new FiletransSubtitleExample();
+        FiletransSubtitleExample.Criteria criteria = filetransSubtitleExample.createCriteria();
+        criteria.andFiletransIdEqualTo(req.getFiletransId());
+        List<FiletransSubtitle> filetransSubtitleList = filetransSubtitleMapper.selectByExample(filetransSubtitleExample);
+
+        log.info("格式化文本");
+        StringBuffer buffer = this.formatText(filetransSubtitleList);
+
+        return uploadFile(filetransId, buffer, suffix);
+    }
+
+    private String uploadFile(Long filetransId, StringBuffer buffer, String suffix) {
+        String fullPath = tempDir + filetransId + suffix;
+        log.info("生成临时文件：{}", fullPath);
 
         FileUtil.mkdir(tempDir);
-        FileUtil.writeBytes(buffer.toString().getBytes(), subtitleFullPath);
+        FileUtil.writeBytes(buffer.toString().getBytes(), fullPath);
 
-        String url = VodUtil.uploadSubtitle(subtitleFullPath);
-        log.info("上传字幕到辅助媒资成功：{}", url);
+        String url = VodUtil.uploadSubtitle(fullPath);
+        log.info("上传临时文件成功：{}", url);
 
-        log.info("删除本地字幕临时文件：{}", subtitleFullPath);
-        FileUtil.del(subtitleFullPath);
+        log.info("删除临时文件：{}", fullPath);
+        FileUtil.del(fullPath);
 
         return url;
     }
@@ -142,5 +164,20 @@ public class FiletransSubtitleService {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss,SSS");
         simpleDateFormat.setTimeZone(TimeZone.getTimeZone("ETC/GMT-8"));
         return simpleDateFormat.format(ms);
+    }
+
+    /**
+     * 格式化纯文本
+     */
+    private StringBuffer formatText(List<FiletransSubtitle> list) {
+        log.info("拼接纯文本数据，总行数：{}", list.size());
+        StringBuffer buffer = new StringBuffer();
+
+        for (FiletransSubtitle item : list) {
+            buffer.append(item.getText());
+            buffer.append(System.getProperty("line.separator"));
+        }
+        log.info("拼接纯文本完成，字符数：{}", buffer.length());
+        return buffer;
     }
 }
