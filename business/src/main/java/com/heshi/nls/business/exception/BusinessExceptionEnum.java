@@ -18,7 +18,7 @@ public enum BusinessExceptionEnum {
     ALIPAY_ERROR("调用支付宝接口失败"),
     PAY_ERROR("调用支付接口失败"),
     FILETRANS_TRANS_ERROR("录音文件识别请求失败"),
-
+    USER_LOGIN_ERROR("登录名未注册或密码错误"),
     GEN_SUBTITLE_ERROR("生成字幕文件失败"),
 
 ;
