@@ -8,6 +8,7 @@ import com.heshi.nls.business.req.MemberResetReq;
 import com.heshi.nls.business.resp.CommonResp;
 import com.heshi.nls.business.resp.MemberLoginResp;
 import com.heshi.nls.business.service.KaptchaService;
+import com.heshi.nls.business.service.MemberLoginLogService;
 import com.heshi.nls.business.service.MemberService;
 import com.heshi.nls.business.service.SmsCodeService;
 import jakarta.annotation.Resource;
@@ -22,6 +23,9 @@ public class WebMemberController {
 
     @Resource
     private MemberService memberService;
+
+    @Resource
+    private MemberLoginLogService memberLoginLogService;
 
     @Resource
     private SmsCodeService smsCodeService;
@@ -66,6 +70,12 @@ public class WebMemberController {
         log.info("忘记密码验证码校验通过：{}", req.getMobile());
 
         memberService.reset(req);
+        return new CommonResp<>();
+    }
+
+    @GetMapping("/heart")
+    public CommonResp<Object> heart() {
+        memberLoginLogService.updateHeartInfo();
         return new CommonResp<>();
     }
 }

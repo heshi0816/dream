@@ -36,9 +36,10 @@
 </template>
 
 <script setup>
-import {ref, watch} from 'vue';
+import {onMounted, onUnmounted, ref, watch} from 'vue';
 import store from "../store/index.js";
 import {useRouter} from "vue-router";
+import axios from "axios";
 
 const selectedKeys = ref(['/home/welcome']);
 const router = useRouter();
@@ -50,6 +51,15 @@ watch(() => router.currentRoute.value.path, (newValue, oldValue) => {
 }, {immediate: true});
 
 const member = store.state.member;
+
+const heart = () => {
+  axios.get("/nls/web/member/heart");
+}
+let interval = setInterval(heart, 5000);
+
+// 退出登录时，停止心跳
+onUnmounted(() => clearInterval(interval));
+
 </script>
 
 <style scoped>

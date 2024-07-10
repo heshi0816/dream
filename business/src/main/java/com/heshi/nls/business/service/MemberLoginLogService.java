@@ -1,7 +1,10 @@
 package com.heshi.nls.business.service;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
+import com.heshi.nls.business.context.LoginMemberContext;
 import com.heshi.nls.business.domain.MemberLoginLog;
+import com.heshi.nls.business.domain.MemberLoginLogExample;
 import com.heshi.nls.business.mapper.MemberLoginLogMapper;
 import com.heshi.nls.business.resp.MemberLoginResp;
 import jakarta.annotation.Resource;
@@ -9,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 @Slf4j
@@ -27,5 +31,26 @@ public class MemberLoginLogService {
         memberLoginLog.setHeartCount(0);
         memberLoginLog.setLastHeartTime(now);
         memberLoginLogMapper.insert(memberLoginLog);
+    }
+
+
+    public void updateHeartInfo() {
+        MemberLoginResp memberLoginResp = LoginMemberContext.getMember();
+        String token = memberLoginResp.getToken();
+        log.info("更新会员心跳信息：{}", token);
+        MemberLoginLogExample memberLoginLogExample = new MemberLoginLogExample();
+        memberLoginLogExample.createCriteria().andTokenEqualTo(token);
+        memberLoginLogExample.setOrderByClause("id desc");
+        List<MemberLoginLog> memberLoginLogList = memberLoginLogMapper.selectByExample(memberLoginLogExample);
+        if (CollUtil.isEmpty(memberLoginLogList)) {
+            log.warn("未找到该token的登录信息：{}，会员ID：{}", token, memberLoginResp.getId());
+            save(memberLoginResp);
+            return;
+        }
+
+        MemberLoginLog memberLoginLogDB = memberLoginLogList.get(0);
+        memberLoginLogDB.setHeartCount(memberLoginLogDB.getHeartCount() + 1);
+        memberLoginLogDB.setLastHeartTime(new Date());
+        memberLoginLogMapper.updateByPrimaryKey(memberLoginLogDB);
     }
 }
