@@ -1,5 +1,6 @@
 package com.heshi.nls.business.config;
 
+import com.heshi.nls.business.interceptor.AdminLoginInterceptor;
 import com.heshi.nls.business.interceptor.LoginInterceptor;
 import com.heshi.nls.business.interceptor.WebLoginInterceptor;
 import jakarta.annotation.Resource;
@@ -17,6 +18,9 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     @Resource
     private WebLoginInterceptor webLoginInterceptor;
 
+    @Resource
+    private AdminLoginInterceptor adminLoginInterceptor;
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginInterceptor);
@@ -31,6 +35,12 @@ public class SpringMvcConfig implements WebMvcConfigurer {
                         "/web/sms-code/send-for-reset",
                         "/web/member/reset"
 
+                );
+        registry.addInterceptor(adminLoginInterceptor)
+                .addPathPatterns("/admin/**")
+                .excludePathPatterns(
+                        "/web/kaptcha/image-code/*",
+                        "/web/member/login"
                 );
     }
 }
