@@ -107,3 +107,17 @@ create table `user` (
 -- 算法：a111111拼接上盐值!@#$*&^%nls（写在md5.js），得到：a111111!@#$*&^%nls，对该值做两次md5（可以找一些在线md5工具）
 -- 如果想设置自己的密码，比如:123456，password=md5(md5(123456!@#$*&^%nls))
 insert into `user` (id, login_name, password) values (1, 'test', '7039ad9f5fe2a41b76d49a3de9f227c3');
+
+
+-- member_login_log 会员登录日志表
+-- 记录所有会员的登录信息
+drop table if exists `member_login_log`;
+create table `member_login_log` (
+                                    `id` bigint not null comment 'id',
+                                    `member_id` bigint not null comment '会员ID',
+                                    `login_time` datetime(3) not null comment '登录时间',
+                                    `token` varchar(300) null comment '登录token',
+                                    `heart_count` int null comment '心跳次数',
+                                    `last_heart_time` datetime(3) comment '最后心跳时间',
+                                    primary key (`id`)
+) engine=innodb default charset=utf8mb4 comment='会员登录日志表';
