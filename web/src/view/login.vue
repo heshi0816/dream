@@ -85,7 +85,7 @@ const login = values => {
     if (data.success) {
       message.success("登录成功！");
       store.commit("setMember", data.content);
-      router.push("/home");
+      router.push("/home/welcome");
     } else {
       message.error(data.message);
     }

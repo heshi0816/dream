@@ -1,66 +1,1249 @@
-2024-06-25 00:06:44.612 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 20820 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
-2024-06-25 00:06:44.615 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
-2024-06-25 00:06:44.662 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-25 00:06:44.662 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-25 00:06:45.558 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 10924 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
-2024-06-25 00:06:45.560 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
-2024-06-25 00:06:45.600 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-25 00:06:45.600 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-25 00:06:45.790 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
-2024-06-25 00:06:45.799 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:06:45.801 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
-2024-06-25 00:06:45.801 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-06-25 00:06:45.857 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
-2024-06-25 00:06:45.857 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1194 ms
-2024-06-25 00:06:46.510 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
-2024-06-25 00:06:46.524 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:06:46.543 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
-2024-06-25 00:06:46.552 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 2.459 seconds (process running for 3.415)
-2024-06-25 00:06:46.555 INFO  com.heshi.nls.business.BusinessApplication         14   restartedMain                     启动成功！
-2024-06-25 00:06:46.555 INFO  com.heshi.nls.business.BusinessApplication         15   restartedMain                     测试地址：http://localhost:18000/nls/hello
-2024-06-25 00:06:46.626 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
-2024-06-25 00:06:46.634 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:06:46.635 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
-2024-06-25 00:06:46.636 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-06-25 00:06:46.685 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
-2024-06-25 00:06:46.686 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1086 ms
-2024-06-25 00:06:47.319 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer     62   restartedMain                     Unable to start LiveReload server
-2024-06-25 00:06:47.332 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:06:47.335 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 624  restartedMain                     Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-06-25 00:06:47.339 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Pausing ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:06:47.339 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Stopping service [Tomcat]
-2024-06-25 00:06:47.344 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Stopping ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:06:47.345 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Destroying ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:06:47.351 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger    82   restartedMain                     
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-06-25 00:06:47.369 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter   40   restartedMain                     
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 18000 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 18000 or configure this application to listen on another port.
-
-2024-06-25 00:07:11.122 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 6256 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
-2024-06-25 00:07:11.124 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
-2024-06-25 00:07:11.165 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-06-25 00:07:11.166 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-06-25 00:07:12.197 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
-2024-06-25 00:07:12.205 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:07:12.207 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
-2024-06-25 00:07:12.207 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-06-25 00:07:12.258 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
-2024-06-25 00:07:12.259 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1092 ms
-2024-06-25 00:07:12.941 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
-2024-06-25 00:07:12.955 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
-2024-06-25 00:07:12.973 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
-2024-06-25 00:07:12.982 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 2.327 seconds (process running for 2.824)
-2024-06-25 00:07:12.984 INFO  com.heshi.nls.business.BusinessApplication         14   restartedMain                     启动成功！
-2024-06-25 00:07:12.985 INFO  com.heshi.nls.business.BusinessApplication         15   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:31:31.776 INFO  org.hibernate.validator.internal.util.Version      21   background-preinit                     HV000001: Hibernate Validator 8.0.1.Final
+2024-07-08 04:31:31.834 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 5572 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:31:31.835 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:31:31.887 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08 04:31:31.887 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08 04:31:32.578 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:31:32.581 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:31:32.621 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:31:34.148 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:31:34.159 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:31:34.161 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:31:34.161 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:31:34.297 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:31:34.298 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 2410 ms
+2024-07-08 04:31:39.247 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:31:39.272 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:31:39.292 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:31:39.304 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 8.841 seconds (process running for 9.535)
+2024-07-08 04:31:39.307 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:31:39.307 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:31:43.871 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  http-nio-18000-exec-1                     Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08 04:31:43.871 INFO  org.springframework.web.servlet.DispatcherServlet  532  http-nio-18000-exec-1                     Initializing Servlet 'dispatcherServlet'
+2024-07-08 04:31:43.873 INFO  org.springframework.web.servlet.DispatcherServlet  554  http-nio-18000-exec-1                     Completed initialization in 2 ms
+2024-07-08 04:31:43.936 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-1 1810049077988077568 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 04:31:43.937 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-1 1810049077988077568 网站登录验证开始，token：{{token}}
+2024-07-08 04:31:43.937 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-1 1810049077988077568 获取会员登录token：{{token}}
+2024-07-08 04:31:44.476 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-1 1810049077988077568 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:31:44.533 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-1 1810049077988077568 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:32:03.900 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-2 1810049161257594880 ------------- 环绕通知开始 -------------
+2024-07-08 04:32:03.901 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-2 1810049161257594880 请求地址: http://localhost:18000/nls/web/member/login POST
+2024-07-08 04:32:03.901 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-2 1810049161257594880 类名方法: com.heshi.nls.business.controller.web.WebMemberController.login
+2024-07-08 04:32:03.902 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-2 1810049161257594880 远程地址: 127.0.0.1
+2024-07-08 04:32:03.983 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-2 1810049161257594880 请求参数: [{"imageCode":"8fmw","imageCodeToken":"1234","mobile":"13000000002","password":"876cc0b1232012c688aaeac03420d23c"}]
+2024-07-08 04:32:04.659 INFO  com.heshi.nls.business.service.KaptchaService      29   http-nio-18000-exec-2 1810049161257594880 从redis中获取到的验证码：null
+2024-07-08 04:32:04.659 WARN  com.heshi.nls.business.service.KaptchaService      31   http-nio-18000-exec-2 1810049161257594880 验证码校验失败，验证码已过期
+2024-07-08 04:32:04.661 ERROR c.h.n.b.controller.ControllerExceptionHandler      34   http-nio-18000-exec-2 1810049161257594880 系统异常：
+com.heshi.nls.business.exception.BusinessException: 图片验证码不正确或已过期
+2024-07-08 04:32:04.663 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-2 1810049161257594880 Resolved [BusinessException(e=IMAGE_CODE_ERROR)]
+2024-07-08 04:32:14.353 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-5 1810049205570416640 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 04:32:14.354 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-5 1810049205570416640 网站登录验证开始，token：{{token}}
+2024-07-08 04:32:14.354 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-5 1810049205570416640 获取会员登录token：{{token}}
+2024-07-08 04:32:14.355 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-5 1810049205570416640 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:32:14.359 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-5 1810049205570416640 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:32:15.451 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-6 1810049210175762432 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 04:32:15.452 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-6 1810049210175762432 网站登录验证开始，token：{{token}}
+2024-07-08 04:32:15.453 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-6 1810049210175762432 获取会员登录token：{{token}}
+2024-07-08 04:32:15.454 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-6 1810049210175762432 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:32:15.458 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-6 1810049210175762432 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:32:16.059 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-9 1810049212725899264 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 04:32:16.059 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-9 1810049212725899264 网站登录验证开始，token：{{token}}
+2024-07-08 04:32:16.059 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-9 1810049212725899264 获取会员登录token：{{token}}
+2024-07-08 04:32:16.060 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-9 1810049212725899264 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:32:16.062 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-9 1810049212725899264 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:33:02.761 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-10 1810049408549564416 ------------- 环绕通知开始 -------------
+2024-07-08 04:33:02.763 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-10 1810049408549564416 请求地址: http://localhost:18000/nls/web/kaptcha/image-code/eDfaTWRG GET
+2024-07-08 04:33:02.763 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-10 1810049408549564416 类名方法: com.heshi.nls.business.controller.web.WebKaptchaController.imageCode
+2024-07-08 04:33:02.763 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-10 1810049408549564416 远程地址: 0:0:0:0:0:0:0:1
+2024-07-08 04:33:02.763 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-10 1810049408549564416 请求参数: ["eDfaTWRG",null]
+2024-07-08 04:33:02.901 INFO  com.heshi.nls.business.aspect.LogAspect            73   http-nio-18000-exec-10 1810049408549564416 返回结果: null
+2024-07-08 04:33:02.901 INFO  com.heshi.nls.business.aspect.LogAspect            74   http-nio-18000-exec-10 1810049408549564416 ------------- 环绕通知结束 耗时：138 ms -------------
+2024-07-08 04:33:11.574 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-2 1810049445568491520 ------------- 环绕通知开始 -------------
+2024-07-08 04:33:11.574 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-2 1810049445568491520 请求地址: http://localhost:18000/nls/web/member/login POST
+2024-07-08 04:33:11.575 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-2 1810049445568491520 类名方法: com.heshi.nls.business.controller.web.WebMemberController.login
+2024-07-08 04:33:11.575 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-2 1810049445568491520 远程地址: 0:0:0:0:0:0:0:1
+2024-07-08 04:33:11.575 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-2 1810049445568491520 请求参数: [{"imageCode":"ee8d","imageCodeToken":"eDfaTWRG","mobile":"13000000004","password":"868404ec65904010834fe3b8d9bf1992"}]
+2024-07-08 04:33:11.612 INFO  com.heshi.nls.business.service.KaptchaService      29   http-nio-18000-exec-2 1810049445568491520 从redis中获取到的验证码：ee8d
+2024-07-08 04:33:11.649 INFO  c.h.n.business.controller.web.WebMemberController  53   http-nio-18000-exec-2 1810049445568491520 会员登录开始：13000000004
+2024-07-08 04:33:11.722 INFO  com.zaxxer.hikari.HikariDataSource                 110  http-nio-18000-exec-2 1810049445568491520 HikariPool-1 - Starting...
+2024-07-08 04:33:12.079 INFO  com.zaxxer.hikari.pool.HikariPool                  565  http-nio-18000-exec-2 1810049445568491520 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51c642ae
+2024-07-08 04:33:12.081 INFO  com.zaxxer.hikari.HikariDataSource                 123  http-nio-18000-exec-2 1810049445568491520 HikariPool-1 - Start completed.
+2024-07-08 04:33:12.132 INFO  com.heshi.nls.business.service.MemberService       93   http-nio-18000-exec-2 1810049445568491520 登录成功，13000000004
+2024-07-08 04:33:12.164 INFO  com.heshi.nls.business.util.JwtUtil                25   http-nio-18000-exec-2 1810049445568491520 准备生成登录token，map：{name=130****0004, token=null, id=1806986232429809664}
+2024-07-08 04:33:12.165 INFO  com.heshi.nls.business.util.JwtUtil                30   http-nio-18000-exec-2 1810049445568491520 开始生成JWT token，map：{name=130****0004, token=null, id=1806986232429809664}
+2024-07-08 04:33:12.185 INFO  com.heshi.nls.business.util.JwtUtil                44   http-nio-18000-exec-2 1810049445568491520 生成成功JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjAzODQzOTIsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA0NzA3OTIsImlhdCI6MTcyMDM4NDM5Mn0.IgEuGLOW8zJJMQk8mQTpR78wKuIRVpIwxyV17SK6ueo
+2024-07-08 04:33:12.191 INFO  com.heshi.nls.business.aspect.LogAspect            73   http-nio-18000-exec-2 1810049445568491520 返回结果: {"content":{"id":1806986232429809664,"name":"130****0004","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjAzODQzOTIsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA0NzA3OTIsImlhdCI6MTcyMDM4NDM5Mn0.IgEuGLOW8zJJMQk8mQTpR78wKuIRVpIwxyV17SK6ueo"},"success":true}
+2024-07-08 04:33:12.191 INFO  com.heshi.nls.business.aspect.LogAspect            74   http-nio-18000-exec-2 1810049445568491520 ------------- 环绕通知结束 耗时：617 ms -------------
+2024-07-08 04:33:17.308 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-3 1810049469614436352 ------------- 环绕通知开始 -------------
+2024-07-08 04:33:17.308 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-3 1810049469614436352 请求地址: http://localhost:18000/nls/web/member/login POST
+2024-07-08 04:33:17.309 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-3 1810049469614436352 类名方法: com.heshi.nls.business.controller.web.WebMemberController.login
+2024-07-08 04:33:17.309 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-3 1810049469614436352 远程地址: 127.0.0.1
+2024-07-08 04:33:17.310 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-3 1810049469614436352 请求参数: [{"imageCode":"8fmw","imageCodeToken":"1234","mobile":"13000000002","password":"876cc0b1232012c688aaeac03420d23c"}]
+2024-07-08 04:33:17.347 INFO  com.heshi.nls.business.service.KaptchaService      29   http-nio-18000-exec-3 1810049469614436352 从redis中获取到的验证码：null
+2024-07-08 04:33:17.347 WARN  com.heshi.nls.business.service.KaptchaService      31   http-nio-18000-exec-3 1810049469614436352 验证码校验失败，验证码已过期
+2024-07-08 04:33:17.348 ERROR c.h.n.b.controller.ControllerExceptionHandler      34   http-nio-18000-exec-3 1810049469614436352 系统异常：
+com.heshi.nls.business.exception.BusinessException: 图片验证码不正确或已过期
+2024-07-08 04:33:17.350 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-3 1810049469614436352 Resolved [BusinessException(e=IMAGE_CODE_ERROR)]
+2024-07-08 04:33:18.739 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-4 1810049475620679680 ------------- 环绕通知开始 -------------
+2024-07-08 04:33:18.740 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-4 1810049475620679680 请求地址: http://localhost:18000/nls/web/member/login POST
+2024-07-08 04:33:18.741 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-4 1810049475620679680 类名方法: com.heshi.nls.business.controller.web.WebMemberController.login
+2024-07-08 04:33:18.741 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-4 1810049475620679680 远程地址: 127.0.0.1
+2024-07-08 04:33:18.742 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-4 1810049475620679680 请求参数: [{"imageCode":"8fmw","imageCodeToken":"1234","mobile":"13000000002","password":"876cc0b1232012c688aaeac03420d23c"}]
+2024-07-08 04:33:18.778 INFO  com.heshi.nls.business.service.KaptchaService      29   http-nio-18000-exec-4 1810049475620679680 从redis中获取到的验证码：null
+2024-07-08 04:33:18.779 WARN  com.heshi.nls.business.service.KaptchaService      31   http-nio-18000-exec-4 1810049475620679680 验证码校验失败，验证码已过期
+2024-07-08 04:33:18.780 ERROR c.h.n.b.controller.ControllerExceptionHandler      34   http-nio-18000-exec-4 1810049475620679680 系统异常：
+com.heshi.nls.business.exception.BusinessException: 图片验证码不正确或已过期
+2024-07-08 04:33:18.782 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-4 1810049475620679680 Resolved [BusinessException(e=IMAGE_CODE_ERROR)]
+2024-07-08 04:33:19.687 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-7 1810049479592685568 ------------- 环绕通知开始 -------------
+2024-07-08 04:33:19.687 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-7 1810049479592685568 请求地址: http://localhost:18000/nls/web/member/login POST
+2024-07-08 04:33:19.687 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-7 1810049479592685568 类名方法: com.heshi.nls.business.controller.web.WebMemberController.login
+2024-07-08 04:33:19.688 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-7 1810049479592685568 远程地址: 127.0.0.1
+2024-07-08 04:33:19.688 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-7 1810049479592685568 请求参数: [{"imageCode":"8fmw","imageCodeToken":"1234","mobile":"13000000002","password":"876cc0b1232012c688aaeac03420d23c"}]
+2024-07-08 04:33:19.724 INFO  com.heshi.nls.business.service.KaptchaService      29   http-nio-18000-exec-7 1810049479592685568 从redis中获取到的验证码：null
+2024-07-08 04:33:19.725 WARN  com.heshi.nls.business.service.KaptchaService      31   http-nio-18000-exec-7 1810049479592685568 验证码校验失败，验证码已过期
+2024-07-08 04:33:19.725 ERROR c.h.n.b.controller.ControllerExceptionHandler      34   http-nio-18000-exec-7 1810049479592685568 系统异常：
+com.heshi.nls.business.exception.BusinessException: 图片验证码不正确或已过期
+2024-07-08 04:33:19.726 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-7 1810049479592685568 Resolved [BusinessException(e=IMAGE_CODE_ERROR)]
+2024-07-08 04:33:25.843 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-8 1810049505421209600 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 04:33:25.844 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-8 1810049505421209600 网站登录验证开始，token：{{token}}
+2024-07-08 04:33:25.844 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-8 1810049505421209600 获取会员登录token：{{token}}
+2024-07-08 04:33:25.845 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-8 1810049505421209600 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:33:25.847 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-8 1810049505421209600 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:33:26.697 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-1 1810049509003145216 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 04:33:26.697 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-1 1810049509003145216 网站登录验证开始，token：{{token}}
+2024-07-08 04:33:26.698 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-1 1810049509003145216 获取会员登录token：{{token}}
+2024-07-08 04:33:26.698 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-1 1810049509003145216 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:33:26.700 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-1 1810049509003145216 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:33:54.057 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-3 1810049623759302656 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/pay
+2024-07-08 04:33:54.058 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-3 1810049623759302656 网站登录验证开始，token：{{token}}
+2024-07-08 04:33:54.058 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-3 1810049623759302656 获取会员登录token：{{token}}
+2024-07-08 04:33:54.059 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-3 1810049623759302656 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:33:54.061 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-3 1810049623759302656 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:33:55.097 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-4 1810049628121378816 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/pay
+2024-07-08 04:33:55.098 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-4 1810049628121378816 网站登录验证开始，token：{{token}}
+2024-07-08 04:33:55.098 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-4 1810049628121378816 获取会员登录token：{{token}}
+2024-07-08 04:33:55.099 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-4 1810049628121378816 系统异常：
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:404)
+	at cn.hutool.jwt.JWT.parse(JWT.java:96)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.heshi.nls.business.util.JwtUtil.getJSONObject(JwtUtil.java:60)
+	at com.heshi.nls.business.interceptor.WebLoginInterceptor.preHandle(WebLoginInterceptor.java:41)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:146)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:33:55.101 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-4 1810049628121378816 Resolved [cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.]
+2024-07-08 04:34:52.492 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener 211  File Watcher                     Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-08 04:34:52.500 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-5                     Pausing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:52.501 INFO  org.apache.catalina.core.StandardService           173  Thread-5                     Stopping service [Tomcat]
+2024-07-08 04:34:52.502 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  Thread-5                     Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-08 04:34:52.504 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/sun.nio.ch.WEPoll.wait(Native Method)
+ java.base@17.0.11/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+ java.base@17.0.11/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.11/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+ app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.504 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.505 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.505 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.505 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.506 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.506 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.506 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.507 WARN  org.apache.catalina.loader.WebappClassLoaderBase   173  Thread-5                     The web application [nls] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+ java.base@17.0.11/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.11/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:34:52.507 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-5                     Stopping ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:52.509 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-5                     Destroying ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:52.641 INFO  com.zaxxer.hikari.HikariDataSource                 350  Thread-5                     HikariPool-1 - Shutdown initiated...
+2024-07-08 04:34:52.654 INFO  com.zaxxer.hikari.HikariDataSource                 352  Thread-5                     HikariPool-1 - Shutdown completed.
+2024-07-08 04:34:52.786 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 5572 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:34:52.786 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:34:52.995 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:34:52.995 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:34:53.002 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:34:53.204 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:34:53.205 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:53.205 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:34:53.205 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:34:53.234 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:34:53.234 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 445 ms
+2024-07-08 04:34:54.317 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:34:54.331 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:54.333 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:34:54.337 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 1.59 seconds (process running for 204.568)
+2024-07-08 04:34:54.339 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  63   restartedMain                     Condition evaluation unchanged
+2024-07-08 04:34:54.339 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:34:54.339 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:34:55.757 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener 211  File Watcher                     Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-08 04:34:55.768 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-7                     Pausing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:55.769 INFO  org.apache.catalina.core.StandardService           173  Thread-7                     Stopping service [Tomcat]
+2024-07-08 04:34:55.772 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-7                     Stopping ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:55.774 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-7                     Destroying ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:55.910 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 5572 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:34:55.910 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:34:56.121 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:34:56.121 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:34:56.128 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:34:56.319 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:34:56.319 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:56.319 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:34:56.320 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:34:56.349 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:34:56.350 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 438 ms
+2024-07-08 04:34:57.538 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:34:57.561 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:34:57.564 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:34:57.568 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 1.701 seconds (process running for 207.8)
+2024-07-08 04:34:57.569 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  63   restartedMain                     Condition evaluation unchanged
+2024-07-08 04:34:57.569 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:34:57.570 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:36:53.081 INFO  org.hibernate.validator.internal.util.Version      21   background-preinit                     HV000001: Hibernate Validator 8.0.1.Final
+2024-07-08 04:36:53.124 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 17056 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:36:53.126 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:36:53.174 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08 04:36:53.175 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08 04:36:53.920 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:36:53.923 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:36:53.956 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:36:55.027 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:36:55.036 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:36:55.037 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:36:55.038 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:36:55.131 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:36:55.132 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1957 ms
+2024-07-08 04:36:57.031 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:36:57.052 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:36:57.073 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:36:57.086 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 4.436 seconds (process running for 5.079)
+2024-07-08 04:36:57.090 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:36:57.091 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:36:59.510 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener 211  File Watcher                     Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-08 04:36:59.523 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-5                     Pausing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:36:59.523 INFO  org.apache.catalina.core.StandardService           173  Thread-5                     Stopping service [Tomcat]
+2024-07-08 04:36:59.527 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-5                     Stopping ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:36:59.529 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-5                     Destroying ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:36:59.689 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 17056 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:36:59.689 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:36:59.898 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:36:59.898 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:36:59.904 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:37:00.108 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:37:00.108 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:00.109 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:37:00.109 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:37:00.148 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:37:00.148 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 456 ms
+2024-07-08 04:37:01.090 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:37:01.100 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:01.103 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:37:01.106 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 1.46 seconds (process running for 9.099)
+2024-07-08 04:37:01.108 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  63   restartedMain                     Condition evaluation unchanged
+2024-07-08 04:37:01.108 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:37:01.109 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:37:24.066 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener 211  File Watcher                     Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-07-08 04:37:24.077 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-7                     Pausing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:24.078 INFO  org.apache.catalina.core.StandardService           173  Thread-7                     Stopping service [Tomcat]
+2024-07-08 04:37:24.081 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-7                     Stopping ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:24.082 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-7                     Destroying ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:24.166 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 17056 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:37:24.166 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:37:24.357 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:37:24.357 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:37:24.364 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:37:24.540 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:37:24.541 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:24.541 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:37:24.541 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:37:24.575 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:37:24.575 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 406 ms
+2024-07-08 04:37:25.525 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:37:25.536 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:25.539 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:37:25.543 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 1.41 seconds (process running for 33.536)
+2024-07-08 04:37:25.544 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  63   restartedMain                     Condition evaluation unchanged
+2024-07-08 04:37:25.545 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:37:25.545 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:37:26.977 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener 211  File Watcher                     Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-08 04:37:26.983 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-11                     Pausing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:26.984 INFO  org.apache.catalina.core.StandardService           173  Thread-11                     Stopping service [Tomcat]
+2024-07-08 04:37:26.985 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-11                     Stopping ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:26.987 INFO  org.apache.coyote.http11.Http11NioProtocol         173  Thread-11                     Destroying ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:27.128 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 17056 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:37:27.129 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:37:27.356 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:37:27.356 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:37:27.363 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:37:27.558 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:37:27.558 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:27.558 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:37:27.559 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:37:27.616 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:37:27.617 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 486 ms
+2024-07-08 04:37:28.811 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:37:28.823 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:28.826 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:37:28.830 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 1.745 seconds (process running for 36.823)
+2024-07-08 04:37:28.831 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  63   restartedMain                     Condition evaluation unchanged
+2024-07-08 04:37:28.832 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:37:28.832 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:37:36.120 INFO  org.hibernate.validator.internal.util.Version      21   background-preinit                     HV000001: Hibernate Validator 8.0.1.Final
+2024-07-08 04:37:36.167 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 9020 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:37:36.168 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:37:36.215 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08 04:37:36.216 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08 04:37:36.893 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:37:36.895 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:37:36.931 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:37:38.010 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:37:38.019 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:38.020 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:37:38.021 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:37:38.100 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:37:38.101 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1884 ms
+2024-07-08 04:37:39.993 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:37:40.012 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:37:40.029 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:37:40.039 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 4.359 seconds (process running for 5.047)
+2024-07-08 04:37:40.041 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:37:40.042 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:37:50.608 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  http-nio-18000-exec-1                     Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08 04:37:50.609 INFO  org.springframework.web.servlet.DispatcherServlet  532  http-nio-18000-exec-1                     Initializing Servlet 'dispatcherServlet'
+2024-07-08 04:37:50.610 INFO  org.springframework.web.servlet.DispatcherServlet  554  http-nio-18000-exec-1                     Completed initialization in 1 ms
+2024-07-08 04:37:50.719 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-1 1810050616186130432 ------------- 环绕通知开始 -------------
+2024-07-08 04:37:50.721 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-1 1810050616186130432 请求地址: http://localhost:18000/nls/web/filetrans/query GET
+2024-07-08 04:37:50.721 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-1 1810050616186130432 类名方法: com.heshi.nls.business.controller.web.WebFiletransController.query
+2024-07-08 04:37:50.721 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-1 1810050616186130432 远程地址: 127.0.0.1
+2024-07-08 04:37:50.799 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-1 1810050616186130432 请求参数: [{"status":"SI"}]
+2024-07-08 04:37:50.800 ERROR com.heshi.nls.business.context.LoginMemberContext  27   http-nio-18000-exec-1 1810050616186130432 获取登录会员信息异常
+java.lang.NullPointerException: Cannot invoke "com.heshi.nls.business.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at com.heshi.nls.business.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at com.heshi.nls.business.controller.web.WebFiletransController.query(WebFiletransController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.heshi.nls.business.aspect.LogAspect.doAround(LogAspect.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.heshi.nls.business.controller.web.WebFiletransController$$SpringCGLIB$$0.query(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:37:50.806 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-1 1810050616186130432 系统异常：
+java.lang.NullPointerException: Cannot invoke "com.heshi.nls.business.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at com.heshi.nls.business.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at com.heshi.nls.business.controller.web.WebFiletransController.query(WebFiletransController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.heshi.nls.business.aspect.LogAspect.doAround(LogAspect.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.heshi.nls.business.controller.web.WebFiletransController$$SpringCGLIB$$0.query(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:37:50.860 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-1 1810050616186130432 Resolved [java.lang.NullPointerException: Cannot invoke "com.heshi.nls.business.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null]
+2024-07-08 04:42:43.775 INFO  org.hibernate.validator.internal.util.Version      21   background-preinit                     HV000001: Hibernate Validator 8.0.1.Final
+2024-07-08 04:42:43.834 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 23208 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 04:42:43.835 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 04:42:43.882 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08 04:42:43.882 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08 04:42:44.547 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 04:42:44.550 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 04:42:44.585 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-07-08 04:42:45.670 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 04:42:45.679 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:42:45.683 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 04:42:45.684 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 04:42:45.771 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 04:42:45.771 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1888 ms
+2024-07-08 04:42:47.534 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 04:42:47.553 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 04:42:47.571 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 04:42:47.581 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 4.252 seconds (process running for 4.906)
+2024-07-08 04:42:47.584 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 04:42:47.584 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 04:42:47.757 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  http-nio-18000-exec-1                     Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08 04:42:47.758 INFO  org.springframework.web.servlet.DispatcherServlet  532  http-nio-18000-exec-1                     Initializing Servlet 'dispatcherServlet'
+2024-07-08 04:42:47.759 INFO  org.springframework.web.servlet.DispatcherServlet  554  http-nio-18000-exec-1                     Completed initialization in 1 ms
+2024-07-08 04:42:47.882 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-1 1810051862519386112 ------------- 环绕通知开始 -------------
+2024-07-08 04:42:47.887 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-1 1810051862519386112 请求地址: http://localhost:18000/nls/web/filetrans/query GET
+2024-07-08 04:42:47.887 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-1 1810051862519386112 类名方法: com.heshi.nls.business.controller.web.WebFiletransController.query
+2024-07-08 04:42:47.888 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-1 1810051862519386112 远程地址: 127.0.0.1
+2024-07-08 04:42:47.991 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-1 1810051862519386112 请求参数: [{"status":"SI"}]
+2024-07-08 04:42:47.992 ERROR com.heshi.nls.business.context.LoginMemberContext  27   http-nio-18000-exec-1 1810051862519386112 获取登录会员信息异常
+java.lang.NullPointerException: Cannot invoke "com.heshi.nls.business.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at com.heshi.nls.business.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at com.heshi.nls.business.controller.web.WebFiletransController.query(WebFiletransController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.heshi.nls.business.aspect.LogAspect.doAround(LogAspect.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.heshi.nls.business.controller.web.WebFiletransController$$SpringCGLIB$$0.query(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:42:47.998 ERROR c.h.n.b.controller.ControllerExceptionHandler      24   http-nio-18000-exec-1 1810051862519386112 系统异常：
+java.lang.NullPointerException: Cannot invoke "com.heshi.nls.business.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at com.heshi.nls.business.context.LoginMemberContext.getId(LoginMemberContext.java:25)
+	at com.heshi.nls.business.controller.web.WebFiletransController.query(WebFiletransController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.heshi.nls.business.aspect.LogAspect.doAround(LogAspect.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.heshi.nls.business.controller.web.WebFiletransController$$SpringCGLIB$$0.query(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-08 04:42:48.049 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver    207  http-nio-18000-exec-1 1810051862519386112 Resolved [java.lang.NullPointerException: Cannot invoke "com.heshi.nls.business.resp.MemberLoginResp.getId()" because the return value of "java.lang.ThreadLocal.get()" is null]
+2024-07-08 20:48:52.325 INFO  org.hibernate.validator.internal.util.Version      21   background-preinit                     HV000001: Hibernate Validator 8.0.1.Final
+2024-07-08 20:48:52.374 INFO  com.heshi.nls.business.BusinessApplication         51   restartedMain                     Starting BusinessApplication using Java 17.0.11 with PID 26060 (D:\nls\nls\business\target\classes started by Administrator in D:\nls\nls)
+2024-07-08 20:48:52.375 INFO  com.heshi.nls.business.BusinessApplication         646  restartedMain                     No active profile set, falling back to 1 default profile: "default"
+2024-07-08 20:48:52.419 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-08 20:48:52.420 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor  250  restartedMain                     For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-08 20:48:53.081 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     291  restartedMain                     Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-08 20:48:53.084 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     138  restartedMain                     Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-08 20:48:53.119 INFO  o.s.d.r.config.RepositoryConfigurationDelegate     207  restartedMain                     Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-07-08 20:48:54.219 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       108  restartedMain                     Tomcat initialized with port(s): 18000 (http)
+2024-07-08 20:48:54.227 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Initializing ProtocolHandler ["http-nio-18000"]
+2024-07-08 20:48:54.228 INFO  org.apache.catalina.core.StandardService           173  restartedMain                     Starting service [Tomcat]
+2024-07-08 20:48:54.229 INFO  org.apache.catalina.core.StandardEngine            173  restartedMain                     Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-07-08 20:48:54.300 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  restartedMain                     Initializing Spring embedded WebApplicationContext
+2024-07-08 20:48:54.300 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     291  restartedMain                     Root WebApplicationContext: initialization completed in 1880 ms
+2024-07-08 20:48:56.240 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer     59   restartedMain                     LiveReload server is running on port 35729
+2024-07-08 20:48:56.259 INFO  org.apache.coyote.http11.Http11NioProtocol         173  restartedMain                     Starting ProtocolHandler ["http-nio-18000"]
+2024-07-08 20:48:56.276 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer       220  restartedMain                     Tomcat started on port(s): 18000 (http) with context path '/nls'
+2024-07-08 20:48:56.287 INFO  com.heshi.nls.business.BusinessApplication         57   restartedMain                     Started BusinessApplication in 4.368 seconds (process running for 5.021)
+2024-07-08 20:48:56.289 INFO  com.heshi.nls.business.BusinessApplication         18   restartedMain                     启动成功！
+2024-07-08 20:48:56.289 INFO  com.heshi.nls.business.BusinessApplication         19   restartedMain                     测试地址：http://localhost:18000/nls/hello
+2024-07-08 20:49:04.941 INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/nls]  173  http-nio-18000-exec-3                     Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-08 20:49:04.942 INFO  org.springframework.web.servlet.DispatcherServlet  532  http-nio-18000-exec-3                     Initializing Servlet 'dispatcherServlet'
+2024-07-08 20:49:04.943 INFO  org.springframework.web.servlet.DispatcherServlet  554  http-nio-18000-exec-3                     Completed initialization in 1 ms
+2024-07-08 20:49:05.026 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-3 1810295036466782208 ------------- 环绕通知开始 -------------
+2024-07-08 20:49:05.028 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-3 1810295036466782208 请求地址: http://localhost:18000/nls/web/kaptcha/image-code/97lz74nj GET
+2024-07-08 20:49:05.028 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-3 1810295036466782208 类名方法: com.heshi.nls.business.controller.web.WebKaptchaController.imageCode
+2024-07-08 20:49:05.028 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-3 1810295036466782208 远程地址: 0:0:0:0:0:0:0:1
+2024-07-08 20:49:05.075 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-3 1810295036466782208 请求参数: ["97lz74nj",null]
+2024-07-08 20:49:05.766 INFO  com.heshi.nls.business.aspect.LogAspect            73   http-nio-18000-exec-3 1810295036466782208 返回结果: null
+2024-07-08 20:49:05.767 INFO  com.heshi.nls.business.aspect.LogAspect            74   http-nio-18000-exec-3 1810295036466782208 ------------- 环绕通知结束 耗时：741 ms -------------
+2024-07-08 20:49:30.804 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-2 1810295144017125376 ------------- 环绕通知开始 -------------
+2024-07-08 20:49:30.804 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-2 1810295144017125376 请求地址: http://localhost:18000/nls/web/member/login POST
+2024-07-08 20:49:30.804 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-2 1810295144017125376 类名方法: com.heshi.nls.business.controller.web.WebMemberController.login
+2024-07-08 20:49:30.805 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-2 1810295144017125376 远程地址: 0:0:0:0:0:0:0:1
+2024-07-08 20:49:30.840 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-2 1810295144017125376 请求参数: [{"imageCode":"p46y","imageCodeToken":"97lz74nj","mobile":"13000000004","password":"868404ec65904010834fe3b8d9bf1992"}]
+2024-07-08 20:49:31.104 INFO  com.heshi.nls.business.service.KaptchaService      29   http-nio-18000-exec-2 1810295144017125376 从redis中获取到的验证码：p46y
+2024-07-08 20:49:31.140 INFO  c.h.n.business.controller.web.WebMemberController  53   http-nio-18000-exec-2 1810295144017125376 会员登录开始：13000000004
+2024-07-08 20:49:31.219 INFO  com.zaxxer.hikari.HikariDataSource                 110  http-nio-18000-exec-2 1810295144017125376 HikariPool-1 - Starting...
+2024-07-08 20:49:31.543 INFO  com.zaxxer.hikari.pool.HikariPool                  565  http-nio-18000-exec-2 1810295144017125376 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e85abeb
+2024-07-08 20:49:31.545 INFO  com.zaxxer.hikari.HikariDataSource                 123  http-nio-18000-exec-2 1810295144017125376 HikariPool-1 - Start completed.
+2024-07-08 20:49:31.599 INFO  com.heshi.nls.business.service.MemberService       93   http-nio-18000-exec-2 1810295144017125376 登录成功，13000000004
+2024-07-08 20:49:31.629 INFO  com.heshi.nls.business.util.JwtUtil                25   http-nio-18000-exec-2 1810295144017125376 准备生成登录token，map：{name=130****0004, token=null, id=1806986232429809664}
+2024-07-08 20:49:31.629 INFO  com.heshi.nls.business.util.JwtUtil                30   http-nio-18000-exec-2 1810295144017125376 开始生成JWT token，map：{name=130****0004, token=null, id=1806986232429809664}
+2024-07-08 20:49:31.656 INFO  com.heshi.nls.business.util.JwtUtil                44   http-nio-18000-exec-2 1810295144017125376 生成成功JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjA0NDI5NzEsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA1MjkzNzEsImlhdCI6MTcyMDQ0Mjk3MX0.MnH8GBijnXK-MgdATUHELrzBcsEav_JiJft001AMq2U
+2024-07-08 20:49:31.661 INFO  com.heshi.nls.business.aspect.LogAspect            73   http-nio-18000-exec-2 1810295144017125376 返回结果: {"content":{"id":1806986232429809664,"name":"130****0004","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjA0NDI5NzEsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA1MjkzNzEsImlhdCI6MTcyMDQ0Mjk3MX0.MnH8GBijnXK-MgdATUHELrzBcsEav_JiJft001AMq2U"},"success":true}
+2024-07-08 20:49:31.662 INFO  com.heshi.nls.business.aspect.LogAspect            74   http-nio-18000-exec-2 1810295144017125376 ------------- 环绕通知结束 耗时：858 ms -------------
+2024-07-08 20:49:33.505 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-4 1810295156000251904 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 20:49:33.506 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-4 1810295156000251904 网站登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjA0NDI5NzEsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA1MjkzNzEsImlhdCI6MTcyMDQ0Mjk3MX0.MnH8GBijnXK-MgdATUHELrzBcsEav_JiJft001AMq2U
+2024-07-08 20:49:33.506 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-4 1810295156000251904 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjA0NDI5NzEsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA1MjkzNzEsImlhdCI6MTcyMDQ0Mjk3MX0.MnH8GBijnXK-MgdATUHELrzBcsEav_JiJft001AMq2U
+2024-07-08 20:49:33.518 INFO  com.heshi.nls.business.util.JwtUtil                65   http-nio-18000-exec-4 1810295156000251904 根据token获取原始内容：{"name":"130****0004","id":1806986232429809664}
+2024-07-08 20:49:33.519 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   42   http-nio-18000-exec-4 1810295156000251904 当前登录会员：{"name":"130****0004","id":1806986232429809664}
+2024-07-08 20:49:33.547 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-4 1810295156000251904 ------------- 环绕通知开始 -------------
+2024-07-08 20:49:33.548 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-4 1810295156000251904 请求地址: http://localhost:18000/nls/web/filetrans/query GET
+2024-07-08 20:49:33.548 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-4 1810295156000251904 类名方法: com.heshi.nls.business.controller.web.WebFiletransController.query
+2024-07-08 20:49:33.548 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-4 1810295156000251904 远程地址: 0:0:0:0:0:0:0:1
+2024-07-08 20:49:33.551 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-4 1810295156000251904 请求参数: [{"page":1,"size":10}]
+2024-07-08 20:49:33.650 INFO  com.heshi.nls.business.aspect.LogAspect            73   http-nio-18000-exec-4 1810295156000251904 返回结果: {"content":{"list":[],"total":0},"success":true}
+2024-07-08 20:49:33.650 INFO  com.heshi.nls.business.aspect.LogAspect            74   http-nio-18000-exec-4 1810295156000251904 ------------- 环绕通知结束 耗时：102 ms -------------
+2024-07-08 20:49:37.675 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-6 1810295173486305280 ------------- 环绕通知开始 -------------
+2024-07-08 20:49:37.676 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-6 1810295173486305280 请求地址: http://localhost:18000/nls/query GET
+2024-07-08 20:49:37.676 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-6 1810295173486305280 类名方法: com.heshi.nls.business.controller.TestController.query
+2024-07-08 20:49:37.676 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-6 1810295173486305280 远程地址: 0:0:0:0:0:0:0:1
+2024-07-08 20:49:37.678 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-6 1810295173486305280 请求参数: [{"mobile":"1"}]
+2024-07-08 20:49:37.688 INFO  com.heshi.nls.business.aspect.LogAspect            73   http-nio-18000-exec-6 1810295173486305280 返回结果: {"content":[{"id":1,"mobile":"1"}],"success":true}
+2024-07-08 20:49:37.688 INFO  com.heshi.nls.business.aspect.LogAspect            74   http-nio-18000-exec-6 1810295173486305280 ------------- 环绕通知结束 耗时：12 ms -------------
+2024-07-08 20:49:38.068 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   30   http-nio-18000-exec-8 1810295175138861056 接口登录拦截，path：http://localhost:18000/nls/web/filetrans/query
+2024-07-08 20:49:38.069 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   34   http-nio-18000-exec-8 1810295175138861056 网站登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjA0NDI5NzEsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA1MjkzNzEsImlhdCI6MTcyMDQ0Mjk3MX0.MnH8GBijnXK-MgdATUHELrzBcsEav_JiJft001AMq2U
+2024-07-08 20:49:38.069 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   40   http-nio-18000-exec-8 1810295175138861056 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MjA0NDI5NzEsIm5hbWUiOiIxMzAqKioqMDAwNCIsImlkIjoxODA2OTg2MjMyNDI5ODA5NjY0LCJleHAiOjE3MjA1MjkzNzEsImlhdCI6MTcyMDQ0Mjk3MX0.MnH8GBijnXK-MgdATUHELrzBcsEav_JiJft001AMq2U
+2024-07-08 20:49:38.070 INFO  com.heshi.nls.business.util.JwtUtil                65   http-nio-18000-exec-8 1810295175138861056 根据token获取原始内容：{"name":"130****0004","id":1806986232429809664}
+2024-07-08 20:49:38.070 INFO  c.h.nls.business.interceptor.WebLoginInterceptor   42   http-nio-18000-exec-8 1810295175138861056 当前登录会员：{"name":"130****0004","id":1806986232429809664}
+2024-07-08 20:49:38.071 INFO  com.heshi.nls.business.aspect.LogAspect            38   http-nio-18000-exec-8 1810295175138861056 ------------- 环绕通知开始 -------------
+2024-07-08 20:49:38.071 INFO  com.heshi.nls.business.aspect.LogAspect            47   http-nio-18000-exec-8 1810295175138861056 请求地址: http://localhost:18000/nls/web/filetrans/query GET
+2024-07-08 20:49:38.071 INFO  com.heshi.nls.business.aspect.LogAspect            48   http-nio-18000-exec-8 1810295175138861056 类名方法: com.heshi.nls.business.controller.web.WebFiletransController.query
+2024-07-08 20:49:38.072 INFO  com.heshi.nls.business.aspect.LogAspect            49   http-nio-18000-exec-8 1810295175138861056 远程地址: 0:0:0:0:0:0:0:1
+2024-07-08 20:49:38.072 INFO  com.heshi.nls.business.aspect.LogAspect            70   http-nio-18000-exec-8 1810295175138861056 请求参数: [{"page":1,"size":10}]
+2024-07-08 20:49:38.078 INFO  com.heshi.nls.business.aspect.LogAspect            73   http-nio-18000-exec-8 1810295175138861056 返回结果: {"content":{"list":[],"total":0},"success":true}
+2024-07-08 20:49:38.078 INFO  com.heshi.nls.business.aspect.LogAspect            74   http-nio-18000-exec-8 1810295175138861056 ------------- 环绕通知结束 耗时：7 ms -------------
+2024-07-08 20:51:56.059 INFO  com.zaxxer.hikari.HikariDataSource                 350  SpringApplicationShutdownHook                     HikariPool-1 - Shutdown initiated...
+2024-07-08 20:51:56.068 INFO  com.zaxxer.hikari.HikariDataSource                 352  SpringApplicationShutdownHook                     HikariPool-1 - Shutdown completed.

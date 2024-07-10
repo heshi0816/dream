@@ -2,16 +2,16 @@
   <a-layout-header class="header">
     <div class="logo" />
     <div style="float: right; color: white;">
-      您好：{{member.name}} &nbsp;&nbsp;
+      您好：{{user.loginName}} &nbsp;&nbsp;
       <router-link to="/login" style="color: white;">
         退出登录
       </router-link>
     </div>
     <a-menu
-      v-model:selectedKeys="selectedKeys"
-      theme="dark"
-      mode="horizontal"
-      :style="{ lineHeight: '64px' }"
+        v-model:selectedKeys="selectedKeys"
+        theme="dark"
+        mode="horizontal"
+        :style="{ lineHeight: '64px' }"
     >
       <a-menu-item key="/home/welcome">
         <router-link to="/home/welcome">
@@ -49,7 +49,7 @@ watch(() => router.currentRoute.value.path, (newValue, oldValue) => {
   selectedKeys.value.push(newValue);
 }, {immediate: true});
 
-const member = store.state.member;
+const user = store.state.user;
 </script>
 
 <style scoped>

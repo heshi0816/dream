@@ -1,15 +1,15 @@
 import { createStore } from 'vuex'
 
-const MEMBER = "member";
+const USER = "user";
 
 export default createStore({
   state: {
-    member: window.SessionStorage.get(MEMBER) || {},
+    user: window.SessionStorage.get(USER) || {},
   },
   mutations: {
-    setMember (state, _member) {
-      state.member = _member;
-      window.SessionStorage.set(MEMBER, _member);
+    setUser (state, _user) {
+      state.user = _user;
+      window.SessionStorage.set(USER, _user);
     }
   },
 })

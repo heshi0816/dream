@@ -13,7 +13,7 @@ app.use(Antd).use(router).mount('#app');
 
 // 全局使用图标
 const icons
-  = Icons;
+    = Icons;
 for (const i in icons) {
   app.component(i, icons[i]);
 }
@@ -23,7 +23,7 @@ for (const i in icons) {
  */
 axios.interceptors.request.use(function (config) {
   console.log('请求参数：', config);
-  let _token = store.state.member.token;
+  let _token = store.state.user.token;
   if (_token) {
     config.headers.token = _token;
     console.log("请求headers增加token: ", _token);

@@ -6,16 +6,16 @@
           甲蛙智能语音
         </div>
         <a-form
-          :model="loginMember"
-          name="basic"
-          :wrapper-col="{ span: 24 }"
-          @finish="login"
+            :model="loginUser"
+            name="basic"
+            :wrapper-col="{ span: 24 }"
+            @finish="login"
         >
           <a-form-item
-            name="mobile" class="form-item"
-            :rules="[{ required: true, message: '请输入手机号' }]"
+              name="loginName" class="form-item"
+              :rules="[{ required: true, message: '请输入登录名' }]"
           >
-            <a-input v-model:value="loginMember.mobile" placeholder="手机号" size="large">
+            <a-input v-model:value="loginUser.loginName" placeholder="登录名" size="large">
               <template #prefix>
                 <MobileOutlined style="margin-left: 15px"/>
               </template>
@@ -23,10 +23,10 @@
           </a-form-item>
 
           <a-form-item
-            name="password" class="form-item"
-            :rules="[{ required: true, message: '请输入密码' }]"
+              name="password" class="form-item"
+              :rules="[{ required: true, message: '请输入密码' }]"
           >
-            <a-input-password v-model:value="loginMember.password" placeholder="密码" size="large">
+            <a-input-password v-model:value="loginUser.password" placeholder="密码" size="large">
               <template #prefix>
                 <LockOutlined style="margin-left: 15px"/>
               </template>
@@ -35,7 +35,7 @@
 
           <a-form-item name="imageCode" class="form-item"
                        :rules="[{ required: true, message: '请输入图片验证码', trigger: 'blur' }]">
-            <a-input v-model:value="loginMember.imageCode" placeholder="图片验证码">
+            <a-input v-model:value="loginUser.imageCode" placeholder="图片验证码">
               <template #prefix>
                 <SafetyOutlined style="margin-left: 15px"/>
               </template>
@@ -51,10 +51,6 @@
             </a-button>
           </a-form-item>
         </a-form>
-        <p class="footer">
-          <router-link to="/register">我要注册</router-link>&nbsp;&nbsp;
-          <router-link class="pull-right" to="/reset">忘记密码</router-link>
-        </p>
       </a-col>
     </a-row>
   </div>
@@ -68,24 +64,24 @@ import store from "../store/index.js";
 
 let router = useRouter();
 
-const loginMember = ref({
-  mobile: '',
+const loginUser = ref({
+  loginName: '',
   password: '',
   imageCode: ''
 });
 const login = values => {
   console.log('开始登录:', values);
-  axios.post("/nls/web/member/login", {
-    mobile: loginMember.value.mobile,
-    password: hexMd5Key(loginMember.value.password),
-    imageCode: loginMember.value.imageCode,
+  axios.post("/nls/admin/user/login", {
+    loginName: loginUser.value.loginName,
+    password: hexMd5Key(loginUser.value.password),
+    imageCode: loginUser.value.imageCode,
     imageCodeToken: imageCodeToken.value,
   }).then(response => {
     let data = response.data;
     if (data.success) {
       message.success("登录成功！");
-      store.commit("setMember", data.content);
-      router.push("/home");
+      store.commit("setUser", data.content);
+      router.push("/home/welcome");
     } else {
       message.error(data.message);
     }
@@ -99,9 +95,9 @@ const imageCodeSrc = ref();
  * 加载图形验证码
  */
 const loadImageCode = () => {
-  loginMember.value.imageCode = "";
+  loginUser.value.imageCode = "";
   imageCodeToken.value = Tool.uuid(8);
-  imageCodeSrc.value = import.meta.env.VITE_SERVER + '/nls/web/kaptcha/image-code/' + imageCodeToken.value;
+  imageCodeSrc.value = import.meta.env.VITE_SERVER + '/nls/admin/kaptcha/image-code/' + imageCodeToken.value;
 };
 loadImageCode();
 </script>
