@@ -28,6 +28,9 @@ public class MemberService {
     @Resource
     private MemberMapper memberMapper;
 
+    @Resource
+    private MemberLoginLogService memberLoginLogService;
+
     /**
      * 按手机号查会员信息
      * @param mobile
@@ -98,6 +101,9 @@ public class MemberService {
             Map<String, Object> map = BeanUtil.beanToMap(memberLoginResp);
             String token = JwtUtil.createLoginToken(map);
             memberLoginResp.setToken(token);
+
+            memberLoginLogService.save(memberLoginResp);
+
             return memberLoginResp;
         } else {
             log.warn("密码错误，{}", req.getMobile());
