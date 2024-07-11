@@ -17,6 +17,11 @@ public class ReportService {
     public StatisticResp queryStatistic() {
         StatisticResp statisticResp = new StatisticResp();
         statisticResp.setOnlineCount(reportMapperCust.queryOnlineCount());
+        statisticResp.setRegisterCount(reportMapperCust.queryRegisterCount());
+        statisticResp.setFiletransCount(reportMapperCust.queryFiletransCount());
+        statisticResp.setFiletransSecond(reportMapperCust.queryFiletransSecond());
+        statisticResp.setOrderCount(reportMapperCust.queryOrderCount());
+        statisticResp.setOrderAmount(reportMapperCust.queryOrderAmount());
         return statisticResp;
     }
 
