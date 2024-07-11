@@ -742,3 +742,5 @@ java.lang.NullPointerException: Cannot invoke "com.heshi.nls.business.resp.Membe
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-11 18:25:07.784 ERROR c.h.n.b.controller.ControllerExceptionHandler      34   http-nio-18000-exec-5 1811345969401425920 系统异常：
+com.heshi.nls.business.exception.BusinessException: 登录名未注册或密码错误
