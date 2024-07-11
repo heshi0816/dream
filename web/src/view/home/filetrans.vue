@@ -1,5 +1,5 @@
 <template>
-  <filetrans-upload ref="filetransUploadCom"></filetrans-upload>
+  <filetrans-upload ref="filetransUploadCom" @afterPay="handleQuery"></filetrans-upload>
   <filetrans-subtitle ref="filetransSubtitleCom"></filetrans-subtitle>
 
   <a-alert :message="null" type="success">

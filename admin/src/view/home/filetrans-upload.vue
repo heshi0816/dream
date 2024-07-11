@@ -38,6 +38,9 @@ import {message, notification} from "ant-design-vue";
 import axios from "axios";
 import store from "../../store/index.js";
 import TheAlipay from "../../components/the-alipay.vue";
+
+let emit = defineEmits(['after-pay', 'afterPay']);
+
 const open = ref(false);
 const FILETRANS_LANG_ARRAY = ref(window.FILETRANS_LANG_ARRAY);
 
@@ -276,6 +279,7 @@ const theAlipayCom = ref();
 const payInfo = ref();
 const handleAfterPay = () => {
   open.value = false;
+  emit('after-pay');
 }
 
 // 使用 defineExpose 向外暴露指定的数据和方法
