@@ -39,8 +39,9 @@ public class SpringMvcConfig implements WebMvcConfigurer {
         registry.addInterceptor(adminLoginInterceptor)
                 .addPathPatterns("/admin/**")
                 .excludePathPatterns(
-                        "/web/kaptcha/image-code/*",
-                        "/web/member/login"
+                        "/admin/kaptcha/image-code/*",
+                        "/admin/user/login",
+                        "/admin/report/**"
                 );
     }
 }
