@@ -27,5 +27,11 @@
         select sum(amount) from order_info where to_days(order_at) = to_days(now()) and status = 'S';
     </select>
 
+    <select id="query30RegisterCount" resultType="com.heshi.nls.business.resp.StatisticDateResp">
+        select date_format(created_at,'%m-%d') as `date`, count(1) as num
+        from member where date_sub(curdate(), interval 29 day) <![CDATA[<=]]> created_at
+        group by date_format(created_at,'%m-%d')
+    </select>
+
 
 </mapper>

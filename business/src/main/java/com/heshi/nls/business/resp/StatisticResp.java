@@ -3,6 +3,7 @@ package com.heshi.nls.business.resp;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 public class StatisticResp {
@@ -36,4 +37,9 @@ public class StatisticResp {
      * 订单金额
      */
     private BigDecimal orderAmount;
+
+    /**
+     * 近30天注册人数
+     */
+    private List<StatisticDateResp> registerCountList;
 }
