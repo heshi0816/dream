@@ -1,6 +1,15 @@
 <template>
   <filetrans-upload ref="filetransUploadCom"></filetrans-upload>
   <filetrans-subtitle ref="filetransSubtitleCom"></filetrans-subtitle>
+
+  <a-alert :message="null" type="success">
+    <template #description>
+      1. 上传音频，生成srt字幕文件、txt文本文件，支持多国语言
+      <br/>
+      2. <b>为保障用户数据不泄露，用户上传的音频将在10天后系统自动删除。</b>
+    </template>
+  </a-alert>
+  <br>
   <p>
     <a-space>
       <a-button type="primary" @click="showModal">开始上传音频</a-button>

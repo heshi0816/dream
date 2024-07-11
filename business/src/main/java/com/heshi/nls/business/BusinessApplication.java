@@ -6,8 +6,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Slf4j
+@EnableScheduling
 @SpringBootApplication
 @MapperScan("com.heshi.nls.business.mapper")
 @ComponentScan("com.heshi")

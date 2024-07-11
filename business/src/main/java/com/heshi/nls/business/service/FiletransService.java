@@ -1,12 +1,14 @@
 package com.heshi.nls.business.service;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyuncs.CommonResponse;
 import com.aliyuncs.vod.model.v20170321.GetVideoInfoResponse;
+import com.aliyuncs.vod.model.v20170321.SearchMediaResponse;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.heshi.nls.business.context.LoginMemberContext;
@@ -29,6 +31,7 @@ import com.heshi.nls.business.util.VodUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Date;
 import java.util.List;
@@ -203,5 +206,34 @@ public class FiletransService {
         pageResp.setList(filetransQueryRespList);
 
         return pageResp;
+    }
+
+    /**
+     * 删除早期视频
+     * @return
+     */
+    public void deleteVodJob() {
+        try {
+            Date date = new Date();
+            Date start = DateUtil.offsetDay(date, -30);
+            String startStr = DateUtil.format(start, "yyyy-MM-dd") + "T00:00:00Z";
+            Date end = DateUtil.offsetDay(date, -15);
+            String endStr = DateUtil.format(end, "yyyy-MM-dd") + "T00:00:00Z";
+            log.info("删除过期VOD，查询列表日期范围：" + startStr + ", " + endStr);
+            SearchMediaResponse searchMediaResponse = VodUtil.searchByCreationTime(startStr, endStr);
+            List<SearchMediaResponse.Media> mediaList = searchMediaResponse.getMediaList();
+            if (!CollectionUtils.isEmpty(mediaList)) {
+                for (SearchMediaResponse.Media media : mediaList){
+                    try {
+                        VodUtil.deleteVideo(media.getMediaId());
+                    } catch (Exception e) {
+                        log.error("删除过期VOD异常：" +  media.getMediaId(), e);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            log.error("删除过期VOD异常", e);
+        }
+
     }
 }
