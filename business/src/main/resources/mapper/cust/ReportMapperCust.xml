@@ -33,5 +33,32 @@
         group by date_format(created_at,'%m-%d')
     </select>
 
+    <select id="query30FiletransCount" resultType="com.heshi.nls.business.resp.StatisticDateResp">
+        select date_format(created_at,'%m-%d') as `date`, count(1) as filetransCount
+        from filetrans where date_sub(curdate(), interval 29 day) <![CDATA[<=]]> created_at and pay_status = 'S'
+        group by date_format(created_at,'%m-%d')
+    </select>
+
+    <select id="query30FiletransSecond" resultType="com.heshi.nls.business.resp.StatisticDateResp">
+        select date_format(created_at,'%m-%d') as `date`, sum(second) as filetransSecond
+        from filetrans where date_sub(curdate(), interval 29 day) <![CDATA[<=]]> created_at and pay_status = 'S'
+        group by date_format(created_at,'%m-%d')
+    </select>
+
+    <select id="query30OrderCount" resultType="com.heshi.nls.business.resp.StatisticDateResp">
+        select date_format(`order_at`,'%m-%d') as `date`, count(1) as orderCount
+        from order_info
+        where date_sub(curdate(), interval 29 day) <![CDATA[<=]]> `order_at`
+          and status = 'S'
+        group by date_format(`order_at`,'%m-%d')
+    </select>
+
+    <select id="query30OrderAmount" resultType="com.heshi.nls.business.resp.StatisticDateResp">
+        select date_format(`order_at`,'%m-%d') as `date`, sum(amount) as orderAmount
+        from order_info
+        where date_sub(curdate(), interval 29 day) <![CDATA[<=]]> `order_at`
+          and status = 'S'
+        group by date_format(`order_at`,'%m-%d')
+    </select>
 
 </mapper>

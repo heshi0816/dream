@@ -42,4 +42,24 @@ public class StatisticResp {
      * 近30天注册人数
      */
     private List<StatisticDateResp> registerCountList;
+
+    /**
+     * 近30天语音识别数
+     */
+    private List<StatisticDateResp> filetransCountList;
+
+    /**
+     * 近30天语音识别时长，秒
+     */
+    private List<StatisticDateResp> filetransSecondList;
+
+    /**
+     * 近30天订单数
+     */
+    private List<StatisticDateResp> orderCountList;
+
+    /**
+     * 近30天订单金额
+     */
+    private List<StatisticDateResp> orderAmountList;
 }

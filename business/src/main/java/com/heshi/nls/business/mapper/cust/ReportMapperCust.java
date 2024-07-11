@@ -21,4 +21,13 @@ public interface ReportMapperCust {
     BigDecimal queryOrderAmount();
 
     List<StatisticDateResp> query30RegisterCount();
+
+
+    List<StatisticDateResp> query30FiletransCount();
+
+    List<StatisticDateResp> query30FiletransSecond();
+
+    List<StatisticDateResp> query30OrderCount();
+
+    List<StatisticDateResp> query30OrderAmount();
 }

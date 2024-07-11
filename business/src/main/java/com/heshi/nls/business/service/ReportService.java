@@ -35,7 +35,20 @@ public class ReportService {
         List<StatisticDateResp> registerCountList = reportMapperCust.query30RegisterCount();
         statisticResp.setRegisterCountList(fill30(registerCountList));
 
+        List<StatisticDateResp> filetransCountList = reportMapperCust.query30FiletransCount();
+        statisticResp.setFiletransCountList(fill30(filetransCountList));
+
+        List<StatisticDateResp> filetransSecondList = reportMapperCust.query30FiletransSecond();
+        statisticResp.setFiletransSecondList(fill30(filetransSecondList));
+
+        List<StatisticDateResp> orderCountList = reportMapperCust.query30OrderCount();
+        statisticResp.setOrderCountList(fill30(orderCountList));
+
+        List<StatisticDateResp> query30OrderAmount = reportMapperCust.query30OrderAmount();
+        statisticResp.setOrderAmountList(fill30(query30OrderAmount));
+
         return statisticResp;
+
     }
 
     /**
