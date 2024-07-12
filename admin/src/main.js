@@ -37,6 +37,14 @@ axios.interceptors.response.use(function (response) {
   return response;
 }, error => {
   console.log('返回错误：', error);
+  const response = error.response;
+  const status = response.status;
+  if (status === 401) {
+    // 判断状态码是401 跳转到登录
+    console.log("未登录，跳到登录页面");
+    store.commit("setMember", {});
+    router.push("/login");
+  }
   return Promise.reject(error);
 });
 

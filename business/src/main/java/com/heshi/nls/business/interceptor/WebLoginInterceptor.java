@@ -36,6 +36,10 @@ public class WebLoginInterceptor implements HandlerInterceptor {
             log.info( "token为空，请求被拦截" );
             response.setStatus(HttpStatus.UNAUTHORIZED.value());
             return false;
+        } else if (!JwtUtil.validate(token)) {
+            log.info( "token校验不通过，请求被拦截" );
+            response.setStatus(HttpStatus.UNAUTHORIZED.value());
+            return false;
         } else {
             log.info("获取会员登录token：{}", token);
             JSONObject loginMember = JwtUtil.getJSONObject(token);

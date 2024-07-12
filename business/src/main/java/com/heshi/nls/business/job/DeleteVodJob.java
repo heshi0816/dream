@@ -15,7 +15,7 @@ public class DeleteVodJob {
     @Resource
     private FiletransService filetransService;
 
-    @Scheduled(cron = "1/5 * * * * ?")
+    @Scheduled(cron = "0 0 1/5 * * ?")
     public void cron() {
         try {
             // 增加日志流水号
