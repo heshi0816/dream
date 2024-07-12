@@ -55,7 +55,7 @@ public class NlsUtil {
             taskObject.put("version", nlsFiletransProperties.getTaskVersion());  // 新接入请使用4.0版本，已接入（默认2.0）如需维持现状，请注释掉该参数设置。
 
             // 允许单句话最大结束时间，秒 转 毫秒
-            taskObject.put("max_single_segment_time", 8 * 1000);
+            taskObject.put("max_single_segment_time", 15 * 1000);
             // 是否打开ITN，中文数字将转为阿拉伯数字输出
             // 只有中文时可打开，外语不支持，需关闭
             // 英语需要同时打开enable_inverse_text_normalization和enable_punctuation_prediction，才能有大小写

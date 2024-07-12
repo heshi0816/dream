@@ -113,6 +113,15 @@
             <groupId>com.alipay.sdk</groupId>
             <artifactId>alipay-sdk-java</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.aliyun.vod</groupId>
+            <artifactId>upload</artifactId>
+            <version>1.4.15</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/aliyun-java-vod-upload-1.4.15.jar</systemPath>
+        </dependency>
+
     </dependencies>
 
     <build>

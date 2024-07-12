@@ -1,9 +1,14 @@
 <template>
   <a-modal v-model:open="open" title="" @ok="pay" ok-text="结算" cancel-text="取消">
     <p>
-      <a-button type="primary" @click="selectFile" size="large">
-        <span><UploadOutlined /> 选择音频</span>
-      </a-button>
+      <a-space>
+        <a-button type="primary" @click="selectFile">
+          <span><UploadOutlined /> 选择音频</span>
+        </a-button>
+        <a-button type="primary" @click="selectDemoFile" :loading="uploadLoading">
+          没有音频？使用示例音频
+        </a-button>
+      </a-space>
       <input type="file"
              style="display: none"
              ref="fileUploadCom"
@@ -38,6 +43,9 @@ import {message, notification} from "ant-design-vue";
 import axios from "axios";
 import store from "../../store/index.js";
 import TheAlipay from "../../components/the-alipay.vue";
+
+let emit = defineEmits(['after-pay', 'afterPay']);
+
 const open = ref(false);
 const FILETRANS_LANG_ARRAY = ref(window.FILETRANS_LANG_ARRAY);
 
@@ -276,7 +284,36 @@ const theAlipayCom = ref();
 const payInfo = ref();
 const handleAfterPay = () => {
   open.value = false;
+  emit('after-pay');
 }
+
+// ------------- 选择示例文件 --------------
+const uploadLoading = ref(false);
+const selectDemoFile = () => {
+  uploadLoading.value = true;
+  axios.get('/nls/web/vod/upload-demo').then((response)=>{
+    uploadLoading.value = false;
+    let resp = response.data;
+    if (resp.success) {
+      let demo = resp.content;
+      filetrans.value = {
+        name: demo.name,
+        percent: 100,
+        amount: demo.amount,
+        lang: demo.lang,
+        fileSign: demo.key,
+        audio: demo.audio,
+        vod: demo.vid,
+        channel: 'A'
+      };
+    } else {
+      notification['error']({
+        message: '系统提示',
+        description: "示例文件上传失败",
+      });
+    }
+  })
+};
 
 // 使用 defineExpose 向外暴露指定的数据和方法
 defineExpose({
