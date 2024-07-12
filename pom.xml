@@ -105,6 +105,13 @@
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>1.4.6</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba.boot/nacos-config-spring-boot-starter -->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>0.3.0-RC</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

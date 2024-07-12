@@ -2,6 +2,7 @@ package com.heshi.nls.business.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.vod.upload.impl.UploadVideoImpl;
 import com.aliyun.vod.upload.req.UploadVideoRequest;
@@ -42,7 +43,7 @@ public class VodUtil {
 
     private static BigDecimal filetransAudioPrice;
 
-    @Value("${filetrans.audio.price}")
+    @NacosValue(value = "${filetrans.audio.price:0.2}", autoRefreshed = true)
     public void setFiletransAudioPrice(BigDecimal filetransAudioPrice) {
         VodUtil.filetransAudioPrice = filetransAudioPrice;
     }

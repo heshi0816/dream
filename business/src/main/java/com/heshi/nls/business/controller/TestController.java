@@ -1,5 +1,6 @@
 package com.heshi.nls.business.controller;
 
+import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.heshi.nls.business.req.DemoQueryReq;
 import com.heshi.nls.business.resp.CommonResp;
 import com.heshi.nls.business.resp.DemoQueryResp;
@@ -16,10 +17,13 @@ public class TestController {
     @Resource
     private DemoService demoService;
 
+    @NacosValue(value = "${test.name:TTT}", autoRefreshed = true)
+    private String testName;
+
     @GetMapping("/hello")
     public CommonResp<String> hello() {
         // return "Hello World!!!";
-        return new CommonResp<>("Hello World!!!");
+        return new CommonResp<>("Hello World!!! " + testName);
     }
 
     @GetMapping("/count")
