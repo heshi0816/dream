@@ -1,0 +1,8 @@
+2024-07-12 22:44:00,796 INFO [dump] add formal task. groupKey=imooc-nls+DEFAULT_GROUP+nls
+
+2024-07-12 22:44:00,857 INFO [dump] process formal task. groupKey=imooc-nls+DEFAULT_GROUP+nls
+
+2024-07-12 22:44:00,864 INFO [dump] md5 changed, save to disk cache ,groupKey=imooc-nls+DEFAULT_GROUP+nls, newMd5=74f5cdf387d4583a6d94ba3d718db75f,oldMd5=
+
+2024-07-12 22:44:00,870 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=imooc-nls+DEFAULT_GROUP+nls, newMd5=74f5cdf387d4583a6d94ba3d718db75f,oldMd5=,lastModifiedTs=1720795440748
+
