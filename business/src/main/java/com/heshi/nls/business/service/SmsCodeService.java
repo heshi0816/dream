@@ -12,6 +12,7 @@ import com.heshi.nls.business.enums.SmsCodeUseEnum;
 import com.heshi.nls.business.exception.BusinessException;
 import com.heshi.nls.business.exception.BusinessExceptionEnum;
 import com.heshi.nls.business.mapper.SmsCodeMapper;
+import com.heshi.nls.business.util.SmsUtil;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -78,6 +79,7 @@ public class SmsCodeService {
         smsCodeMapper.insert(smsCode);
 
         // 对接短信通道，发送短信
+        SmsUtil.sendCode(mobile, code);
     }
 
 
