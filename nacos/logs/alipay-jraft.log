@@ -1,318 +1,180 @@
-2024-07-13 00:20:44,352 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 00:18:04,451 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 00:24:45,616 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 00:21:18,107 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 00:29:09,782 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 00:24:19,038 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 00:50:44,367 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 00:48:04,462 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 00:54:45,628 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 00:51:18,116 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 00:59:09,786 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 00:54:19,048 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 01:20:44,367 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 01:18:04,464 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 01:24:45,643 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 01:21:18,124 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 01:29:09,795 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 01:24:19,061 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 01:50:44,368 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 01:48:04,466 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 01:54:45,643 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 01:51:18,140 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 01:59:09,797 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 01:54:19,071 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 02:20:44,375 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 02:18:04,469 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 02:24:45,647 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 02:21:18,141 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 02:29:09,812 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 02:24:19,078 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 02:50:44,378 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 02:48:04,489 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 02:54:45,648 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 02:51:18,154 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 02:59:09,827 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 02:54:19,078 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 03:20:44,384 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 03:18:04,492 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 03:24:45,657 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 03:21:18,161 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 03:29:09,835 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 03:24:19,088 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 03:50:44,400 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 03:48:04,502 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 03:54:45,665 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 03:51:18,172 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 03:59:09,846 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 03:54:19,093 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 04:20:44,403 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 04:18:04,511 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 04:24:45,676 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 04:21:18,176 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 04:29:09,855 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 04:24:19,105 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 04:50:44,411 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 04:48:04,525 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 04:54:45,686 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 04:51:18,749 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 04:59:09,868 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 04:54:19,110 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 05:20:44,422 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 05:18:04,659 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 05:24:45,699 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 1 ms.
+2024-07-15 05:21:18,297 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 05:29:09,883 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 05:24:19,140 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 05:50:44,434 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 05:48:04,639 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 05:54:45,704 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 05:51:19,618 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 05:59:09,881 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 05:54:19,202 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 06:20:44,445 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 06:18:04,684 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 06:24:45,712 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 06:21:18,214 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 06:29:09,890 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 06:24:19,193 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 06:50:44,445 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 06:48:04,624 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 06:54:45,718 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 06:51:18,208 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 06:59:09,899 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 06:54:19,133 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 07:20:44,449 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 07:18:04,661 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 07:24:45,729 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 1 ms.
+2024-07-15 07:21:18,255 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 07:29:09,906 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 07:24:19,222 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 07:50:44,463 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 07:48:04,575 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 07:54:45,733 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 07:51:18,215 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 07:59:09,915 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 07:54:19,146 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 08:20:44,469 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 08:18:04,588 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 08:24:45,739 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 08:21:18,220 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 08:29:09,923 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 08:24:19,153 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 08:50:44,474 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 08:48:04,596 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 08:54:45,749 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 08:51:18,221 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 08:59:09,936 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 08:54:19,154 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 09:20:44,480 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 09:18:04,613 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 09:24:45,756 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 09:21:18,226 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 09:29:09,947 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 09:24:19,163 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 09:50:44,493 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 09:48:04,613 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 09:54:45,759 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 09:51:18,238 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 09:59:09,957 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 09:54:19,164 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 10:20:44,507 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 10:18:04,620 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 10:24:45,764 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 10:21:18,250 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 10:29:09,966 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 10:24:19,175 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 10:50:44,508 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 10:48:04,625 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 10:54:45,776 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 10:51:18,264 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 10:59:09,969 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 10:54:19,186 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 11:20:44,508 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 11:18:04,655 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 11:24:45,781 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 11:21:18,375 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 11:29:09,973 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 11:24:19,207 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 11:50:44,514 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 11:48:04,687 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 11:54:45,798 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 11:51:19,731 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 11:59:09,977 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 11:54:19,311 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 12:20:44,524 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 12:18:12,278 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 12:24:45,804 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 12:21:18,306 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 12:29:09,975 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 12:24:19,305 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 12:50:44,525 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 12:48:04,770 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 12:54:45,818 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 1 ms.
+2024-07-15 12:51:18,387 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 12:59:09,980 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 1 ms.
+2024-07-15 12:54:19,344 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 13:20:44,532 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 13:18:04,677 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 13:24:45,832 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 13:21:18,321 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 13:29:09,981 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 13:24:19,233 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 1 ms.
 
-2024-07-13 13:50:44,539 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 13:48:04,693 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 13:54:45,848 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 13:51:18,324 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 13:59:09,992 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 13:54:19,243 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 14:20:44,550 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 14:18:04,706 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 14:24:45,855 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 14:21:18,327 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 14:29:10,003 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 14:24:19,253 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 14:50:44,555 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
+2024-07-15 14:48:04,718 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 14:54:45,858 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
+2024-07-15 14:51:18,338 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
 
-2024-07-13 14:59:10,008 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 15:20:44,570 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 15:24:45,861 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 15:29:10,023 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 1 ms.
-
-2024-07-13 15:50:44,578 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 15:54:45,871 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 15:59:10,039 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 16:20:44,581 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 16:24:45,878 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 3 to 3, cost 1 ms.
-
-2024-07-13 16:29:10,047 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log from log index 3 to 3, cost 0 ms.
-
-2024-07-13 16:36:20,530 INFO Node <naming_service_metadata/192.168.31.231:7848> shutdown, currTerm=2 state=STATE_LEADER.
-
-2024-07-13 16:36:20,531 INFO Fail to find the next candidate, group naming_service_metadata.
-
-2024-07-13 16:36:20,531 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
-
-2024-07-13 16:36:20,540 WARN Unable to fsync directory D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\meta-data on windows.
-
-2024-07-13 16:36:20,541 INFO Save raft meta, path=D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\meta-data, term=2, votedFor=192.168.31.231:7848, cost time=8 ms
-
-2024-07-13 16:36:20,541 INFO Shutting down FSMCaller...
-
-2024-07-13 16:36:20,541 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@1377c363[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
-
-2024-07-13 16:36:20,542 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@4d24b46[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
-
-2024-07-13 16:36:20,542 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,542 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,542 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,542 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,542 INFO onShutdown.
-
-2024-07-13 16:36:20,542 INFO Node <naming_service_metadata/192.168.31.231:7848> shutdown, currTerm=2 state=STATE_SHUTTING.
-
-2024-07-13 16:36:20,542 INFO The number of active nodes decrement to 2.
-
-2024-07-13 16:36:20,542 INFO Stop the RaftGroupService successfully.
-
-2024-07-13 16:36:20,542 INFO Node <naming_instance_metadata/192.168.31.231:7848> shutdown, currTerm=2 state=STATE_LEADER.
-
-2024-07-13 16:36:20,542 INFO Fail to find the next candidate, group naming_instance_metadata.
-
-2024-07-13 16:36:20,543 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
-
-2024-07-13 16:36:20,552 WARN Unable to fsync directory D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\meta-data on windows.
-
-2024-07-13 16:36:20,555 INFO Save raft meta, path=D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\meta-data, term=2, votedFor=192.168.31.231:7848, cost time=9 ms
-
-2024-07-13 16:36:20,555 INFO Shutting down FSMCaller...
-
-2024-07-13 16:36:20,555 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@1307b655[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
-
-2024-07-13 16:36:20,555 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@5195708[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
-
-2024-07-13 16:36:20,555 INFO onShutdown.
-
-2024-07-13 16:36:20,555 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,555 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,555 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,555 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,555 INFO The number of active nodes decrement to 1.
-
-2024-07-13 16:36:20,555 INFO Node <naming_instance_metadata/192.168.31.231:7848> shutdown, currTerm=2 state=STATE_SHUTTING.
-
-2024-07-13 16:36:20,555 INFO Stop the RaftGroupService successfully.
-
-2024-07-13 16:36:20,556 INFO Node <naming_persistent_service_v2/192.168.31.231:7848> shutdown, currTerm=2 state=STATE_LEADER.
-
-2024-07-13 16:36:20,556 INFO Fail to find the next candidate, group naming_persistent_service_v2.
-
-2024-07-13 16:36:20,556 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
-
-2024-07-13 16:36:20,566 WARN Unable to fsync directory D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data on windows.
-
-2024-07-13 16:36:20,567 INFO Save raft meta, path=D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data, term=2, votedFor=192.168.31.231:7848, cost time=10 ms
-
-2024-07-13 16:36:20,567 INFO Shutting down FSMCaller...
-
-2024-07-13 16:36:20,567 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@251d0544[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
-
-2024-07-13 16:36:20,567 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@b06aaac[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
-
-2024-07-13 16:36:20,567 INFO onShutdown.
-
-2024-07-13 16:36:20,568 INFO The number of active nodes decrement to 0.
-
-2024-07-13 16:36:20,568 INFO DB destroyed, the db path is: D:\nls\nls\nacos\data\protocol\raft\naming_service_metadata\log.
-
-2024-07-13 16:36:20,569 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@a8b3bf9[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
-
-2024-07-13 16:36:20,569 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,569 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@71ff05ec[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
-
-2024-07-13 16:36:20,569 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,572 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@a889719[Shutting down, pool size = 12, active threads = 0, queued tasks = 0, completed tasks = 77775].
-
-2024-07-13 16:36:20,572 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,574 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@598b3bbf[Shutting down, pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 108].
-
-2024-07-13 16:36:20,574 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/192.168.31.231:7848>'}.
-
-2024-07-13 16:36:20,574 INFO Node <naming_persistent_service_v2/192.168.31.231:7848> shutdown, currTerm=2 state=STATE_SHUTTING.
-
-2024-07-13 16:36:20,574 INFO Stop the RaftGroupService successfully.
-
-2024-07-13 16:36:20,574 INFO Shutdown managed channel: 192.168.31.231:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=192.168.31.231:7848}}.
-
-2024-07-13 16:36:20,576 INFO The channel 192.168.31.231:7848 is in state: SHUTDOWN.
-
-2024-07-13 16:36:20,576 WARN This channel 192.168.31.231:7848 has started shutting down. Any new RPCs should fail immediately.
-
-2024-07-13 16:36:20,578 INFO DB destroyed, the db path is: D:\nls\nls\nacos\data\protocol\raft\naming_instance_metadata\log.
-
-2024-07-13 16:36:20,579 INFO Connection disconnected: /192.168.31.231:64052
-
-2024-07-13 16:36:20,584 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@49a7913b[Shutting down, pool size = 20, active threads = 0, queued tasks = 0, completed tasks = 55094].
-
-2024-07-13 16:36:20,593 INFO DB destroyed, the db path is: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log.
+2024-07-15 14:54:19,254 INFO Truncated prefix logs in data path: D:\nls\nls\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
 

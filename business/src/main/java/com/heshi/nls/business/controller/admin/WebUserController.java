@@ -25,6 +25,7 @@ public class WebUserController {
     @Resource
     private KaptchaService kaptchaService;
 
+//    password: a111111
     @PostMapping("/login")
     public CommonResp<UserLoginResp> login(@Valid @RequestBody UserLoginReq req) {
         req.setPassword(DigestUtil.md5Hex(req.getPassword().toLowerCase()));

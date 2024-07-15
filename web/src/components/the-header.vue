@@ -52,13 +52,13 @@ watch(() => router.currentRoute.value.path, (newValue, oldValue) => {
 
 const member = store.state.member;
 
-const heart = () => {
-  axios.get("/nls/web/member/heart");
-}
-let interval = setInterval(heart, 5000);
-
-// 退出登录时，停止心跳
-onUnmounted(() => clearInterval(interval));
+// const heart = () => {
+//   axios.get("/nls/web/member/heart");
+// }
+// let interval = setInterval(heart, 5000);
+//
+// // 退出登录时，停止心跳
+// onUnmounted(() => clearInterval(interval));
 
 </script>
 

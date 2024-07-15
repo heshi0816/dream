@@ -33,7 +33,8 @@ public class SpringMvcConfig implements WebMvcConfigurer {
                         "/web/member/register",
                         "/web/sms-code/send-for-register",
                         "/web/sms-code/send-for-reset",
-                        "/web/member/reset"
+                        "/web/member/reset",
+                        "/web/vod/get-upload-auth"
 
                 );
         registry.addInterceptor(adminLoginInterceptor)

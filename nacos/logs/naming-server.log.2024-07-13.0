@@ -1,0 +1,18 @@
+2024-07-13 16:32:19,510 INFO Client connection 1720858208885_192.168.31.231_62363 disconnect, remove instances and subscribers
+
+2024-07-13 16:33:49,693 INFO Client connection 1720859623778_192.168.31.231_62746 disconnect, remove instances and subscribers
+
+2024-07-13 16:36:20,453 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2024-07-13 16:36:20,463 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2024-07-13 16:55:35,593 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2024-07-13 16:55:35,593 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2024-07-13 16:55:35,593 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2024-07-13 16:55:35,594 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2024-07-13 16:55:36,437 INFO Load instance extension handler []
+
